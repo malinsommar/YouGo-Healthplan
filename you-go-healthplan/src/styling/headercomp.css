@@ -1,0 +1,28 @@
+.header {
+  background-color: rgb(80, 80, 80);
+  padding: 20px;
+  text-align: end;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  width: 90px;
+
+  left: 10px;
+}
+
+.nav-items {
+  display: inline-flex;
+  position: relative;
+}
+
+.navLink {
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: gray;
+}
