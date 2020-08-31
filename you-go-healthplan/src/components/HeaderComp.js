@@ -5,7 +5,7 @@ import "../styling/headercomp.css";
 
 const HeaderComponent = () => {
   return (
-    <div>
+    <div id="whole-header">
       <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
 
       <div className="header">

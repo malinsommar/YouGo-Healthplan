@@ -1,4 +1,107 @@
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
 body {
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: rgb(238, 238, 238);
+}
+
+.top-items {
+  align-items: center;
+  text-align: center;
+  font-family: lightFont;
+}
+
+#pricing-header {
+  background-image: url(https://images.unsplash.com/photo-1538356596070-887d2c0b0d63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vw;
+  position: relative;
+}
+
+#header-title {
+  position: relative;
+  font-family: titleFont;
+  top: 5vw;
+  color: #e78c7c;
+  font-size: 80px;
+}
+
+#header-p {
+  position: relative;
+  font-family: lightFont;
+  top: 9vw;
+  color: #e78c7c;
+  font-size: 20px;
+}
+
+#numberOfEmp {
+  margin: 4vw 0vw 3vw 0vw;
+}
+
+.employeesButtons {
+  margin-bottom: 1vw;
+}
+
+.emp-button {
+  border: solid 3px #e78c7c;
+  border-radius: 3px;
+  color: #e78c7c;
+  height: 50px;
+  margin-right: 40px;
+  width: 130px;
+}
+
+.emp-button:hover {
+  background-color: #e78c7c;
+  color: white;
+}
+
+#last-emp-button {
+  margin-right: 0;
+}
+
+#youGoBreak {
+  position: relative;
+  top: -10px;
+  width: 220px;
+}
+
+#contact {
+  position: relative;
+  left: 44.5%;
+}
+
+#nav {
+  color: #e78c7c;
+  border: solid 2px;
+  padding: 10px;
+  width: 10%;
+}
+
+#nav:hover {
+  color: #ffbbae;
+}
+
+#bottom-items {
+  align-items: center;
+  text-align: center;
+  font-family: lightFont;
+}
+
+#temp-footer {
+  background-color: #e78c7c;
+  color: #ffbbae;
+  height: 150px;
+  text-align: center;
+  font-size: 100px;
 }

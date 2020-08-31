@@ -1,15 +1,24 @@
+@font-face {
+  font-family: boldFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Bold.ttf);
+}
+
 .header {
-  background-color: rgb(80, 80, 80);
   padding: 20px;
   text-align: end;
+  background-color: rgba(248, 110, 110, 0.5);
 }
 
 #logo {
   position: absolute;
   top: 10px;
   width: 90px;
-
-  left: 10px;
+  left: 15px;
 }
 
 .nav-items {
@@ -17,12 +26,19 @@
   position: relative;
 }
 
-.navLink {
+.navLink,
+a {
   margin-left: 40px;
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  font-family: lightFont;
 }
 
 .navLink:hover {
-  color: gray;
+  color: rgb(248, 110, 110);
+}
+
+a:hover {
+  color: rgb(248, 110, 110);
 }
