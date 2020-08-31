@@ -1,5 +1,6 @@
 import React from "react";
 import "../styling/home.css";
+import Circle from "../images/YouGo_3.png";
 
 const Home = () => {
   return (
@@ -75,24 +76,7 @@ const ContainerInfoCircle = () => {
   return (
     <div id="InfoContainer">
       <div id="firstBox">
-        <div id="firstcircle"></div>
-        <div id="firsttext">
-          Digital hälsokontroll <br></br>& kartläggning
-        </div>
-      </div>
-      <div id="secondBox">
-        <div id="secondcircle"></div>
-        <div id="secondText">Hälsorapporter</div>
-      </div>
-      <div id="thirdBox">
-        <div id="thirdcircle"></div>
-        <div id="thirdText">
-          Individanpassade<br></br>årgärder
-        </div>
-      </div>
-      <div className="fourthBox">
-        <div id="fourthcircle"></div>
-        <div id="fourthText">Agera med rätt insats</div>
+        <img id="icon" src={Circle} alt="icon"></img>
       </div>
     </div>
   );
