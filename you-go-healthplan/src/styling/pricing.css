@@ -96,6 +96,11 @@ body {
   align-items: center;
   text-align: center;
   font-family: lightFont;
+  background-color: aqua;
+  height: 700px;
+}
+
+.left {
 }
 
 #temp-footer {
