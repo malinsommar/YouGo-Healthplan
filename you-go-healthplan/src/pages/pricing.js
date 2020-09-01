@@ -2,9 +2,15 @@ import React from "react";
 import "../styling/pricing.css";
 import HeaderComponent from "../components/HeaderComp";
 import BoxComponent from "../components/PricingboxComp";
+import PricingInfoComponent from "../components/PricingInfoComp";
 import { NavLink } from "react-router-dom";
-import yougobreak from "../images/yougoBreak.jpg";
 import { useState } from "react";
+import yougobreak from "../images/yougoBreak.jpg";
+import loginIcon from "../images/login.png";
+import surveyIcon from "../images/survey.png";
+import individualIcon from "../images/person.png";
+import healthprogramIcon from "../images/health-program.png";
+import breakIcon from "../images/break.png";
 
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
@@ -79,40 +85,44 @@ const Pricing = () => {
       <br />
 
       <div id="bottom-items">
-        <p>
-          Personlig inloggning:
-          <br />
-          Alla anställda får sitt egen inlogg med tillgång till all
-          funktionalitet.
-        </p>
+        <PricingInfoComponent
+          title="Personlig inloggning:"
+          text="Alla anställda får sitt egen inlogg med tillgång till all
+        funktionalitet."
+          image={loginIcon}
+        />
 
-        <p>
-          Digital hälsokartläggning:
-          <br />
-          Första gången din antällda loggar in på sitt konto kommer hen få gå
+        <PricingInfoComponent
+          title="Digital hälsokartläggning:"
+          text=" Första gången din antällda loggar in på sitt konto kommer hen få gå
           igenom ett formulär,
-          <br /> utifrån detta kommer vi sedan kunna kartlägga dennes hälsa.
-          <br /> Formuläret skall göras 4 gånger om året för att ni lätt skall
-          kunna se era framgångar.
-        </p>
+           utifrån detta kommer vi sedan kunna kartlägga dennes hälsa.
+           Formuläret skall göras 4 gånger om året för att ni lätt skall
+          kunna se era framgångar."
+          image={surveyIcon}
+        />
 
-        <p>
-          Individanpassade åtgärdsförslag: <br /> Beroende på hur den anställdes
-          resultat på formuläret kommer vi rekomendera ett åtgärdsförslag på hur
-          denne skall på bästa sätt skall ströva efter ett hälsosammare liv.
-        </p>
+        <PricingInfoComponent
+          title="Individanpassade åtgärdsförslag:"
+          text=" Beroende på hur den anställdes resultat på formuläret kommer vi
+          rekomendera ett åtgärdsförslag på hur denne skall på bästa sätt
+          skall ströva efter ett hälsosammare liv."
+          image={individualIcon}
+        />
 
-        <p>
-          Fria hälsoprogram: <br />
-          Alla anställda får tillgång till videos, artiklar, tips och tricks med
-          allt från kost till träning.{" "}
-        </p>
+        <PricingInfoComponent
+          title="Fria hälsoprogram:"
+          text=" Alla anställda får tillgång till videos, artiklar, tips och tricks
+        med allt från kost till träning."
+          image={healthprogramIcon}
+        />
 
-        <p>
-          YouGo Break: <br /> Ett träningsprogram alla antällda kör igenom 3
-          gånger om dagen. Det tar bara några minuter men det har enorma
-          resultat!
-        </p>
+        <PricingInfoComponent
+          title="YouGo Break:"
+          text="Ett träningsprogram alla antällda kör igenom 3 gånger om dagen. Det
+          tar bara några minuter men det har enorma resultat!"
+          image={breakIcon}
+        />
       </div>
 
       <br />

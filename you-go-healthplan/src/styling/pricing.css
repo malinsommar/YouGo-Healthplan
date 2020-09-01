@@ -96,11 +96,9 @@ body {
   align-items: center;
   text-align: center;
   font-family: lightFont;
-  background-color: aqua;
-  height: 700px;
-}
-
-.left {
+  background-color: #e78c7c;
+  width: 100%;
+  display: inline-block;
 }
 
 #temp-footer {
