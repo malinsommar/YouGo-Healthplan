@@ -1,19 +1,19 @@
 import React from "react";
 import "../styling/home.css";
 import Circle from "../images/YouGo_3.png";
+import HeaderComponent from "../components/HeaderComp";
 
 const Home = () => {
   return (
     <div>
       <div id="headerpicture">
         <header>
-          <h1>Home</h1>
+          <HeaderComponent />
         </header>
-
-        <div>{ContentAboutYouGo()}</div>
-        <div>{ColorContainer()}</div>
-        <div>{ContainerInfoCircle()}</div>
       </div>
+      <div>{ContentAboutYouGo()}</div>
+      <div>{ColorContainer()}</div>
+      <div>{ContainerInfoCircle()}</div>
     </div>
   );
 };
@@ -57,16 +57,19 @@ const ColorContainer = () => {
         <div className="picture"></div>
         <div className="rubrik">Osäker?</div>
         <div className="text">Läs mer om oss...</div>
+        <button className="buttonInfo">Klick here</button>
       </div>
       <div className="boxOfInfo">
         <div className="picture"></div>
         <div className="rubrik">Enkel registrering</div>
         <div className="text">Kontakta oss...</div>
+        <button className="buttonInfo">Klick here</button>
       </div>
       <div className="boxOfInfo">
         <div className="picture"></div>
         <div className="rubrik">Erbjudande</div>
         <div className="text">Gratis 3 månader, kolla priser!</div>
+        <button className="buttonInfo">Klick here</button>
       </div>
     </div>
   );

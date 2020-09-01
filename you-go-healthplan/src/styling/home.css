@@ -4,11 +4,15 @@ body {
 }
 
 #headerpicture {
-  background-color: aquamarine;
-  width: 100%;
-  height: 100px;
+  background-image: url(https://images.unsplash.com/photo-1538356596070-887d2c0b0d63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vw;
+  position: relative;
 }
+
 .infoAboutAll {
+  width: 100%;
   padding: 100px;
   display: flex;
   flex-direction: row;
@@ -55,18 +59,20 @@ body {
 #colorcontainer {
   background-color: aquamarine;
   width: 100%;
-  height: 400px;
+  height: 610px;
   display: flex;
   flex-direction: row;
 }
 
 .boxOfInfo {
-  background-color: beige;
+  background-color: white;
   width: 300px;
-  height: 325px;
+  height: 500px;
   margin: 40px;
   position: relative;
   left: 50px;
+  box-shadow: black 0 0 1px;
+  border-radius: 10px;
 }
 
 .picture {
@@ -90,6 +96,19 @@ body {
 .text {
   text-align: center;
 }
+
+.buttonInfo {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6b6b;
+  box-shadow: black 0 0 1px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
 #InfoContainer {
   width: 100%;
   height: 400px;
