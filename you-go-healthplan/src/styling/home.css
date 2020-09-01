@@ -1,6 +1,17 @@
 body {
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: rgb(238, 238, 238);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
 #headerpicture {
@@ -16,8 +27,7 @@ body {
   padding: 100px;
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: 18%;
+  align-items: center;
 }
 
 #infoAboutYouGo {
@@ -25,7 +35,7 @@ body {
 }
 
 #imgOfSomething {
-  background-color: aquamarine;
+  background-color: #ff6b6b;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -41,14 +51,14 @@ body {
 }
 
 #imgOfSomething1 {
-  background-color: aquamarine;
+  background-color: #ffb26b;
   width: 200px;
   height: 200px;
   padding: 8px;
   border-radius: 50%;
   position: relative;
   top: 250px;
-  left: -230px;
+  left: -250px;
 }
 #infoAboutYouGo1 {
   padding: 8px;
@@ -57,7 +67,7 @@ body {
 }
 
 #colorcontainer {
-  background-color: aquamarine;
+  background-color: #ff6b6b;
   width: 100%;
   height: 610px;
   display: flex;
@@ -91,10 +101,12 @@ body {
   top: -40px;
   text-align: center;
   text-transform: uppercase;
+  font-family: titleFont;
 }
 
 .text {
   text-align: center;
+  font-family: lightFont;
 }
 
 .buttonInfo {
@@ -107,6 +119,7 @@ body {
   position: relative;
   left: 100px;
   top: 100px;
+  font-family: titleFont;
 }
 
 #InfoContainer {

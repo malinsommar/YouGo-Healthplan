@@ -23,12 +23,19 @@ const ContentAboutYouGo = () => {
     <div className="infoAboutAll">
       <div>
         <div id="infoAboutYouGo">
-          <h1>Vad är YouGo?</h1>
+          <h1>Möt YouGo</h1>
           <p>
-            skhvgsfjjdisojgufddsjgfidojg <br></br> fhuishdusjivnfdskhvgsfjjdi{" "}
-            <br></br> fhuishdusjivnfd skhvgsfjjdi <br></br>{" "}
-            fhuishdusjivnfdskhvgs <br></br> fhuishdusjivnfd skhvgsfj <br></br>{" "}
-            fhuishd <br></br> fhuishdusjivnfd
+            Med våra tidigare erfarenheter som egenföretagare och <br />
+            ledare vet vi vikten av friska medarbetare och
+            <br /> vilken positiv effekt det är när medarbetarna trivs, <br />
+            är friska, blir sedda och har en god gemenskap. <br />
+            När vi blickar tillbaka på våra tidigare år inom arbetslivet,
+            <br /> som många gånger varit otroligt tuffa, med stress, höga krav{" "}
+            <br />
+            och förväntningar är vi överens om att vi klarat av att hålla oss
+            <br />
+            friska pga att vi hela tiden gjort hälsosamma val och hållit
+            <br /> igång med olika typer av aktiviteter.
           </p>
         </div>
         <div id="imgOfSomething"></div>
@@ -36,13 +43,16 @@ const ContentAboutYouGo = () => {
       <div id="moveBox1">
         <div id="imgOfSomething1"></div>
         <div id="infoAboutYouGo1">
-          <h1>Ta hand om dina anställda</h1>
+          <h1>Vår Filosofi</h1>
           <p>
-            skhvgsfjjdisojgufddsjgfidojgfadfsgfdhfrjd <br></br>{" "}
-            fhuishdusjivnfdskhvgsfjjdifdhgfds <br></br> fhuishdusjivnfd
-            skhvgsfjjdirtyujjhgff <br></br> fhuishdusjivnfdskhvgs <br></br>{" "}
-            fhuishdusjivnfd skhvgsfj <br></br> fhuishdrtyukjhgfd <br></br>{" "}
-            fhuishdusjivnfd
+            Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa.
+            <br />
+            Alla företag är olika. Vi tar reda på vilka åtgärder just ER <br />
+            organisation behöver. Vår styrka är att nå de medarbetare som <br />
+            är mest ohälsosamma inom olika kategorierna som rör hälsa.
+            <br />
+            Forskningen visar att medarbetare behöver må bra för <br />
+            att göra ett gott jobb och leverera önskat resultat.
           </p>
         </div>
       </div>
