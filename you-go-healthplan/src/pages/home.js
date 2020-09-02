@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/home.css";
-import Circle from "../images/YouGo_3.png";
+import Circle from "../images/YouGo_4.png";
 import HeaderComponent from "../components/HeaderComp";
 
 const Home = () => {
@@ -88,6 +88,7 @@ const ColorContainer = () => {
 const ContainerInfoCircle = () => {
   return (
     <div id="InfoContainer">
+      <p id="firstBoxRubrik">Så här jobbar vi</p>
       <div id="firstBox">
         <img id="icon" src={Circle} alt="icon"></img>
       </div>
