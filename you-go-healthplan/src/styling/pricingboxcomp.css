@@ -5,11 +5,11 @@
   border-radius: 4px;
   margin: 30px;
   width: 250px;
-  height: 558px;
+  height: 557px;
 }
 
 .top-box {
-  background-color: #ffbbae;
+  background-color: #b9d3b4;
   color: white;
   padding-bottom: 5px;
 }
@@ -23,7 +23,7 @@
 #title {
   position: relative;
   top: -25px;
-  background-color: #e78c7c;
+  background-color: #97bb90;
   color: white;
   padding: 10px 25px 10px 25px;
   border-radius: 3px;

@@ -20,13 +20,33 @@ const Pricing = () => {
   ]);
   const [startPrice, setstartPrice] = useState(["0", "0", "1000"]);
 
+  const onFirstPricingButton = () => {
+    setmonthlyPrice(["49kr / mo", "99kr /mo", "149kr /mo"]);
+    setstartPrice(["0", "0", "1000"]);
+  };
+
+  const onSecondPricingButton = () => {
+    setmonthlyPrice(["39kr / mo", "79kr /mo", "129kr /mo"]);
+    setstartPrice(["2000", "2000", "1000"]);
+  };
+
+  const onThirdPricingButton = () => {
+    setmonthlyPrice(["49kr / mo", "59kr /mo", "109kr /mo"]);
+    setstartPrice(["5000", "7500", "1000"]);
+  };
+
+  const onForthPricingButton = () => {
+    setmonthlyPrice(["19kr / mo", "39kr /mo", "99kr /mo"]);
+    setstartPrice(["7500", "10000", "1000"]);
+  };
+
   return (
     <div>
       <div className="top-items">
         <div id="pricing-header">
           <HeaderComponent />
-          <h1 id="header-title">Erbjudanden</h1>
-          <p id="header-p">
+          <h1 id="pricing-header-title">Erbjudanden</h1>
+          <p id="pricing-header-p">
             Här kan ni se våra olika erbjudanden, klicka i hur många anställda
             ni är.
             <br /> Bla bla blaa blabla bl bablabla.
@@ -36,24 +56,34 @@ const Pricing = () => {
           Klicka i hur många anställda ni är på ert företag:
         </p>
         <div className="employeesButtons">
-          <button className="emp-button">0 - 100</button>
-          <button className="emp-button">101 - 500</button>
-          <button className="emp-button">501 - 2000</button>
-          <button className="emp-button" id="last-emp-button">
+          <button className="emp-button" onClick={onFirstPricingButton}>
+            0 - 100
+          </button>
+          <button className="emp-button" onClick={onSecondPricingButton}>
+            101 - 500
+          </button>
+          <button className="emp-button" onClick={onThirdPricingButton}>
+            501 - 2000
+          </button>
+          <button
+            className="emp-button"
+            id="last-emp-button"
+            onClick={onForthPricingButton}
+          >
             2001+
           </button>
         </div>
         <div>
           <BoxComponent
             title="Liten"
-            startPrice="0"
-            monthly="49kr /mo"
+            startPrice={startPrice[0]}
+            monthly={monthlyPrice[0]}
             list={["Test", "Test", "Test", "Test"]}
           />
           <BoxComponent
             title="Mellan"
-            startPrice="0"
-            monthly="99kr /mo"
+            startPrice={startPrice[1]}
+            monthly={monthlyPrice[1]}
             list={[
               "Personlig inloggning",
               "Digital hälsokartläggning 3ggr/år",
@@ -63,8 +93,8 @@ const Pricing = () => {
           />
           <BoxComponent
             title="Stor"
-            startPrice="1000"
-            monthly="149kr /mo"
+            startPrice={startPrice[2]}
+            monthly={monthlyPrice[2]}
             list={[
               "Personlig inloggning",
               "Digital hälsokartläggning 3ggr/år",
@@ -113,7 +143,7 @@ const Pricing = () => {
         <PricingInfoComponent
           title="Fria hälsoprogram:"
           text=" Alla anställda får tillgång till videos, artiklar, tips och tricks
-        med allt från kost till träning."
+        med allt från kost, mental hälsa till träning."
           image={healthprogramIcon}
         />
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../images/logo.png";
 import "../styling/headercomp.css";
 
 const HeaderComponent = () => {
@@ -30,7 +29,7 @@ const HeaderComponent = () => {
             <p id="home">Blogg</p>
           </NavLink>
 
-          <NavLink className="navLink" to="/home" activeClassName="isActive">
+          <NavLink className="navLink" to="/contact" activeClassName="isActive">
             <p id="home">Kontakt</p>
           </NavLink>
 

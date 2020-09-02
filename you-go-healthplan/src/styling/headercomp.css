@@ -11,7 +11,7 @@
 .header {
   padding: 20px;
   text-align: end;
-  background-color: rgba(248, 110, 110, 0.5);
+  background-color: #97bb90b2;
 }
 
 #logo {
@@ -36,9 +36,5 @@ a {
 }
 
 .navLink:hover {
-  color: rgb(248, 110, 110);
-}
-
-a:hover {
-  color: rgb(248, 110, 110);
+  color: #336245;
 }
