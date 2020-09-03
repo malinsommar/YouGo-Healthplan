@@ -1,0 +1,37 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+#fotterDiv {
+  background-color: #336245;
+  color: white;
+  height: 25vh;
+  display: flex;
+  font-family: lightFont;
+  font-size: 1vw;
+  padding-top: 2vw;
+}
+
+#fotter-adress {
+  text-align: initial;
+  padding-left: 4vw;
+  width: 35vw;
+}
+
+#fotter-contact {
+  text-align: initial;
+  width: 20vw;
+}
+
+#fotter-media {
+  width: 40vw;
+  text-align: center;
+}
+
+.fotterIcons {
+  width: 1.2vw;
+  position: relative;
+  top: 0.2vw;
+  right: 0.4vw;
+}

@@ -3,12 +3,13 @@ import "../styling/pricing.css";
 import HeaderComponent from "../components/HeaderComp";
 import BoxComponent from "../components/PricingboxComp";
 import PricingInfoComponent from "../components/PricingInfoComp";
+import FotterComponent from "../components/FotterComp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import yougobreak from "../images/yougoBreak.jpg";
 import loginIcon from "../images/login.png";
 import surveyIcon from "../images/survey.png";
-import individualIcon from "../images/person.png";
+import individualIcon from "../images/individual.png";
 import healthprogramIcon from "../images/health-program.png";
 import breakIcon from "../images/break.png";
 
@@ -80,6 +81,7 @@ const Pricing = () => {
             monthly={monthlyPrice[0]}
             list={["Test", "Test", "Test", "Test"]}
           />
+
           <BoxComponent
             title="Mellan"
             startPrice={startPrice[1]}
@@ -154,12 +156,7 @@ const Pricing = () => {
           image={breakIcon}
         />
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <div id="temp-footer"> FOTTER</div>
+      <FotterComponent />
     </div>
   );
 };
