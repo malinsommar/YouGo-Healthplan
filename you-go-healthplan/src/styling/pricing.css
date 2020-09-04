@@ -59,6 +59,7 @@ body {
   height: 50px;
   margin-right: 40px;
   width: 130px;
+  outline: none;
 }
 
 .emp-button:hover {
@@ -79,6 +80,7 @@ body {
 #contact {
   position: relative;
   left: 44.5%;
+  outline: none;
   text-decoration: none;
 }
 

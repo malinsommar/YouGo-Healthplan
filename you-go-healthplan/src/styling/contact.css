@@ -112,6 +112,7 @@ input {
   background-color: #97bb90;
   height: 2vw;
   width: 10vw;
+  outline: none;
 }
 
 #submitButton:hover {

@@ -1,24 +1,31 @@
-.blogpics {
-  height: 15vw;
-  width: 15vw;
-  object-fit: cover;
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
 .cardDiv {
   display: inline-block;
-  margin: 2vw;
+  margin: 1vw 1.9vw 1vw 1.9vw;
+  width: 15.5vw;
+  font-family: lightFont;
+  color: black;
+}
+
+.cardDiv:hover {
+  color: #97bb90;
+}
+
+#postCompTitle {
+  font-size: 1.4vw;
+}
+
+#postDateP {
+  font-size: 1vw;
+}
+
+.blogpics {
+  height: 15vw;
   width: 15vw;
-}
-
-#cardButton {
-  border: none;
-  background-color: white;
+  object-fit: cover;
   border-radius: 4px;
-  outline: none;
-  margin-bottom: 0.5vw;
-  background-color: rgb(209, 250, 246);
-}
-
-#cardButton:hover {
-  background-color: rgb(81, 216, 209);
 }

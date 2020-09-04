@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HeaderComponent from "../components/HeaderComp";
 import PostComponent from "../components/PostComp";
+import FooterComponent from "../components/FooterComp";
 import "../styling/blogg.css";
 
 const BloggPage = () => {
@@ -14,12 +15,13 @@ const BloggPage = () => {
       date: "2020-07-11",
       image:
         "https://images.pexels.com/photos/167300/pexels-photo-167300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      text: "Bra med bra hälsa",
+      text:
+        "Bra med bra hälsa, aspodin po asomd kpokp, dapdapos dasjasalsjdk sdjkasdhg lkfddskj söldjvdskjgndföd dsdja ls dkldsa, hugvh asdasl kdfa skj dksjfsd aslkjd ilkasjdjhefhlsajd jkhasd",
     },
     {
       title: "Jobba bra",
-      sortDate: new Date("2020-05-44"),
-      date: "2020-05-44",
+      sortDate: new Date("2020-05-10"),
+      date: "2020-05-10",
       image:
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heart-healthy-food-1580231690.jpg",
       text: "Bra joi hu  hu  hälsa",
@@ -100,21 +102,30 @@ const BloggPage = () => {
           <h1 id="blog-header-title">Blogg</h1>
           <h3 id="blog-header-sub-title">Inspiration, fakta och nyheter.</h3>
         </div>
-
         <div id="blogg-posts">{printBloggPosts()}</div>
+        <FooterComponent />
       </div>
     );
   };
 
   const postView = () => {
     return (
-      <div id="blogg-page">
+      <div id="post-page">
         <HeaderComponent />
-        <button onClick={toggleView}>Tillbaka</button>
-        <h1>{posts[currentPost].title}</h1>
-        <p>{posts[currentPost].text}</p>
-        <img src={posts[currentPost].image} />
-        <p>Datum: {posts[currentPost].date}</p>
+        <button id="post-back-button" onClick={toggleView}>
+          Tillbaka
+        </button>
+        <div id="post">
+          <div>
+            <img id="post-image" src={posts[currentPost].image} />
+            <p id="post-date">Datum: {posts[currentPost].date}</p>
+          </div>
+          <div>
+            <h1 id="post-title">{posts[currentPost].title}</h1>
+            <p id="post-text">{posts[currentPost].text}</p>
+          </div>
+        </div>
+        <FooterComponent />
       </div>
     );
   };
