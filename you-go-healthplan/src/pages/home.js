@@ -1,7 +1,18 @@
 import React from "react";
 import "../styling/home.css";
 import Circle from "../images/YouGo_4.png";
+import actiway from "../images/actiway.png";
+import bikelease from "../images/bikelease.png";
+import casall from "../images/casall.png";
+import bluecall from "../images/bluecall.png";
+import viktväktarna from "../images/viktväktarna.png";
+import flexmassage from "../images/flexmassage.png";
+import icebug from "../images/icebug.png";
+import livingpepole from "../images/livingpepole.png";
+import nordicwellness from "../images/nordicwellness.png";
+import pep from "../images/pep.png";
 import HeaderComponent from "../components/HeaderComp";
+import FooterComponent from "../components/FotterComp";
 
 const Home = () => {
   return (
@@ -14,6 +25,7 @@ const Home = () => {
       <div>{ContentAboutYouGo()}</div>
       <div>{ColorContainer()}</div>
       <div>{ContainerInfoCircle()}</div>
+      <div>{Partners()}</div>
     </div>
   );
 };
@@ -92,6 +104,36 @@ const ContainerInfoCircle = () => {
       <div id="firstBox">
         <img id="icon" src={Circle} alt="icon"></img>
       </div>
+    </div>
+  );
+};
+
+const Partners = () => {
+  return (
+    <div>
+      <div id="partners">
+        <p id="textSamarbetspartners">Samarbetspartners</p>
+        <img className="picinfo" src={flexmassage} alt="icon"></img>
+
+        <img className="picinfo" src={bluecall} alt="icon"></img>
+
+        <img className="picinfo" src={casall} alt="icon"></img>
+
+        <img className="picinfo" src={icebug} alt="icon"></img>
+
+        <img className="picinfo" src={livingpepole} alt="icon"></img>
+
+        <img className="picinfo" src={pep} alt="icon"></img>
+
+        <img className="picinfo" src={nordicwellness} alt="icon"></img>
+
+        <img className="picinfo" src={viktväktarna} alt="icon"></img>
+
+        <img className="picinfo" src={actiway} alt="icon"></img>
+
+        <img className="picinfo" src={bikelease} alt="icon"></img>
+      </div>
+      <FooterComponent />
     </div>
   );
 };
