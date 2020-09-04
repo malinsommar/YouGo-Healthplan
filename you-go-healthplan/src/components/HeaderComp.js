@@ -25,7 +25,7 @@ const HeaderComponent = () => {
             <p id="home">Priser</p>
           </NavLink>
 
-          <NavLink className="navLink" to="/home" activeClassName="isActive">
+          <NavLink className="navLink" to="/blogg" activeClassName="isActive">
             <p id="home">Blogg</p>
           </NavLink>
 

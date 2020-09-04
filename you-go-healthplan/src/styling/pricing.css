@@ -31,17 +31,17 @@ body {
 #pricing-header-title {
   position: relative;
   font-family: titleFont;
-  top: 10vw;
+  top: 9vw;
   color: #97bb90;
-  font-size: 80px;
+  font-size: 6vw;
 }
 
 #pricing-header-p {
   position: relative;
   font-family: lightFont;
-  top: 12vw;
+  top: 8vw;
   color: #97bb90;
-  font-size: 20px;
+  font-size: 1.2vw;
 }
 
 #numberOfEmp {
@@ -79,6 +79,7 @@ body {
 #contact {
   position: relative;
   left: 44.5%;
+  text-decoration: none;
 }
 
 #nav {

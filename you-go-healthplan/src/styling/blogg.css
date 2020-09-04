@@ -1,0 +1,48 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgb(238, 238, 238);
+}
+
+#blog-page {
+  font-family: lightFont;
+}
+
+#blog-header {
+  background-image: url(https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+#blog-header-title {
+  position: relative;
+  top: 3vw;
+  color: #ffffff;
+  font-size: 10vw;
+  font-family: lightFont;
+}
+
+#blog-header-sub-title {
+  font-family: lightFont;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#blogg-posts {
+  width: 100%;
+  padding: 2vw;
+}
