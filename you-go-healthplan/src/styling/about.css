@@ -1,0 +1,9 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}

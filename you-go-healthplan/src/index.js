@@ -7,6 +7,7 @@ import Pricing from "./pages/pricing.js";
 import Blogg from "./pages/blogg.js";
 import Contact from "./pages/contact.js";
 import NoPageFound from "./pages/default.js";
+import About from "./pages/about.js";
 import "./index.css";
 
 const routes = (
@@ -15,6 +16,7 @@ const routes = (
       <Switch>
         <Route path="/" component={Home} exact={true} />
         <Route path="/home" component={Home} />
+        <Route path="/about" component={About} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/blogg" component={Blogg} />
         <Route path="/contact" component={Contact} />

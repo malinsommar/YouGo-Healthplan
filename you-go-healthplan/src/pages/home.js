@@ -12,7 +12,7 @@ import livingpepole from "../images/livingpepole.png";
 import nordicwellness from "../images/nordicwellness.png";
 import pep from "../images/pep.png";
 import HeaderComponent from "../components/HeaderComp";
-import FooterComponent from "../components/FotterComp";
+import FooterComponent from "../components/FooterComp";
 
 const Home = () => {
   return (
