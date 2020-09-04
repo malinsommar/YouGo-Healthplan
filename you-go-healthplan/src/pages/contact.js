@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HeaderComponent from "../components/HeaderComp";
 import MapComponent from "../components/MapComp";
+import FotterComponent from "../components/FooterComp";
 import QuestionImg from "../images/question.png";
 import "../styling/contact.css";
 
@@ -62,6 +63,7 @@ const Contact = () => {
           </from>
         </div>
       </div>
+      <FotterComponent />
     </div>
   );
 };

@@ -1,37 +1,37 @@
 import React from "react";
 import PhoneIcon from "../images/phoneIcon.png";
 import MailIcon from "../images/mailIcon.png";
-import "../styling/fottercomp.css";
+import "../styling/footercomp.css";
 
 const FotterComponent = () => {
   return (
-    <div id="fotterDiv">
-      <div id="fotter-adress">
+    <div id="footerDiv">
+      <div id="footer-adress">
         <h2>YouGo Healthplan</h2>
         <p>Björklundabacken 10</p>
         <p>436 57 Hovås</p>
       </div>
-      <div id="fotter-contact">
+      <div id="footer-contact">
         <p>
-          <img className="fotterIcons" src={PhoneIcon} />
+          <img className="footerIcons" src={PhoneIcon} />
           0707-708490
         </p>
         <p>
-          <img className="fotterIcons" src={PhoneIcon} />
+          <img className="footerIcons" src={PhoneIcon} />
           0707-390997
         </p>
         <p>
           {" "}
-          <img className="fotterIcons" src={MailIcon} />
+          <img className="footerIcons" src={MailIcon} />
           anna.krantz@yougohealthplan.com
         </p>
         <p>
           {" "}
-          <img className="fotterIcons" src={MailIcon} />
+          <img className="footerIcons" src={MailIcon} />
           linda.seinger@yougohealthplan.com
         </p>
       </div>
-      <div id="fotter-media">
+      <div id="footer-media">
         <img></img>
         <p>Sociala edier taggar</p>
       </div>

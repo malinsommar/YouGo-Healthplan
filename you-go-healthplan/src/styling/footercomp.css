@@ -3,33 +3,33 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
-#fotterDiv {
-  background-color: #336245;
+#footerDiv {
+  background-color: #336245e3;
   color: white;
-  height: 25vh;
+  height: 35vh;
   display: flex;
   font-family: lightFont;
-  font-size: 1vw;
-  padding-top: 2vw;
+  font-size: 1.2vw;
+  padding-top: 3vw;
 }
 
-#fotter-adress {
+#footer-adress {
   text-align: initial;
   padding-left: 4vw;
-  width: 35vw;
+  width: 30vw;
 }
 
-#fotter-contact {
+#footer-contact {
   text-align: initial;
   width: 20vw;
 }
 
-#fotter-media {
+#footer-media {
   width: 40vw;
   text-align: center;
 }
 
-.fotterIcons {
+.footerIcons {
   width: 1.2vw;
   position: relative;
   top: 0.2vw;

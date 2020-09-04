@@ -3,7 +3,7 @@ import "../styling/pricing.css";
 import HeaderComponent from "../components/HeaderComp";
 import BoxComponent from "../components/PricingboxComp";
 import PricingInfoComponent from "../components/PricingInfoComp";
-import FotterComponent from "../components/FotterComp";
+import FotterComponent from "../components/FooterComp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import yougobreak from "../images/yougoBreak.jpg";
