@@ -3,6 +3,11 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
 body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -40,51 +45,4 @@ body {
 #blogg-posts {
   width: 100%;
   padding: 2vw;
-}
-
-#post-page {
-  font-family: lightFont;
-}
-
-#post-back-button {
-  font-family: lightFont;
-  width: 4vw;
-  height: 4vw;
-  font-size: 0.9vw;
-  border-radius: 50%;
-  color: #336246;
-  border-color: #97bb90;
-  margin: 1vw 0vw 0vw 1vw;
-  outline: none;
-}
-
-#post-back-button:hover {
-  border-color: #496d41;
-}
-
-#post {
-  display: flex;
-  width: 80vw;
-  margin: 0 auto;
-}
-
-#post-title {
-  font-size: 3vw;
-  margin-left: 3vw;
-}
-
-#post-text {
-  font-size: 1.1vw;
-  margin: 3vw;
-}
-
-#post-image {
-  width: 30vw;
-  object-fit: cover;
-  border-radius: 3px;
-}
-
-#post-date {
-  font-size: 1.1vw;
-  margin-bottom: 3vw;
 }
