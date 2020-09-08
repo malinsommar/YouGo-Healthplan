@@ -46,3 +46,39 @@ body {
   width: 100%;
   padding: 2vw;
 }
+
+#post-back-button {
+  font-family: lightFont;
+  font-size: 1vw;
+}
+
+#post {
+  font-family: lightFont;
+  display: flex;
+  width: 80vw;
+  margin: 2vw auto;
+}
+
+#post-image {
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+}
+
+#post-date {
+  font-size: 1vw;
+}
+
+#post-title {
+  font-size: 2vw;
+  margin-left: 2vw;
+}
+
+#post-text {
+  font-size: 1vw;
+  margin-left: 2vw;
+}
+
+#title-text-div {
+  width: 60vw;
+}

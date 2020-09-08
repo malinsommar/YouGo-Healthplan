@@ -10,49 +10,44 @@ import yougobreak from "../images/yougoBreak.jpg";
 import loginIcon from "../images/login.png";
 import surveyIcon from "../images/survey.png";
 import individualIcon from "../images/individual.png";
-import healthprogramIcon from "../images/health-program.png";
+import EgnaRapporter from "../images/egnaRapporter.png";
 import breakIcon from "../images/break.png";
 
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
-    "49kr / mo",
-    "99kr /mo",
-    "149kr /mo",
+    "49kr",
+    "69kr",
+    "Kontakta oss",
   ]);
   const [startPrice, setstartPrice] = useState(["0", "0", "1000"]);
 
   const onFirstPricingButton = () => {
-    setmonthlyPrice(["49kr / mo", "99kr /mo", "149kr /mo"]);
+    setmonthlyPrice(["49kr", "69kr", "Kontakta oss"]);
     setstartPrice(["0", "0", "1000"]);
   };
 
   const onSecondPricingButton = () => {
-    setmonthlyPrice(["39kr / mo", "79kr /mo", "129kr /mo"]);
+    setmonthlyPrice(["39kr", "49kr", "Kontakta oss"]);
     setstartPrice(["2000", "2000", "1000"]);
   };
 
   const onThirdPricingButton = () => {
-    setmonthlyPrice(["49kr / mo", "59kr /mo", "109kr /mo"]);
+    setmonthlyPrice(["25kr", "35kr", "Kontakta oss"]);
     setstartPrice(["5000", "7500", "1000"]);
   };
 
   const onForthPricingButton = () => {
-    setmonthlyPrice(["19kr / mo", "39kr /mo", "99kr /mo"]);
-    setstartPrice(["7500", "10000", "1000"]);
+    setmonthlyPrice(["20kr", "25kr", "Kontakta oss"]);
+    setstartPrice(["7500", "10 000", "1000"]);
   };
 
   return (
     <div>
       <div className="top-items">
-        <div id="pricing-header">
-          <HeaderComponent />
-          <h1 id="pricing-header-title">Erbjudanden</h1>
-          <p id="pricing-header-p">
-            Här kan ni se våra olika erbjudanden, klicka i hur många anställda
-            ni är.
-            <br /> Bla bla blaa blabla bl bablabla.
-          </p>
-        </div>
+        <HeaderComponent />
+
+        <h1 id="pricing-title">Erbjudanden</h1>
+        <hr id="pricing-hr" />
         <p id="numberOfEmp">
           Klicka i hur många anställda ni är på ert företag:
         </p>
@@ -76,33 +71,56 @@ const Pricing = () => {
         </div>
         <div>
           <BoxComponent
-            title="Liten"
+            title="Bas"
             startPrice={startPrice[0]}
             monthly={monthlyPrice[0]}
-            list={["Test", "Test", "Test", "Test"]}
+            list={[
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+            ]}
           />
 
           <BoxComponent
-            title="Mellan"
+            title="Premium"
             startPrice={startPrice[1]}
             monthly={monthlyPrice[1]}
             list={[
-              "Personlig inloggning",
-              "Digital hälsokartläggning 3ggr/år",
-              "Individanpassade åtgärdsförslag",
-              "Fria hälsoprogram för kropp och knopp",
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+              "Åtgärdsförslag",
+              "Skapa egna rapporter",
+              "Målgruppsanpassade utckick av aktiviteter",
             ]}
           />
           <BoxComponent
-            title="Stor"
+            title="Premium+"
             startPrice={startPrice[2]}
             monthly={monthlyPrice[2]}
             list={[
-              "Personlig inloggning",
-              "Digital hälsokartläggning 3ggr/år",
-              "Individanpassade åtgärdsförslag",
-              "Fria hälsoprogram för kropp och knopp",
-              <img id="youGoBreak" src={yougobreak} alt="Yougo break logo" />,
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+              "Åtgärdsförslag",
+              "Skapa egna rapporter",
+              "Målgruppsanpassade utckick av aktiviteter",
+              "Möjlighet att skräddarsy analysen",
+              "Möjlighet till extra mätning",
+              "Kundservice över telefon",
+              "Personlig kontakt",
             ]}
           />
         </div>
@@ -120,7 +138,7 @@ const Pricing = () => {
         <PricingInfoComponent
           title="Personlig inloggning:"
           text="Alla anställda får sitt egen inlogg med tillgång till all
-        funktionalitet."
+        funktionalitet. Om du väljer premium eller premium+ får även du som admin tillgång till ett verktyg där du kan se hur dina anställda svarat i formulären."
           image={loginIcon}
         />
 
@@ -135,25 +153,23 @@ const Pricing = () => {
         />
 
         <PricingInfoComponent
-          title="Individanpassade åtgärdsförslag:"
+          title="Åtgärdsförslag & fria hälsoprogram:"
           text=" Beroende på hur den anställdes resultat på formuläret kommer vi
-          rekomendera ett åtgärdsförslag på hur denne skall på bästa sätt
-          skall ströva efter ett hälsosammare liv."
-          image={individualIcon}
-        />
-
-        <PricingInfoComponent
-          title="Fria hälsoprogram:"
-          text=" Alla anställda får tillgång till videos, artiklar, tips och tricks
-        med allt från kost, mental hälsa till träning."
-          image={healthprogramIcon}
-        />
-
-        <PricingInfoComponent
-          title="YouGo Break:"
-          text="Ett träningsprogram alla antällda kör igenom 3 gånger om dagen. Det
-          tar bara några minuter men det har enorma resultat!"
+          rekomendera ett åtgärdsförslag för ett hälsosamare liv. Hen får tillgång till videos, artiklar, tips och tricks
+          med allt från kost, mental hälsa till träning."
           image={breakIcon}
+        />
+
+        <PricingInfoComponent
+          title="Egna rapporter:"
+          text="Väljer ni premium eller premium + får ni tillgång till att skapa egna rapporter till era anställda. I premium+ kan ni även skräddarsy den initiala rapportern!"
+          image={EgnaRapporter}
+        />
+
+        <PricingInfoComponent
+          title="Personig kontakt:"
+          text="Väljer ni paketet premium+ får ni tillgång till persolig kontakt med oss och kundservice över telefon. Lite extra smidigt!"
+          image={individualIcon}
         />
       </div>
       <FotterComponent />
