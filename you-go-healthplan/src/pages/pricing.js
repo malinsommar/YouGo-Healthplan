@@ -16,43 +16,38 @@ import breakIcon from "../images/break.png";
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
     "49kr / mo",
-    "99kr /mo",
-    "149kr /mo",
+    "69kr /mo",
+    "Kontakta oss",
   ]);
   const [startPrice, setstartPrice] = useState(["0", "0", "1000"]);
 
   const onFirstPricingButton = () => {
-    setmonthlyPrice(["49kr / mo", "99kr /mo", "149kr /mo"]);
+    setmonthlyPrice(["49kr / mo", "69kr /mo", "Kontakta oss"]);
     setstartPrice(["0", "0", "1000"]);
   };
 
   const onSecondPricingButton = () => {
-    setmonthlyPrice(["39kr / mo", "79kr /mo", "129kr /mo"]);
+    setmonthlyPrice(["39kr / mo", "49kr /mo", "Kontakta oss"]);
     setstartPrice(["2000", "2000", "1000"]);
   };
 
   const onThirdPricingButton = () => {
-    setmonthlyPrice(["49kr / mo", "59kr /mo", "109kr /mo"]);
+    setmonthlyPrice(["25kr / mo", "35kr /mo", "Kontakta oss"]);
     setstartPrice(["5000", "7500", "1000"]);
   };
 
   const onForthPricingButton = () => {
-    setmonthlyPrice(["19kr / mo", "39kr /mo", "99kr /mo"]);
-    setstartPrice(["7500", "10000", "1000"]);
+    setmonthlyPrice(["20kr / mo", "25kr /mo", "Kontakta oss"]);
+    setstartPrice(["7500", "10 000", "1000"]);
   };
 
   return (
     <div>
       <div className="top-items">
-        <div id="pricing-header">
-          <HeaderComponent />
-          <h1 id="pricing-header-title">Erbjudanden</h1>
-          <p id="pricing-header-p">
-            Här kan ni se våra olika erbjudanden, klicka i hur många anställda
-            ni är.
-            <br /> Bla bla blaa blabla bl bablabla.
-          </p>
-        </div>
+        <HeaderComponent />
+
+        <h1 id="pricing-title">Erbjudanden</h1>
+        <hr id="pricing-hr" />
         <p id="numberOfEmp">
           Klicka i hur många anställda ni är på ert företag:
         </p>
@@ -76,33 +71,56 @@ const Pricing = () => {
         </div>
         <div>
           <BoxComponent
-            title="Liten"
+            title="Bas"
             startPrice={startPrice[0]}
             monthly={monthlyPrice[0]}
-            list={["Test", "Test", "Test", "Test"]}
+            list={[
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+            ]}
           />
 
           <BoxComponent
-            title="Mellan"
+            title="Premium"
             startPrice={startPrice[1]}
             monthly={monthlyPrice[1]}
             list={[
-              "Personlig inloggning",
-              "Digital hälsokartläggning 3ggr/år",
-              "Individanpassade åtgärdsförslag",
-              "Fria hälsoprogram för kropp och knopp",
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+              "Åtgärdsförslag",
+              "Skapa egna rapporter",
+              "Målgruppsanpassade utckick av aktiviteter",
             ]}
           />
           <BoxComponent
-            title="Stor"
+            title="Premium+"
             startPrice={startPrice[2]}
             monthly={monthlyPrice[2]}
             list={[
-              "Personlig inloggning",
-              "Digital hälsokartläggning 3ggr/år",
-              "Individanpassade åtgärdsförslag",
-              "Fria hälsoprogram för kropp och knopp",
-              <img id="youGoBreak" src={yougobreak} alt="Yougo break logo" />,
+              "Hälsostrategiskt systemstöd",
+              "Standard analys",
+              "Hälsokartläggning 3ggr/ år",
+              "Individuella åtgärdsförslag",
+              "Tillgång till hälsoportal",
+              "Fria hälsoprogram",
+              "Standard Rapport på hälsokartläggningen",
+              "Åtgärdsförslag",
+              "Skapa egna rapporter",
+              "Målgruppsanpassade utckick av aktiviteter",
+              "Möjlighet att skräddarsy analysen",
+              "Möjlighet till extra mätning",
+              "Kundservice över telefon",
+              "Personlig kontakt",
             ]}
           />
         </div>

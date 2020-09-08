@@ -120,7 +120,7 @@ const BloggPage = () => {
             <img id="post-image" src={posts[currentPost].image} />
             <p id="post-date">Datum: {posts[currentPost].date}</p>
           </div>
-          <div>
+          <div id="title-text-div">
             <h1 id="post-title">{posts[currentPost].title}</h1>
             <p id="post-text">{posts[currentPost].text}</p>
           </div>
