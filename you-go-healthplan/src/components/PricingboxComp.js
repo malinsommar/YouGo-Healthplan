@@ -12,6 +12,7 @@ const PricingBoxComponent = ({ title, startPrice, monthly, list }) => {
     <div className="box">
       <div className="top-box">
         <h1 id="title">{title}</h1>
+        <p>Månadskostnad / anställd:</p>
         <p id="monthly">{monthly}</p>{" "}
         <p>
           Engångskostnad:
