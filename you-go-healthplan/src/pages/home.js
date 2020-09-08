@@ -35,19 +35,20 @@ const ContentAboutYouGo = () => {
     <div className="infoAboutAll">
       <div>
         <div id="infoAboutYouGo">
-          <h1>Möt YouGo</h1>
+          <h1>Hälsosmart</h1>
           <p>
-            Med våra tidigare erfarenheter som egenföretagare och <br />
-            ledare vet vi vikten av friska medarbetare och
-            <br /> vilken positiv effekt det är när medarbetarna trivs, <br />
-            är friska, blir sedda och har en god gemenskap. <br />
-            När vi blickar tillbaka på våra tidigare år inom arbetslivet,
-            <br /> som många gånger varit otroligt tuffa, med stress, höga krav{" "}
+            Förebygga hälsa är mer kostnadseffektivt än att rehabilitera!
             <br />
-            och förväntningar är vi överens om att vi klarat av att hålla oss
+            På de flesta arbetsplatser visar beräkningar att det är <br />
+            en ren vinst att utöka friskvården, särskilt om den når <br />
+            människor inte värnar om sin hälsa på eget initiativ.
+            <br /> Lönsam friskvård är till exempel pulshöjande motion, att
             <br />
-            friska pga att vi hela tiden gjort hälsosamma val och hållit
-            <br /> igång med olika typer av aktiviteter.
+            äta regelbundet och rätt sammansatt, finna tid för återhämtning,
+            <br />
+            hjälp att sluta röka, gå ner i vikt med mera. Har medarbetarna redan
+            <br />
+            god hälsa är det viktigt att se till att friskheten består.
           </p>
         </div>
         <div id="imgOfSomething"></div>
