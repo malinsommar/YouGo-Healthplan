@@ -2,3 +2,62 @@
   font-family: lightFont;
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
+
+#service-header {
+  text-align: center;
+  font-family: lightFont;
+}
+
+#service-header-title {
+  color: #97bb90;
+  font-size: 4vw;
+}
+
+#service-header-sub-title {
+  color: #97bb90;
+  font-size: 1vw;
+}
+
+#service-hr {
+  width: 40vw;
+  background-color: #97bb90;
+  border: none;
+}
+
+.service-left-box {
+  display: flex;
+  background: linear-gradient(to right, #97bb90, #97bb90 50%, #ffffff00 50%);
+  height: 70vh;
+}
+
+.service-right-box {
+  display: flex;
+  background: linear-gradient(to right, #ffffff00, #ffffff00 50%, #97bb90 50%);
+  height: 70vh;
+}
+
+.service-left-small-box {
+  width: 50%;
+}
+
+.service-right-small-box {
+  width: 50%;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-title {
+  font-family: lightFont;
+  font-size: 3vw;
+  padding: 1vw 2vw 1vw 2vw;
+}
+
+.service-text {
+  font-family: lightFont;
+  font-size: 1.5vw;
+  padding: vw 2vw 1vw 2vw;
+}

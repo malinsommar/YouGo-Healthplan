@@ -17,7 +17,7 @@ const HeaderComponent = () => {
             <p id="home">Om oss</p>
           </NavLink>
 
-          <NavLink className="navLink" to="/home" activeClassName="isActive">
+          <NavLink className="navLink" to="/service" activeClassName="isActive">
             <p id="home">Tjänsten</p>
           </NavLink>
 
