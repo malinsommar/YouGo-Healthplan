@@ -80,25 +80,28 @@ const Philosophy = () => {
 
 const MeetYouGo = () => {
   return (
-    <div id="meetYouGodiv">
-      <p className="rubrikAbout">Möt YouGo</p>
+    <div>
+      <div id="meetYouGodiv">
+        <p className="rubrikAbout">Möt YouGo</p>
 
-      <p className="textAbout">
-        Med våra tidigare erfarenheter som egenföretagare och ledare vet vi
-        vikten av friska medarbetare och vilken positiv effekt det är när
-        medarbetarna trivs, är friska, blir sedda och har en god gemenskap. När
-        vi blickar tillbaka på våra tidigare år inom arbetslivet, som många
-        gånger varit otroligt tuffa, med stress, höga krav och förväntningar är
-        vi överens om att vi klarat av att hålla oss friska pga att vi hela
-        tiden gjort hälsosamma val och hållit igång med olika typer av
-        aktiviteter. Vi är övertygade om att friska medarbetare är
-        framgångsfaktorn för trivsamma, attraktiva, hållbara och lönsamma
-        arbetsplatser. Detta mynnade ut i vår affärsidé om att göra hälsa mätbar
-        där vi erbjuder företagen en analysdel och medarbetarna en hälsoportal
-        med enkla individanpassade åtgärder utefter vad nuläget visar. Vi vill
-        visa att det lönar sig att arbeta hälsofrämjande, om man gör det på rätt
-        sätt.{" "}
-      </p>
+        <p className="textAbout">
+          Med våra tidigare erfarenheter som egenföretagare och ledare vet vi
+          vikten av friska medarbetare och vilken positiv effekt det är när
+          medarbetarna trivs, är friska, blir sedda och har en god gemenskap.
+          När vi blickar tillbaka på våra tidigare år inom arbetslivet, som
+          många gånger varit otroligt tuffa, med stress, höga krav och
+          förväntningar är vi överens om att vi klarat av att hålla oss friska
+          pga att vi hela tiden gjort hälsosamma val och hållit igång med olika
+          typer av aktiviteter. Vi är övertygade om att friska medarbetare är
+          framgångsfaktorn för trivsamma, attraktiva, hållbara och lönsamma
+          arbetsplatser. Detta mynnade ut i vår affärsidé om att göra hälsa
+          mätbar där vi erbjuder företagen en analysdel och medarbetarna en
+          hälsoportal med enkla individanpassade åtgärder utefter vad nuläget
+          visar. Vi vill visa att det lönar sig att arbeta hälsofrämjande, om
+          man gör det på rätt sätt.{" "}
+        </p>
+      </div>
+      <FooterComponent />
     </div>
   );
 };
