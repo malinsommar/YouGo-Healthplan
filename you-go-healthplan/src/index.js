@@ -10,7 +10,6 @@ import Contact from "./pages/contact.js";
 import NoPageFound from "./pages/default.js";
 import About from "./pages/about.js";
 import "./index.css";
-
 const routes = (
   <BrowserRouter>
     <div>

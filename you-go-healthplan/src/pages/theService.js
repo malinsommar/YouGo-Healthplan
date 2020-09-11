@@ -1,19 +1,18 @@
 import React from "react";
+import { Slider, RangeSlider } from "rsuite";
 import "../styling/theService.css";
 import image from "../images/service.png";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
+import SliderComponent from "../components/SliderComp";
 
 const Service = () => {
   return (
     <div>
+      <HeaderComponent />
+
       <div id="service-header">
-        <HeaderComponent />
-        <h1 id="service-header-title">Vår tjänst</h1>
-        <h3 id="service-header-sub-title">
-          Osäker på vad vi har att erbjuda? Få en klarare bild av vår tjänst!
-        </h3>
-        <hr id="service-hr" />
+        <SliderComponent />
       </div>
 
       <div className="service-left-box">

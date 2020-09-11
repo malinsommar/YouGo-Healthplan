@@ -13,8 +13,9 @@ const Contact = () => {
         <h1 id="contact-header-title">Kontakt</h1>
         <p id="contact-header-p">
           Ni är nu ett steg närmre en hälsosamare arbetsplats! Kontakta oss via
-          mail <br /> eller telefon så svarar vi på era frågor och bokar in ett
-          möte.
+          mail,
+          <br /> telefon eller vårt formulär så svarar vi på era frågor och
+          bokar in ett möte.
         </p>
       </div>
 

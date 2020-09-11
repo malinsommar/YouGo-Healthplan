@@ -15,7 +15,7 @@ const PricingBoxComponent = ({ title, startPrice, monthly, list }) => {
         <p>Månadskostnad / anställd:</p>
         <p id="monthly">{monthly}</p>{" "}
         <p>
-          Engångskostnad:
+          Startkostnad:
           <br /> från {startPrice}kr
         </p>
       </div>

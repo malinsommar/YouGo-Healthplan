@@ -17,10 +17,6 @@ const HeaderComponent = () => {
             <p id="home">Om oss</p>
           </NavLink>
 
-          <NavLink className="navLink" to="/service" activeClassName="isActive">
-            <p id="home">Tjänsten</p>
-          </NavLink>
-
           <NavLink className="navLink" to="/pricing" activeClassName="isActive">
             <p id="home">Priser</p>
           </NavLink>

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+#input-slider {
+  font-family: lightFont;
+}
+
+.moneyLoss {
+  font-family: lightFont;
+  font-size: 1.2vw;
+}

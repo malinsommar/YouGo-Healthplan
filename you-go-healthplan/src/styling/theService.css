@@ -3,21 +3,6 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
-#service-header {
-  text-align: center;
-  font-family: lightFont;
-}
-
-#service-header-title {
-  color: #97bb90;
-  font-size: 4vw;
-}
-
-#service-header-sub-title {
-  color: #97bb90;
-  font-size: 1vw;
-}
-
 #service-hr {
   width: 40vw;
   background-color: #97bb90;
@@ -26,7 +11,7 @@
 
 .service-left-box {
   display: flex;
-  background: linear-gradient(to right, #97bb90, #97bb90 50%, #ffffff00 50%);
+  background: linear-gradient(to right, #add1a5, #63ad54 50%, #ffffff00 50%);
   height: 70vh;
 }
 
