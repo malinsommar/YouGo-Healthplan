@@ -117,7 +117,7 @@ const BloggPage = () => {
         </button>
         <div id="post">
           <div>
-            <img id="post-image" src={posts[currentPost].image} />
+            <img id="post-image" src={posts[currentPost].image} alt="post" />
             <p id="post-date">Datum: {posts[currentPost].date}</p>
           </div>
           <div id="title-text-div">

@@ -155,9 +155,9 @@ export default function InputSlider({ title }) {
               onChange={handleInputChange2}
               onBlur={handleBlur2}
               inputProps={{
-                step: 10000,
-                min: 20000,
-                max: 90000,
+                step: 100,
+                min: 1,
+                max: 2000,
                 type: "number",
                 "aria-labelledby": "input-slider",
               }}
@@ -178,7 +178,7 @@ export default function InputSlider({ title }) {
               value={typeof shortValue === "number" ? shortValue : 0}
               onChange={handleSliderChange3}
               min={0}
-              max={100}
+              max={40}
               aria-labelledby="input-slider"
             />
           </Grid>

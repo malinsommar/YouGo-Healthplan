@@ -6,7 +6,6 @@ import PricingInfoComponent from "../components/PricingInfoComp";
 import FotterComponent from "../components/FooterComp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import yougobreak from "../images/yougoBreak.jpg";
 import loginIcon from "../images/login.png";
 import surveyIcon from "../images/survey.png";
 import individualIcon from "../images/individual.png";

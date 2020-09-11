@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import HeaderComponent from "../components/HeaderComp";
 import MapComponent from "../components/MapComp";
 import FotterComponent from "../components/FooterComp";

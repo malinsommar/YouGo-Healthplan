@@ -1,5 +1,4 @@
 import React from "react";
-import { Slider, RangeSlider } from "rsuite";
 import "../styling/theService.css";
 import image from "../images/service.png";
 import HeaderComponent from "../components/HeaderComp";
@@ -38,6 +37,7 @@ const Service = () => {
         </div>
         <div className="service-right-small-box">
           <img
+            alt="grapths"
             className="service-image"
             src="https://images.pexels.com/photos/669616/pexels-photo-669616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           />
@@ -46,7 +46,7 @@ const Service = () => {
 
       <div className="service-right-box">
         <div className="service-left-small-box">
-          <img className="service-image" src={image} />
+          <img className="service-image" src={image} alt="grapths" />
         </div>
         <div className="service-right-small-box">
           <h1 className="service-title">Analysera</h1>
@@ -81,6 +81,7 @@ const Service = () => {
         </div>
         <div className="service-right-small-box">
           <img
+            alt="yougo service"
             className="service-image"
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
           />
@@ -90,6 +91,7 @@ const Service = () => {
       <div className="service-right-box">
         <div className="service-left-small-box">
           <img
+            alt="service"
             className="service-image"
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
           />
