@@ -28,6 +28,7 @@ body {
 
 #pricing-hr {
   width: 40vw;
+  height: 1px;
   background-color: #8ace32;
   border: none;
 }

@@ -1,36 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
-import MapComponent from "../components/MapComp";
 import FotterComponent from "../components/FooterComp";
 import QuestionImg from "../images/question.png";
+import adressImg from "../images/adress.png";
 import "../styling/contact.css";
 
-const Contact = ({ history }) => {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-
+const Contact = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    const templateId = "template_uj6j6n7";
-
-    alert(
-      `Submitting Name ${name}, Mail ${mail}, Phone ${phone}, Message ${message}`
-    );
-
-    sendFeedback(templateId, {
-      message: message,
-      from_name: name,
-      from_mail: mail,
-      from_number: phone,
-    });
-  };
-
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send("gmail", templateId, variables)
+    emailjs
+      .sendForm(
+        "service_wkq6nqw",
+        "template_uj6j6n7",
+        evt.target,
+        "user_2rNXw0NnMeH0FbsHBLxi4"
+      )
       .then((res) => {
         console.log("Email successfully sent!");
       })
@@ -40,6 +25,7 @@ const Contact = ({ history }) => {
           err
         )
       );
+    evt.target.reset();
   };
 
   return (
@@ -53,64 +39,52 @@ const Contact = ({ history }) => {
           vi kan.
         </p>
       </div>
-      <div id="formAndContact">
-        <div id="formDiv">
-          <form onSubmit={handleSubmit}>
+      <div className="contact-content">
+        <div className="adress-pic-info">
+          <div className="agress-img"></div>
+          <div id="adress-info">
+            <h2>Besök oss!</h2>
+            <p>Björklundabacken 10</p>
+            <p>436 57 Hovås</p>
+            <hr />
+            <p>Anna: 0707-708490</p>
+            <p>Linda: 0707-390997</p>
+            <p>anna.krantz@yougohealthplan.com</p>
+            <p>linda.seinger@yougohealthplan.com</p>
+          </div>
+        </div>
+        <div className="form-style-8">
+          <h1>Kontakta oss! </h1>
+          <form onSubmit={handleSubmit} className="contactForm">
             <label>
               Namn:
-              <input
-                type="text"
-                name="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+              <input type="text" name="name" className="contact-input" />
             </label>
             <br />
             <label>
               Mail:
-              <input
-                type="text"
-                name="mail"
-                value={mail}
-                onChange={(e) => setMail(e.target.value)}
-              />
+              <input type="text" name="mail" className="contact-input" />
             </label>
             <br />
             <label>
               Telefon:
-              <input
-                type="number"
-                name="phone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
+              <input type="number" name="phone" className="contact-input" />
             </label>
             <br />
             <label>
               Meddelande:
-              <input
+              <textarea
                 type="text"
                 name="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                className="contact-input"
+                id="contact-meddage"
               />
             </label>
             <br />
             <input type="submit" value="Submit" />
           </form>
         </div>
-        <div id="adress-info">
-          <h2>Besök oss!</h2>
-          <p>Björklundabacken 10</p>
-          <p>436 57 Hovås</p>
-          <hr />
-          <p>Anna: 0707-708490</p>
-          <p>Linda: 0707-390997</p>
-          <p>anna.krantz@yougohealthplan.com</p>
-          <p>linda.seinger@yougohealthplan.com</p>
-        </div>
       </div>
-      <img id="questionImg" src={QuestionImg} alt="Yougo break logo" />,
       <FotterComponent />
     </div>
   );

@@ -31,33 +31,39 @@ body {
   font-size: 1vw;
 }
 
-#formAndContact {
-  background-color: white;
-  border-radius: 3px;
-  width: 70vw;
-  height: 23vw;
-  margin: 50px auto;
+.contact-content {
   display: flex;
+  align-items: center;
+  margin: 2vw;
+}
+
+.adress-pic-info {
+  margin: 1vw auto;
+  background-color: white;
+  display: flex;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.agress-img {
+  background-image: url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: 140%;
+  background-position: -5vw;
+  width: 30vw;
 }
 
 #adress-info {
-  margin: 0 initial;
-  padding: 0 0 0 30px;
+  height: 21vw;
+  padding: 1vw;
   font-size: 1.1vw;
   color: #336245;
 }
 
-hr {
+#adress-info hr {
   background-color: #336245;
   height: 1px;
   border: none;
-}
-
-#contact-form {
-  display: flex; /* mindre skärm: display: inline-block; */
-  padding-left: 18%;
-  width: 100%;
-  margin-bottom: 50px;
 }
 
 #questionImg {
@@ -65,39 +71,74 @@ hr {
   padding-left: 1vw;
 }
 
-#formDiv {
-  background-color: white;
-  width: 30%;
-  height: 20vw;
-  text-align: center;
-  padding: 0.5vw 20px 0.5vw 0;
-  font-size: 1.1vw;
-  color: #336245;
+.form-style-8 {
+  font-family: lightFont;
+  margin: 1vw auto;
+  width: 30vw;
+  padding: 1vw 2vw 1vw 2vw;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
-
-input {
-  border: solid 0.01vw rgb(236, 236, 236);
-  background-color: rgb(247, 247, 247);
-  width: 10vw;
-  height: 1vw;
+.form-style-8 h2 {
+  background: #4d4d4d;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
 }
-
-#free {
-  height: 6vw;
-}
-
-#submitButton {
-  border: none;
-  border-radius: 3px;
-  color: #ffffff;
-  background-color: #97bb90;
-  height: 2vw;
-  width: 10vw;
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
 }
-
-#submitButton:hover {
-  background-color: #72a169;
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #a0c29a;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a0c29a;
+  box-shadow: inset 0px 1px 0px 0px #a0c29a;
+  background-color: #97bb90;
+  border: 1px solid #97bb90;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #81aa78 5%, #75a06c 100%);
 }
 
 /*
