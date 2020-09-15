@@ -1,26 +1,104 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { withRouter } from "react-router-dom";
 import HeaderComponent from "../components/HeaderComp";
 import MapComponent from "../components/MapComp";
 import FotterComponent from "../components/FooterComp";
 import QuestionImg from "../images/question.png";
 import "../styling/contact.css";
 
-const Contact = () => {
+const Contact = ({ history }) => {
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    const templateId = "template_uj6j6n7";
+
+    alert(
+      `Submitting Name ${name}, Mail ${mail}, Phone ${phone}, Message ${message}`
+    );
+
+    sendFeedback(templateId, {
+      message: message,
+      from_name: name,
+      from_mail: mail,
+      from_number: phone,
+    });
+  };
+
+  const sendFeedback = (templateId, variables) => {
+    window.emailjs
+      .send("gmail", templateId, variables)
+      .then((res) => {
+        console.log("Email successfully sent!");
+      })
+      .catch((err) =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
+  };
+
   return (
     <div id="contact-page">
       <div id="contact-header">
         <HeaderComponent />
         <h1 id="contact-header-title">Kontakt</h1>
         <p id="contact-header-p">
-          Ni är nu ett steg närmre en hälsosamare arbetsplats! Kontakta oss via
-          mail,
-          <br /> telefon eller vårt formulär så svarar vi på era frågor och
-          bokar in ett möte.
+          Har ni frågor men inte tid att ringa eller maila oss just nu?
+          <br /> Inga problem! Svara på formuläret så kontaktar vi er så snart
+          vi kan.
         </p>
       </div>
-
-      <div id="mapAndContact">
-        <MapComponent />
+      <div id="formAndContact">
+        <div id="formDiv">
+          <form onSubmit={handleSubmit}>
+            <label>
+              Namn:
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
+            <br />
+            <label>
+              Mail:
+              <input
+                type="text"
+                name="mail"
+                value={mail}
+                onChange={(e) => setMail(e.target.value)}
+              />
+            </label>
+            <br />
+            <label>
+              Telefon:
+              <input
+                type="number"
+                name="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+              />
+            </label>
+            <br />
+            <label>
+              Meddelande:
+              <input
+                type="text"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </label>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
         <div id="adress-info">
           <h2>Besök oss!</h2>
           <p>Björklundabacken 10</p>
@@ -32,38 +110,7 @@ const Contact = () => {
           <p>linda.seinger@yougohealthplan.com</p>
         </div>
       </div>
-      <div id="contact-form">
-        <div id="form-text">
-          <h2>Kontakta oss!</h2>
-          <p>
-            Har ni frågor men inte tid att ringa eller maila oss just nu? Inga
-            problem! Svara på formuläret så kontaktar vi er så snart vi kan.
-          </p>
-          <img id="questionImg" src={QuestionImg} alt="Yougo break logo" />,
-        </div>
-        <div id="formDiv">
-          <from>
-            <label for="name">Namn:</label>
-            <br />
-            <input type="text" id="name" name="name" value="" />
-            <br />
-            <label for="mail">Mail:</label>
-            <br />
-            <input type="text" id="mail" name="mail" value="" />
-            <br />
-            <label for="phone">Telefon:</label>
-            <br />
-            <input type="text" id="phone" name="phone" value="" />
-            <br />
-            <label for="free">Meddelande:</label>
-            <br />
-            <input type="text" id="free" name="free" value="" />
-            <br />
-            <br />
-            <input type="submit" id="submitButton" value="Skicka!" />
-          </from>
-        </div>
-      </div>
+      <img id="questionImg" src={QuestionImg} alt="Yougo break logo" />,
       <FotterComponent />
     </div>
   );

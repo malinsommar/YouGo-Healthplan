@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -9,10 +9,13 @@ import Blogg from "./pages/blogg.js";
 import Contact from "./pages/contact.js";
 import NoPageFound from "./pages/default.js";
 import About from "./pages/about.js";
+import ScrollToTop from "./components/ScrollToTopComp";
 import "./index.css";
+
 const routes = (
   <BrowserRouter>
-    <div>
+    <Fragment>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact={true} />
         <Route path="/home" component={Home} />
@@ -23,7 +26,7 @@ const routes = (
         <Route path="/contact" component={Contact} />
         <Route component={NoPageFound} />
       </Switch>
-    </div>
+    </Fragment>
   </BrowserRouter>
 );
 

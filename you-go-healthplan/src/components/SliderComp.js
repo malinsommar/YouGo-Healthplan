@@ -122,7 +122,7 @@ export default function InputSlider({ title }) {
               onChange={handleInputChange}
               onBlur={handleBlur}
               inputProps={{
-                step: 100,
+                step: 1,
                 min: 1,
                 max: 2000,
                 type: "number",
