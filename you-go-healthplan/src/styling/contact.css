@@ -9,6 +9,8 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+/*-- "Header" items --*/
+
 #contact-page {
   font-family: lightFont;
 }
@@ -31,11 +33,15 @@ body {
   font-size: 1vw;
 }
 
+/*-- Visit us & message form --*/
+
 .contact-content {
   display: flex;
   align-items: center;
   margin: 2vw;
 }
+
+/*-- Visit us box --*/
 
 .adress-pic-info {
   margin: 1vw auto;
@@ -54,10 +60,10 @@ body {
 }
 
 #adress-info {
-  height: 21vw;
-  padding: 1vw;
-  font-size: 1.1vw;
+  height: 23vw;
+  font-size: 1.3vw;
   color: #336245;
+  padding: 1vw 2vw 0 2vw;
 }
 
 #adress-info hr {
@@ -66,10 +72,7 @@ body {
   border: none;
 }
 
-#questionImg {
-  width: 8vw;
-  padding-left: 1vw;
-}
+/*-- Message form box --*/
 
 .form-style-8 {
   font-family: lightFont;
@@ -85,7 +88,7 @@ body {
   background: #4d4d4d;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #797979;
+  color: #336245;
   font-size: 18px;
   font-weight: 100;
   padding: 20px;
@@ -130,22 +133,14 @@ body {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 14px;
+  font-family: lightFont;
+  font-size: 0.8vw;
   padding: 8px 18px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 .form-style-8 input[type="button"]:hover,
 .form-style-8 input[type="submit"]:hover {
-  background: linear-gradient(to bottom, #81aa78 5%, #75a06c 100%);
+  background-color: #7caa72;
 }
-
-/*
-background: linear-gradient(
-    to right,
-    #ffffff,
-    #ffffff 30%,
-    rgb(238, 238, 238) 30%
-  );
-*/

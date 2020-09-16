@@ -3,11 +3,6 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
-@font-face {
-  font-family: titleFont;
-  src: url(../fonts/Louis\ George\ Cafe.ttf);
-}
-
 body {
   overflow-y: auto;
   overflow-x: hidden;
@@ -17,6 +12,8 @@ body {
 #blog-page {
   font-family: lightFont;
 }
+
+/*-- Header items --*/
 
 #blog-header {
   background-image: url(https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
@@ -42,14 +39,19 @@ body {
   font-size: 20px;
 }
 
+/*-- Blog items --*/
+
 #blogg-posts {
   width: 100%;
   padding: 2vw;
 }
 
+/*-- In post items --*/
+
 #post-back-button {
   font-family: lightFont;
   font-size: 1vw;
+  margin: 2vw;
 }
 
 #post {
@@ -57,6 +59,7 @@ body {
   display: flex;
   width: 80vw;
   margin: 2vw auto;
+  margin-top: 0;
 }
 
 #post-image {
@@ -81,4 +84,46 @@ body {
 
 #title-text-div {
   width: 60vw;
+}
+
+/*______Button animation_______*/
+
+.post-back-button {
+  border-radius: 4px;
+  background-color: #97bb90;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1vw;
+  font-family: lightFont;
+  padding: 1vw;
+  width: 7vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2vw;
+}
+
+.post-back-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.post-back-button span:after {
+  content: "\276C";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.post-back-button:hover span {
+  padding-left: 25px;
+}
+
+.post-back-button:hover span:after {
+  opacity: 1;
+  left: 0;
 }

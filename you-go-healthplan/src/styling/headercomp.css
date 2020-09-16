@@ -1,39 +1,102 @@
 @font-face {
-  font-family: boldFont;
-  src: url(../fonts/Louis\ George\ Cafe\ Bold.ttf);
-}
-
-@font-face {
   font-family: lightFont;
   src: url(../fonts/Louis\ George\ Cafe\ Bold.ttf);
-}
-
-.header {
-  padding: 20px;
-  text-align: end;
-  background-color: #97bb90b2;
 }
 
 #logo {
   position: absolute;
-  top: 10px;
-  width: 90px;
-  left: 15px;
+  top: 1vh;
+  width: 7vw;
+  left: 2vw;
 }
 
-.nav-items {
-  display: inline-flex;
-  position: relative;
-}
+/*-- Navlink items --*/
 
 .navLink {
-  margin-left: 40px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
   font-family: lightFont;
+  height: 39px;
 }
 
-.navLink:hover {
-  color: #336245;
+/*-- Log in button --*/
+
+#logIn {
+  height: 23px;
+}
+
+/* Header made by Dominik Biedebach @domobch */
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.918);
+  padding: 1vw 0;
+  box-shadow: 0px 2px 0px #dedede;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li .navLink {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li .navLink,
+nav ul li .navLink:after,
+nav ul li .navLink:before {
+  transition: all 0.5s;
+}
+nav ul li .navLink:hover {
+  color: #555;
+}
+
+nav.stroke ul li .navLink,
+nav.fill ul li .navLink {
+  position: relative;
+}
+nav.stroke ul li .navLink:after,
+nav.fill ul li .navLink:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #333;
+  height: 0.5px;
+}
+nav.stroke ul li .navLink:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li .navLink {
+  transition: all 2s;
+}
+
+nav.fill ul li .navLink:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li .navLink:hover {
+  color: #023f1c;
+  z-index: 1;
+}
+nav.fill ul li .navLink:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
 }

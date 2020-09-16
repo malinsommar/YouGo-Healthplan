@@ -13,6 +13,7 @@
 
 .cardDiv:hover {
   color: #97bb90;
+  transition: 0.3s;
 }
 
 #postCompTitle {

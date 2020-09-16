@@ -21,19 +21,11 @@ const FotterComponent = () => {
           <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
           0707-708490
         </p>
-        <p>
-          <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
-          0707-390997
-        </p>
+
         <p>
           {" "}
           <img className="footerIcons" src={MailIcon} alt="Mail icon" />
-          anna.krantz@yougohealthplan.com
-        </p>
-        <p>
-          {" "}
-          <img className="footerIcons" src={MailIcon} alt="Mail icon" />
-          linda.seinger@yougohealthplan.com
+          hej@yougohealthplan.com
         </p>
       </div>
       <div id="footer-media">

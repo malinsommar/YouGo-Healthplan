@@ -1,9 +1,4 @@
 @font-face {
-  font-family: titleFont;
-  src: url(../fonts/Louis\ George\ Cafe.ttf);
-}
-
-@font-face {
   font-family: lightFont;
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
@@ -14,6 +9,8 @@ body {
   background-color: rgb(238, 238, 238);
 }
 
+/*-- "Header" items --*/
+
 .top-items {
   align-items: center;
   text-align: center;
@@ -22,37 +19,40 @@ body {
 
 #pricing-title {
   font-family: titleFont;
-  color: #8ace32;
+  color: #57e24a;
   font-size: 4vw;
 }
 
 #pricing-hr {
   width: 40vw;
   height: 1px;
-  background-color: #8ace32;
+  background-color: #48d13c;
   border: none;
 }
 
 #numberOfEmp {
-  margin: 4vw 0vw 3vw 0vw;
+  margin: 2vw 0vw 3vw 0vw;
 }
+
+/*-- "Choose how many employers" buttons --*/
 
 .employeesButtons {
   margin-bottom: 1vw;
 }
 
 .emp-button {
-  border: solid 3px #8ace32;
+  border: solid 3px #48d13c;
   border-radius: 3px;
-  color: #8ace32;
+  color: #57e24a;
   height: 50px;
   margin-right: 40px;
   width: 130px;
   outline: none;
+  transition: all 0.3s;
 }
 
 .emp-button:hover {
-  background-color: #8ace32;
+  background-color: #48d13c;
   color: white;
 }
 
@@ -60,11 +60,7 @@ body {
   margin-right: 0;
 }
 
-#youGoBreak {
-  position: relative;
-  top: -10px;
-  width: 220px;
-}
+/*-- Contact button --*/
 
 #contact {
   position: relative;
@@ -74,21 +70,24 @@ body {
 }
 
 #nav {
-  color: #8ace32;
+  color: #48d13c;
   border: solid 2px;
   padding: 10px;
   width: 10%;
+  transition: all 0.5s;
 }
 
 #nav:hover {
-  color: #7dbd2b;
+  color: #34aa2a;
 }
+
+/*-- Service description --*/
 
 #bottom-items {
   align-items: center;
   text-align: center;
   font-family: lightFont;
-  background: linear-gradient(to right, #b7f369, #8ace32 100%);
+  background: linear-gradient(to right, #7bfa70, #48d13c 100%);
   width: 100%;
   display: inline-block;
   margin-bottom: 2vw;

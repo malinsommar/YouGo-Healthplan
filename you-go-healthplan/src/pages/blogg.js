@@ -112,9 +112,10 @@ const BloggPage = () => {
     return (
       <div id="post-page">
         <HeaderComponent />
-        <button id="post-back-button" onClick={toggleView}>
-          Tillbaka
+        <button className="post-back-button" onClick={toggleView}>
+          <span>Tillbaka</span>
         </button>
+
         <div id="post">
           <div>
             <img id="post-image" src={posts[currentPost].image} alt="post" />
