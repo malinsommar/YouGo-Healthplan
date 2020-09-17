@@ -22,83 +22,95 @@ body {
   position: relative;
 }
 
+/*-- Style for Info about YouGo --*/
+
 .infoAboutAll {
+  width: 98%;
+  margin: 1%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.infoAboutYouGo {
+  width: 50%;
+  padding-left: 1%;
+}
+
+#firstContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#secondContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+#imgOfSomething {
+  background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1862&q=80);
+  width: 51%;
+  height: 500px;
+}
+
+#imgOfSomething1 {
+  background-image: url(https://images.unsplash.com/photo-1517849443514-73aa552d55bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  width: 51%;
+  height: 500px;
+}
+
+/*-- Style for quick cards --*/
+
+#colorcontainer {
   width: 100%;
-  padding: 100px;
+  height: 610px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#infoAboutYouGo {
-  padding: 8px;
-}
-
-#imgOfSomething {
-  background-color: #97bb90;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  padding: 8px;
-  position: relative;
-  left: 150%;
-  top: -220px;
-}
-
-#moveBox1 {
-  position: relative;
-  top: 55px;
-}
-
-#imgOfSomething1 {
-  background-color: #97bb90;
-  width: 200px;
-  height: 200px;
-  padding: 8px;
-  border-radius: 50%;
-  position: relative;
-  top: 250px;
-  left: -250px;
-}
-#infoAboutYouGo1 {
-  padding: 8px;
-  position: relative;
-  left: 100px;
-}
-
-#colorcontainer {
-  background-color: #97bb90;
-  width: 100%;
-  height: 610px;
-  display: flex;
-  flex-direction: row;
-}
-
 .boxOfInfo {
-  background-color: white;
+  margin: 5% auto;
+}
+
+#card-nr-1 {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
   width: 300px;
   height: 500px;
-  margin: 40px;
-  position: relative;
-  left: 50px;
-  box-shadow: black 0 0 1px;
-  border-radius: 10px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
-
+#card-nr-2 {
+  background: linear-gradient(-45deg, #f321d7, #ffec61);
+  width: 300px;
+  height: 500px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+#card-nr-3 {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  width: 300px;
+  height: 500px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
 .picture {
-  background-color: black;
   width: 100px;
   height: 100px;
   margin: 40px;
   position: relative;
-  left: 60px;
-  top: -15px;
-  border-radius: 50%;
+  left: 15%;
 }
 
 .rubrik {
   position: relative;
-  top: -40px;
   text-align: center;
   text-transform: uppercase;
   font-family: titleFont;
@@ -113,14 +125,16 @@ body {
   width: 100px;
   height: 30px;
   border-radius: 5px;
+  outline: none;
   border: none;
-  background-color: #97bb90;
   box-shadow: black 0 0 1px;
   position: relative;
   left: 100px;
-  top: 100px;
+  top: 250px;
   font-family: titleFont;
 }
+
+/*-- Style for picture about how they work --*/
 
 #InfoContainer {
   width: 100%;
@@ -137,8 +151,9 @@ body {
   text-align: center;
 }
 
+/*-- Style for partners --*/
+
 #partners {
-  background-color: #97bb90;
   width: 100%;
   display: inline-block;
   flex-direction: row;

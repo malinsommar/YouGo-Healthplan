@@ -13,6 +13,9 @@ import nordicwellness from "../images/nordicwellness.png";
 import pep from "../images/pep.png";
 import HeaderComponent from "../components/HeaderComp";
 import FooterComponent from "../components/FooterComp";
+import Login from "../images/login.png";
+import Person from "../images/person.png";
+import SaveMoney from "../images/saveMoney.png";
 
 const Home = () => {
   return (
@@ -33,39 +36,33 @@ const Home = () => {
 const ContentAboutYouGo = () => {
   return (
     <div className="infoAboutAll">
-      <div>
-        <div id="infoAboutYouGo">
+      <div id="firstContainer">
+        <div className="infoAboutYouGo">
           <h1>Hälsosmart</h1>
           <p>
-            Förebygga hälsa är mer kostnadseffektivt än att rehabilitera!
-            <br />
-            På de flesta arbetsplatser visar beräkningar att det är <br />
-            en ren vinst att utöka friskvården, särskilt om den når <br />
-            människor inte värnar om sin hälsa på eget initiativ.
-            <br /> Lönsam friskvård är till exempel pulshöjande motion, att
-            <br />
-            äta regelbundet och rätt sammansatt, finna tid för återhämtning,
-            <br />
-            hjälp att sluta röka, gå ner i vikt med mera. Har medarbetarna redan
-            <br />
-            god hälsa är det viktigt att se till att friskheten består.
+            Förebygga hälsa är mer kostnadseffektivt än att rehabilitera! På de
+            flesta arbetsplatser visar beräkningar att det är en ren vinst att
+            utöka friskvården, särskilt om den når människor inte värnar om sin
+            hälsa på eget initiativ. Lönsam friskvård är till exempel
+            pulshöjande motion, att äta regelbundet och rätt sammansatt, finna
+            tid för återhämtning, hjälp att sluta röka, gå ner i vikt med mera.
+            Har medarbetarna redan god hälsa är det viktigt att se till att
+            friskheten består.
           </p>
         </div>
         <div id="imgOfSomething"></div>
       </div>
-      <div id="moveBox1">
+      <div id="secondContainer">
         <div id="imgOfSomething1"></div>
-        <div id="infoAboutYouGo1">
+        <div className="infoAboutYouGo">
           <h1>Vår Filosofi</h1>
           <p>
             Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa.
-            <br />
-            Alla företag är olika. Vi tar reda på vilka åtgärder just ER <br />
-            organisation behöver. Vår styrka är att nå de medarbetare som <br />
-            är mest ohälsosamma inom olika kategorierna som rör hälsa.
-            <br />
-            Forskningen visar att medarbetare behöver må bra för <br />
-            att göra ett gott jobb och leverera önskat resultat.
+            Alla företag är olika. Vi tar reda på vilka åtgärder just ER
+            organisation behöver. Vår styrka är att nå de medarbetare som är
+            mest ohälsosamma inom olika kategorierna som rör hälsa. Forskningen
+            visar att medarbetare behöver må bra för att göra ett gott jobb och
+            leverera önskat resultat.
           </p>
         </div>
       </div>
@@ -77,22 +74,34 @@ const ColorContainer = () => {
   return (
     <div id="colorcontainer">
       <div className="boxOfInfo">
-        <div className="picture"></div>
-        <div className="rubrik">Osäker?</div>
-        <div className="text">Läs mer om oss...</div>
-        <button className="buttonInfo">Klick here</button>
+        <div id="card-nr-1">
+          <div className="picture">
+            <img src={Person}></img>
+          </div>
+          <div className="rubrik">Hur vi jobbar</div>
+          <div className="text">Läs mer om hur vi jobbar på YouGo</div>
+          <button className="buttonInfo">Klick here</button>
+        </div>
       </div>
       <div className="boxOfInfo">
-        <div className="picture"></div>
-        <div className="rubrik">Enkel registrering</div>
-        <div className="text">Kontakta oss...</div>
-        <button className="buttonInfo">Klick here</button>
+        <div id="card-nr-2">
+          <div className="picture">
+            <img src={Login}></img>
+          </div>
+          <div className="rubrik">Enkel registrering</div>
+          <div className="text">Kontakta oss...</div>
+          <button className="buttonInfo">Klick here</button>
+        </div>
       </div>
       <div className="boxOfInfo">
-        <div className="picture"></div>
-        <div className="rubrik">Erbjudande</div>
-        <div className="text">Gratis 3 månader, kolla priser!</div>
-        <button className="buttonInfo">Klick here</button>
+        <div id="card-nr-3">
+          <div className="picture">
+            <img src={SaveMoney}></img>
+          </div>
+          <div className="rubrik">Erbjudande</div>
+          <div className="text">Gratis 3 månader, kolla priser!</div>
+          <button className="buttonInfo">Klick here</button>
+        </div>
       </div>
     </div>
   );
