@@ -21,12 +21,15 @@ body {
   font-family: titleFont;
   color: #57e24a;
   font-size: 4vw;
+  background: linear-gradient(to right, #24ff72 20%, #9a4eff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #pricing-hr {
   width: 40vw;
   height: 1px;
-  background-color: #48d13c;
+  background-color: black;
   border: none;
 }
 
@@ -41,9 +44,9 @@ body {
 }
 
 .emp-button {
-  border: solid 3px #48d13c;
+  border: solid 2px #9a4eff;
   border-radius: 3px;
-  color: #57e24a;
+  color: #9a4eff;
   height: 50px;
   margin-right: 40px;
   width: 130px;
@@ -52,7 +55,7 @@ body {
 }
 
 .emp-button:hover {
-  background-color: #48d13c;
+  background-color: #9a4eff;
   color: white;
 }
 
@@ -70,7 +73,7 @@ body {
 }
 
 #nav {
-  color: #48d13c;
+  color: #9a4eff;
   border: solid 2px;
   padding: 10px;
   width: 10%;
@@ -78,7 +81,7 @@ body {
 }
 
 #nav:hover {
-  color: #34aa2a;
+  color: #813fd6;
 }
 
 /*-- Service description --*/
@@ -91,6 +94,7 @@ body {
   background: linear-gradient(to bottom right, #5febc1 20%, #5f9ceb 100%);
   background: linear-gradient(to bottom right, #d657d6 20%, #4287d6 100%);
   background: linear-gradient(to bottom right, #7bfa70, #48d13c 100%);
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
 
   width: 100%;
   display: inline-block;
