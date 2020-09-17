@@ -56,7 +56,7 @@ const Philosophy = () => {
   return (
     <div className="pic-to-left">
       <div id="philosophydiv" className="pic-to-right-text">
-        <p className="rubrikAbout"> Vår Filosofi </p>
+        <p className="rubrikAbout"> YouGo's Filosofi </p>
         <p className="textAbout">
           Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
           företag är olika. Vi tar reda på vilka åtgärder just ER organisation
@@ -86,7 +86,7 @@ const MeetYouGo = () => {
         }
       />
       <div id="meetYouGodiv" className="pic-to-right-text">
-        <p className="rubrikAbout">Vår bakgrund</p>
+        <p className="rubrikAbout">YouGo's bakgrund</p>
 
         <p className="textAbout">
           Med våra tidigare erfarenheter som egenföretagare och ledare vet vi
