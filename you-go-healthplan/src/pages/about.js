@@ -11,78 +11,82 @@ const About = () => {
       <div id="headerPicAbout">
         <header>
           <HeaderComponent />
-          <h1 id="blog-header-title">About</h1>
+          <h1 id="about-header-title">Om oss på YouGo</h1>
         </header>
       </div>
 
       <div>{GlobalGoals()}</div>
-      <div>{DreamBig()}</div>
       <div>{Philosophy()}</div>
       <div>{MeetYouGo()}</div>
+      <FooterComponent />
     </div>
   );
 };
 
 const GlobalGoals = () => {
   return (
-    <div id="globalGoals">
-      <p className="rubrikAbout">
-        Vår tjänst stöttar de Globala målen för en hållbar utveckling.
-      </p>
-      <p className="textAbout">
-        Nr 3 God hälsa är en grundläggande förutsättning för människors
-        möjlighet att nå sin fulla potential och att bidra till samhällets
-        utveckling. Människors hälsa påverkas av ekonomiska, ekologiska och
-        sociala faktorer och mål 3 inkluderar alla dimensioner och människor i
-        alla åldrar. Under de senaste decennierna har stora framsteg gjorts för
-        att förbättra människors hälsa globalt, till exempel så har
-        barndödligheten minskat med 50% sedan 1990. Investeringar i hälsa genom
-        förebyggande insatser och modern och effektiv vård för alla gynnar
-        samhällets utveckling i stort och skapar förutsättningar för människors
-        grundläggande rättigheter till välbefinnande.
-      </p>
+    <div className="pic-to-left" id="global-goals">
+      <img
+        className="about-images"
+        src={
+          "https://images.unsplash.com/photo-1535515384173-d74166f26820?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        }
+      />
+      <div id="globalGoals-right" className="pic-to-right-text">
+        <p className="rubrikAbout">Hållbar utveckling</p>
+        <p className="textAbout">
+          Nr 3 God hälsa är en grundläggande förutsättning för människors
+          möjlighet att nå sin fulla potential och att bidra till samhällets
+          utveckling. Människors hälsa påverkas av ekonomiska, ekologiska och
+          sociala faktorer och mål 3 inkluderar alla dimensioner och människor i
+          alla åldrar. Under de senaste decennierna har stora framsteg gjorts
+          för att förbättra människors hälsa globalt, till exempel så har
+          barndödligheten minskat med 50% sedan 1990. Investeringar i hälsa
+          genom förebyggande insatser och modern och effektiv vård för alla
+          gynnar samhällets utveckling i stort och skapar förutsättningar för
+          människors grundläggande rättigheter till välbefinnande.
+        </p>
+      </div>
     </div>
   );
 };
-
-const DreamBig = () => {
-  return (
-    <div id="dreamBig">
-      <p className="rubrikAbout">Vinnare av Dream Big innovation race</p>
-
-      <p className="textAbout">
-        Motivering Med en tydlig ambition att göra Sverige friskare har teamet
-        hittat en viktig nisch mellan gränslandet mellan att stötta individer
-        till ett hälsosammare liv och ge företag verktyg att medvetet stötta
-        resurser mot rätt hälsosatsningar. /Lars Kry, CEO, Sigma IT Consulting
-      </p>
-      <img id="DreamBigLogga" src={DreamBigLogga} alt="DreamBig"></img>
-    </div>
-  );
-};
+/*Vår tjänst stöttar de Globala målen för en hållbar utveckling.*/
 
 const Philosophy = () => {
   return (
-    <div id="philosophydiv">
-      <p className="textAbout">Humankapitalet -Den viktigaste resursen</p>
-      <p className="rubrikAbout"> Vår Filosofi </p>
-
-      <p className="textAbout">
-        Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
-        företag är olika. Vi tar reda på vilka åtgärder just ER organisation
-        behöver. Vår styrka är att nå de medarbetare som är mest ohälsosamma
-        inom olika kategorierna som rör hälsa. Forskningen visar att medarbetare
-        behöver må bra för att göra ett gott jobb och leverera önskat resultat.
-      </p>
+    <div className="pic-to-left">
+      <div id="philosophydiv" className="pic-to-right-text">
+        <p className="rubrikAbout"> Vår Filosofi </p>
+        <p className="textAbout">
+          Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
+          företag är olika. Vi tar reda på vilka åtgärder just ER organisation
+          behöver. Vår styrka är att nå de medarbetare som är mest ohälsosamma
+          inom olika kategorierna som rör hälsa. Forskningen visar att
+          medarbetare behöver må bra för att göra ett gott jobb och leverera
+          önskat resultat.
+        </p>
+      </div>
+      <img
+        className="about-images"
+        src={
+          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
+        }
+      />
     </div>
   );
 };
 
 const MeetYouGo = () => {
   return (
-    <div>
-      <div id="meetYouGodiv">
-        <p className="rubrikAbout">Möt YouGo</p>
+    <div className="pic-to-left">
+      <img
+        className="about-images"
+        src={
+          "https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        }
+      />
+      <div id="meetYouGodiv" className="pic-to-right-text">
+        <p className="rubrikAbout">Vår bakgrund</p>
 
         <p className="textAbout">
           Med våra tidigare erfarenheter som egenföretagare och ledare vet vi
@@ -101,7 +105,6 @@ const MeetYouGo = () => {
           man gör det på rätt sätt.{" "}
         </p>
       </div>
-      <FooterComponent />
     </div>
   );
 };

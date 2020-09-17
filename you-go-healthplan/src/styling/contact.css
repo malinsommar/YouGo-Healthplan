@@ -139,6 +139,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s;
+  outline: none;
 }
 .form-style-8 input[type="button"]:hover,
 .form-style-8 input[type="submit"]:hover {

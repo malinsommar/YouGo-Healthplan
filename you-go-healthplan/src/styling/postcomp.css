@@ -3,12 +3,14 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
+/*-- Card -- */
+
 .cardDiv {
+  color: black;
   display: inline-block;
+  font-family: lightFont;
   margin: 1vw 1.9vw 1vw 1.9vw;
   width: 15.5vw;
-  font-family: lightFont;
-  color: black;
 }
 
 .cardDiv:hover {
@@ -16,17 +18,23 @@
   transition: 0.3s;
 }
 
+/*-- Title -- */
+
 #postCompTitle {
   font-size: 1.4vw;
 }
 
-#postDateP {
-  font-size: 1vw;
-}
+/*-- Picture -- */
 
 .blogpics {
-  height: 15vw;
-  width: 15vw;
-  object-fit: cover;
   border-radius: 4px;
+  height: 15vw;
+  object-fit: cover;
+  width: 15vw;
+}
+
+/*-- Date -- */
+
+#postDateP {
+  font-size: 1vw;
 }

@@ -1,30 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
-import QuestionImg from "../images/question.png";
 import "../styling/contact.css";
 
 const Contact = () => {
+  const [submitMessage, setSubmitMessage] = useState("");
+  const [mail, setMail] = useState("");
+  const [name, setName] = useState("");
+
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    emailjs
-      .sendForm(
-        "service_wkq6nqw",
-        "template_uj6j6n7",
-        evt.target,
-        "user_2rNXw0NnMeH0FbsHBLxi4"
-      )
-      .then((res) => {
-        console.log("Email successfully sent!");
-      })
-      .catch((err) =>
-        console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
-          err
+    console.log(evt.target.mail);
+
+    if (mail == "") {
+      setSubmitMessage("Hoppsan! Du missade att fylla i din mail.");
+    } else if (name == "") {
+      setSubmitMessage("Hoppsan! Du missade att fylla i ditt namn.");
+    } else {
+      emailjs
+        .sendForm(
+          "service_wkq6nqw",
+          "template_uj6j6n7",
+          evt.target,
+          "user_2rNXw0NnMeH0FbsHBLxi4"
         )
-      );
-    evt.target.reset();
+        .then((res) => {
+          setSubmitMessage("Meddelandet är skickat, vi hör av oss inom kort!");
+        })
+        .catch((err) => {
+          console.error("Something went wrong", err);
+          setSubmitMessage(
+            "Något gick fel, försök igen eller nå oss på mail eller telefon."
+          );
+        });
+      evt.target.reset();
+      setMail("");
+      setName("");
+    }
   };
 
   return (
@@ -55,13 +68,23 @@ const Contact = () => {
           <h1>Skicka ett meddelande! </h1>
           <form onSubmit={handleSubmit} className="contactForm">
             <label>
-              Namn:
-              <input type="text" name="name" className="contact-input" />
+              Namn: *
+              <input
+                type="text"
+                name="name"
+                className="contact-input"
+                onChange={(e) => setName(e.target.value)}
+              />
             </label>
             <br />
             <label>
-              Mail:
-              <input type="text" name="mail" className="contact-input" />
+              Mail: *
+              <input
+                type="text"
+                name="mail"
+                className="contact-input"
+                onChange={(e) => setMail(e.target.value)}
+              />
             </label>
             <br />
             <label>
@@ -79,10 +102,12 @@ const Contact = () => {
               />
             </label>
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Skicka" />
+            <p>{submitMessage}</p>
           </form>
         </div>
       </div>
+
       <FotterComponent />
     </div>
   );
