@@ -3,19 +3,16 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
-@font-face {
-  font-family: titleFont;
-  src: url(../fonts/Louis\ George\ Cafe.ttf);
-}
-
 #headerPicAbout {
-  background-image: url(https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100vh;
-  position: relative;
+  font-family: lightFont;
   align-items: center;
   text-align: center;
+}
+
+#about-header-title {
+  font-family: lightFont;
+  font-size: 3vw;
+  margin-bottom: 3vw;
 }
 
 .rubrikAbout {
@@ -23,41 +20,30 @@
   text-align: center;
   text-transform: uppercase;
   font-family: titleFont;
+  font-size: 25px;
 }
 
-.textAbout {
-  text-align: center;
+.pic-to-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+.pic-to-right-text {
+  margin: 0 auto;
+  text-align: initial;
   font-family: lightFont;
+  width: 30vw;
+  font-size: 17px;
 }
 
-#globalGoals {
-  margin-top: 70px;
-  text-align: center;
-  padding: 10px;
-}
-
-#dreamBig {
-  margin-top: 70px;
-  text-align: center;
-  padding: 10px;
-}
-
-#DreamBigLogga {
-  width: 70%;
-}
-
-#philosophydiv {
-  background-color: #ffb26b;
-  width: 50%;
-  display: inline-block;
-  flex-direction: row;
-}
-
-#meetYouGodiv {
-  background-color: #ff6b6b;
-  width: 50%;
-  display: inline-block;
-  flex-direction: row;
-  position: relative;
-  left: 50%;
+.about-images {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 3px;
 }
