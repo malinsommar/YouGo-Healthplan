@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { StickyContainer, Sticky } from "react-sticky";
 import "../styling/headercomp.css";
 
 const HeaderComponent = () => {

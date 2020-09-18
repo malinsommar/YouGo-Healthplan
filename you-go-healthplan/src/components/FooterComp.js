@@ -1,10 +1,10 @@
 import React from "react";
-import PhoneIcon from "../images/phoneIcon.png";
-import MailIcon from "../images/mailIcon.png";
-import FacebookLogo from "../images/facebookLogo.png";
-import InstagramLogo from "../images/instagramLogo.png";
-import LinkedinLogo from "../images/linkedinLogo.png";
-import YoutubeLogo from "../images/youtubeLogo.png";
+import PhoneIcon from "../images/phoneIconWhite.png";
+import MailIcon from "../images/mailIconWhite.png";
+import FacebookLogo from "../images/facebookLogo.svg";
+import InstagramLogo from "../images/instagramLogo.svg";
+import LinkedinLogo from "../images/linkedinLogo.svg";
+import YoutubeLogo from "../images/youtubeLogo.svg";
 import YougoLogo from "../images/logo.png";
 import "../styling/footercomp.css";
 

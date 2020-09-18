@@ -4,8 +4,8 @@
 }
 
 #footerDiv {
-  background-color: #336245e3;
-  color: white;
+  background-color: white;
+  color: black;
   height: 31vh;
   display: flex;
   font-family: lightFont;

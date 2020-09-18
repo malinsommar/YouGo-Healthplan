@@ -29,12 +29,12 @@ body {
 #pricing-hr {
   width: 40vw;
   height: 1px;
-  background-color: black;
+  background-color: #6995c5;
   border: none;
 }
 
 #numberOfEmp {
-  margin: 2vw 0vw 3vw 0vw;
+  margin: 3vw 0vw 2vw 0vw;
 }
 
 /*-- "Choose how many employers" buttons --*/

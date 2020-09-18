@@ -1,0 +1,55 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+#noPageFoundBox {
+  margin: 2vw auto;
+  width: 65vw;
+  height: 22vw;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  font-family: lightFont;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#error404 {
+  font-size: 6vw;
+  margin: 0 auto;
+  /*background: linear-gradient(to right, #24ff72, #9a4eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+
+#default-right-items {
+  margin: 0 auto;
+}
+
+#defaultTitle {
+  font-size: 2vw;
+}
+
+#defaultText {
+  font-size: 1vw;
+}
+
+#goHome {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: rgb(87, 190, 216);
+}
+
+#goHome:hover {
+  color: rgb(62, 154, 177);
+}
+
+#errorIcon {
+  margin: 0 auto;
+  margin-left: -3vw;
+  width: 9vw;
+}

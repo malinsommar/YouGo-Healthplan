@@ -23,7 +23,9 @@ body {
 
 #contact-header-title {
   font-family: titleFont;
-  color: #336245;
+  background: linear-gradient(to right, #f321d7 20%, #ffec61 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3vw;
 }
 
@@ -62,12 +64,12 @@ body {
 #adress-info {
   height: 23vw;
   font-size: 1.3vw;
-  color: #336245;
+  color: #444444;
   padding: 1vw 2vw 0 2vw;
 }
 
 #adress-info hr {
-  background-color: #336245;
+  background-color: #444444;
   height: 1px;
   border: none;
 }
@@ -88,7 +90,7 @@ body {
   background: #4d4d4d;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #336245;
+  color: #444444;
   font-size: 18px;
   font-weight: 100;
   padding: 20px;
@@ -125,11 +127,11 @@ body {
 }
 .form-style-8 input[type="button"],
 .form-style-8 input[type="submit"] {
-  -moz-box-shadow: inset 0px 1px 0px 0px #a0c29a;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #a0c29a;
-  box-shadow: inset 0px 1px 0px 0px #a0c29a;
-  background-color: #97bb90;
-  border: 1px solid #97bb90;
+  -moz-box-shadow: inset 0px 1px 0px 0px #ec9287;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ec948b;
+  box-shadow: inset 0px 1px 0px 0px #e98f85;
+  background-color: #fa9a90;
+  border: none;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -143,5 +145,5 @@ body {
 }
 .form-style-8 input[type="button"]:hover,
 .form-style-8 input[type="submit"]:hover {
-  background-color: #7caa72;
+  background-color: #e2887e;
 }
