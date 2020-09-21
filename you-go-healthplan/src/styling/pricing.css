@@ -21,7 +21,7 @@ body {
   font-family: titleFont;
   color: #57e24a;
   font-size: 4vw;
-  background: linear-gradient(to right, #24ff72 20%, #9a4eff 80%);
+  background: linear-gradient(to left, #24ff72 20%, #9a4eff 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

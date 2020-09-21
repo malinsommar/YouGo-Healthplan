@@ -59,6 +59,7 @@ body {
   display: flex;
   width: 80vw;
   margin: 2vw auto;
+  margin-bottom: 1vw;
   margin-top: -4.2vw;
 }
 
@@ -80,10 +81,20 @@ body {
 #post-text {
   font-size: 1vw;
   margin-left: 2vw;
+  width: 50vw;
 }
 
 #title-text-div {
   width: 60vw;
+}
+
+.shareButtons {
+  margin: 0 3vw 1vw 0;
+  text-align: end;
+}
+
+.Demo__some-network__share-button {
+  margin-right: 5px;
 }
 
 /*______Button animation_______*/
