@@ -17,6 +17,34 @@
   height: 39px;
 }
 
+@media only screen and (min-width: 730px) {
+  .small-screen {
+    display: none;
+  }
+  .desktop-screen {
+    display: block;
+  }
+  nav {
+    background: rgba(255, 255, 255, 0.918);
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .small-screen {
+    display: block;
+  }
+  .desktop-screen {
+    display: none;
+  }
+  nav {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #logo {
+    display: none;
+  }
+}
+
 /*-- Log in button --*/
 
 #logIn {
@@ -99,4 +127,10 @@ nav.fill ul li .navLink:hover:after {
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
   opacity: 1;
+}
+
+/*----------------------------*/
+
+.sideBar {
+  background-color: blue;
 }

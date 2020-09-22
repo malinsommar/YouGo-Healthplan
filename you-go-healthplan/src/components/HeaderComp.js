@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import SideBar from "../components/Sidebar";
 import "../styling/headercomp.css";
+import { useState } from "react";
 
 const HeaderComponent = () => {
   return (
@@ -8,7 +10,7 @@ const HeaderComponent = () => {
       <nav className="stroke">
         <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
 
-        <ul>
+        <ul className="desktop-screen">
           <li>
             <NavLink className="navLink" to="/home" activeClassName="isActive">
               <p id="home">Hem</p>
@@ -54,6 +56,9 @@ const HeaderComponent = () => {
           </li>
         </ul>
       </nav>
+      <div className="small-screen">
+        <SideBar right />
+      </div>
     </section>
   );
   /*return (

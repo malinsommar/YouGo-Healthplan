@@ -3,6 +3,12 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #noPageFoundBox {
   margin: 2vw auto;
   width: 65vw;
