@@ -1,0 +1,10 @@
+#hoverButton {
+  width: 4%;
+  height: 20px;
+}
+
+#shownMessage {
+  width: 60px;
+  height: 60px;
+  border: black solid;
+}
