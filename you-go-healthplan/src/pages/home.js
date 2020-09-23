@@ -1,5 +1,6 @@
 import React from "react";
 import "../styling/home.css";
+import { NavLink } from "react-router-dom";
 
 import HoverButton from "../components/HoverComp";
 
