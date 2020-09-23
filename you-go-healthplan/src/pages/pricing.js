@@ -128,7 +128,7 @@ const Pricing = () => {
 
   const contactButton = () => {
     return (
-      <div>
+      <div id="contact-div">
         <NavLink id="contact" to="/contact" activeClassName="isActive">
           <p id="nav">
             Intresserad?
