@@ -1,5 +1,9 @@
 import React from "react";
 import "../styling/home.css";
+import { NavLink } from "react-router-dom";
+
+import HoverButton from "../components/HoverComp";
+
 import Circle from "../images/YouGo_4.png";
 import actiway from "../images/actiway.png";
 import bikelease from "../images/bikelease.png";
@@ -73,34 +77,45 @@ const ContentAboutYouGo = () => {
 const ColorContainer = () => {
   return (
     <div id="colorcontainer">
-      <div className="boxOfInfo">
-        <div id="card-nr-1">
-          <div className="picture">
-            <img src={Person}></img>
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-1">
+            <img className="picture" src={Person}></img>
+            <div className="rubrik">Hur vi jobbar</div>
+            <div className="text">Läs mer om hur vi jobbar på YouGo</div>
           </div>
-          <div className="rubrik">Hur vi jobbar</div>
-          <div className="text">Läs mer om hur vi jobbar på YouGo</div>
-          <button className="buttonInfo">Klick here</button>
+
+          <div className="card-back-1">
+            <button className="buttonInfo">Klick here</button>
+          </div>
         </div>
       </div>
-      <div className="boxOfInfo">
-        <div id="card-nr-2">
-          <div className="picture">
-            <img src={Login}></img>
+
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-2">
+            <img className="picture" src={Login}></img>
+            <div className="rubrik">Enkel registrering</div>
+            <div className="text">Kontakta oss...</div>
           </div>
-          <div className="rubrik">Enkel registrering</div>
-          <div className="text">Kontakta oss...</div>
-          <button className="buttonInfo">Klick here</button>
+
+          <div className="card-back-2">
+            <button className="buttonInfo">Klick here</button>
+          </div>
         </div>
       </div>
-      <div className="boxOfInfo">
-        <div id="card-nr-3">
-          <div className="picture">
-            <img src={SaveMoney}></img>
+
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-3">
+            <img className="picture" src={SaveMoney}></img>
+            <div className="rubrik">Erbjudande</div>
+            <div className="text">Gratis 3 månader, kolla priser!</div>
           </div>
-          <div className="rubrik">Erbjudande</div>
-          <div className="text">Gratis 3 månader, kolla priser!</div>
-          <button className="buttonInfo">Klick here</button>
+
+          <div className="card-back-3">
+            <button className="buttonInfo">Klick here</button>
+          </div>
         </div>
       </div>
     </div>
