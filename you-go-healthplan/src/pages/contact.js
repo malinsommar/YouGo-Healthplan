@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="form-style-8">
-          <h1>Skicka ett meddelande! </h1>
+          <h1 id="form-title">Skicka ett meddelande! </h1>
           <form onSubmit={handleSubmit} className="contactForm">
             <label>
               Namn: *

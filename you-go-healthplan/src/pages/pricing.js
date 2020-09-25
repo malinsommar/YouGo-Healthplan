@@ -43,9 +43,6 @@ const Pricing = () => {
   const empButtons = () => {
     return (
       <div className="employeesButtons">
-        <p id="numberOfEmp">
-          Klicka i hur många anställda ni är på ert företag:
-        </p>
         <button className="emp-button" onClick={onFirstPricingButton}>
           0 - 100
         </button>
@@ -189,6 +186,9 @@ const Pricing = () => {
         <HeaderComponent />
         <h1 id="pricing-title">Erbjudanden</h1>
         <hr id="pricing-hr" />
+        <p id="numberOfEmp">
+          Klicka i hur många anställda ni är på ert företag:
+        </p>
         {empButtons()}
         {pricingBoxes()}
         {contactButton()}

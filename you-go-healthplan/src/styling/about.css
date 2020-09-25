@@ -23,7 +23,7 @@
   text-align: center;
   text-transform: uppercase;
   font-family: titleFont;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
 .pic-to-left {
@@ -49,4 +49,13 @@
   object-fit: cover;
   margin: 0 auto;
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .textAbout {
+    font-size: 1.2vw;
+  }
+  .rubrikAbout {
+    /*font-size: 25px;*/
+  }
 }

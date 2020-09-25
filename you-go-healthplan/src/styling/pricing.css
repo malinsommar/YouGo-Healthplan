@@ -20,7 +20,7 @@ body {
 #pricing-title {
   font-family: titleFont;
   color: #57e24a;
-  font-size: 4vw;
+  font-size: 4.5vw;
   background: linear-gradient(to left, #24ff72 20%, #9a4eff 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -35,6 +35,60 @@ body {
 
 #numberOfEmp {
   margin: 3vw 0vw 2vw 0vw;
+}
+
+@media only screen and (max-width: 1151px) {
+  #pricing-title {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+  #numberOfEmp {
+    margin: 3vw 0vw 3vw 0vw;
+  }
+  #pricing-hr {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  #pricing-title {
+    font-size: 7.5vw;
+  }
+  #numberOfEmp {
+    margin: 4vw 0vw 4vw 0vw;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  #pricing-title {
+    font-size: 7.5vw;
+    margin-bottom: 2vw;
+  }
+  #numberOfEmp {
+    margin: 4vw 0vw 4vw 0vw;
+  }
+}
+@media only screen and (max-width: 755px) {
+  #pricing-title {
+    font-size: 10vw;
+    margin-bottom: 3vw;
+  }
+  #numberOfEmp {
+    margin: 6vw 0vw 4vw 0vw;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #pricing-title {
+    font-size: 12vw;
+    margin-bottom: 3vw;
+  }
+  #pricing-hr {
+    width: 80vw;
+  }
+  #numberOfEmp {
+    margin: 7vw 0vw 6vw 0vw;
+  }
 }
 
 /*-- "Choose how many employers" buttons --*/
@@ -62,6 +116,42 @@ body {
 
 #last-emp-button {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 639px) {
+  .emp-button {
+    width: 110px;
+    margin-right: 25px;
+  }
+  .employeesButtons {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .emp-button {
+    width: 95px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 439px) {
+  .employeesButtons {
+    display: flex;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  .emp-button {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .emp-button {
+    font-size: 13px;
+  }
 }
 
 /*-- Contact button --*/
@@ -94,6 +184,7 @@ body {
 @media only screen and (max-width: 895px) {
   #nav {
     width: 14%;
+    margin-top: 2vw;
   }
 }
 
@@ -106,6 +197,7 @@ body {
 @media only screen and (max-width: 409px) {
   #nav {
     width: 25%;
+    margin-top: 4vw;
   }
 }
 
