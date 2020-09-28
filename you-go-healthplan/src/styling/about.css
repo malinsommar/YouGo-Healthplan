@@ -20,7 +20,7 @@
 
 .rubrikAbout {
   position: relative;
-  text-align: center;
+  text-align: initial;
   text-transform: uppercase;
   font-family: titleFont;
   font-size: 2vw;
@@ -52,10 +52,111 @@
 }
 
 @media only screen and (max-width: 1300px) {
+  #about-header-title {
+    font-size: 3.5vw;
+  }
   .textAbout {
     font-size: 1.2vw;
   }
   .rubrikAbout {
-    /*font-size: 25px;*/
+    font-size: 2.3vw;
+  }
+  .pic-to-left {
+    width: 80%;
+  }
+  .pic-to-right-text {
+    width: 33vw;
+  }
+  .about-images {
+    width: 33vw;
+    height: 22vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about-header-title {
+    font-size: 5vw;
+  }
+  .textAbout {
+    font-size: 1.5vw;
+  }
+  .rubrikAbout {
+    font-size: 2.7vw;
+  }
+  .pic-to-left {
+    width: 85%;
+  }
+  .pic-to-right-text {
+    width: 35vw;
+  }
+  .about-images {
+    width: 37vw;
+    height: 25vw;
+  }
+}
+
+#small-screen-pic {
+  display: none;
+}
+
+#philosophydiv-small {
+  display: none;
+}
+
+#big-screen-pic {
+  display: block;
+}
+
+#philosophydiv-big {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .pic-to-left {
+    width: 90%;
+  }
+  #about-header-title {
+    font-size: 6vw;
+  }
+  .textAbout {
+    font-size: 2.1vw;
+  }
+  .rubrikAbout {
+    font-size: 3vw;
+    text-align: center;
+  }
+  .pic-to-left {
+    display: block;
+  }
+  #small-screen-pic {
+    display: block;
+  }
+  #philosophydiv-small {
+    display: block;
+  }
+  #big-screen-pic {
+    display: none;
+  }
+  #philosophydiv-big {
+    display: none;
+  }
+  .about-images {
+    display: block;
+    width: 70vw;
+    height: 35vw;
+  }
+  .pic-to-right-text {
+    width: 70vw;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textAbout {
+    font-size: 2.6vw;
+  }
+  .rubrikAbout {
+    font-size: 4vw;
+    text-align: center;
   }
 }

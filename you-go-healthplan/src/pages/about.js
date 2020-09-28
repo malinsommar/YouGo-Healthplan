@@ -55,7 +55,7 @@ const GlobalGoals = () => {
 const Philosophy = () => {
   return (
     <div className="pic-to-left">
-      <div id="philosophydiv" className="pic-to-right-text">
+      <div id="philosophydiv-big" className="pic-to-right-text">
         <p className="rubrikAbout"> YouGo's Filosofi </p>
         <p className="textAbout">
           Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
@@ -68,10 +68,29 @@ const Philosophy = () => {
       </div>
       <img
         className="about-images"
+        id="big-screen-pic"
         src={
           "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
         }
       />
+      <img
+        className="about-images"
+        id="small-screen-pic"
+        src={
+          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
+        }
+      />
+      <div id="philosophydiv-small" className="pic-to-right-text">
+        <p className="rubrikAbout"> YouGo's Filosofi </p>
+        <p className="textAbout">
+          Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
+          företag är olika. Vi tar reda på vilka åtgärder just ER organisation
+          behöver. Vår styrka är att nå de medarbetare som är mest ohälsosamma
+          inom olika kategorierna som rör hälsa. Forskningen visar att
+          medarbetare behöver må bra för att göra ett gott jobb och leverera
+          önskat resultat.
+        </p>
+      </div>
     </div>
   );
 };
