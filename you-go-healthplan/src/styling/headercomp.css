@@ -39,6 +39,17 @@
   nav {
     background: rgba(255, 255, 255, 0);
   }
+  .stroke {
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    padding: 0;
+  }
+
+  .bm-menu-wrap,
+  .bm-overlay {
+    position: relative;
+    top: 0px;
+  }
 
   #logo {
     display: none;
