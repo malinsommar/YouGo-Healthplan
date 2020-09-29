@@ -3,10 +3,12 @@
   src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
 }
 
+/*-- Big screen --*/
+
 #footerDiv {
   background-color: white;
   color: black;
-  height: 31vh;
+  height: 18vw;
   display: flex;
   font-family: lightFont;
   font-size: 1.2vw;
@@ -18,7 +20,8 @@
 #footer-adress {
   text-align: initial;
   padding-left: 4vw;
-  width: 30vw;
+  width: 29vw;
+  font-size: 1.5vw;
 }
 
 /*-- Contact section --*/
@@ -27,6 +30,7 @@
   padding-top: 2vw;
   text-align: initial;
   width: 20vw;
+  font-size: 1.5vw;
 }
 
 /*-- Social-media section --*/
@@ -65,4 +69,59 @@
 
 #footerYougoLogo {
   width: 13vw;
+}
+
+/*-- Big screen end --*/
+
+/*-- Small screen  --*/
+
+.smallScreenDiv {
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding: 2vw;
+}
+
+#footerYougoLogoSmall {
+  width: 23vw;
+  margin-top: 2vw;
+}
+
+#footer-contact-small {
+  margin: 30px;
+}
+
+#footer-media-small {
+  margin: 30px;
+}
+
+.socialMediaLogoSmall {
+  width: 7vw;
+  margin: 0 1.5vw 0 1.5vw;
+}
+
+.footer-hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.479);
+  width: 80%;
+}
+
+/* -- Responsive -- */
+
+#bigFooter {
+  display: block;
+}
+
+#smallFooter {
+  display: none;
+}
+
+@media only screen and (max-width: 730px) {
+  #bigFooter {
+    display: none;
+  }
+  #smallFooter {
+    display: block;
+  }
 }

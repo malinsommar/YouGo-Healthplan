@@ -245,6 +245,11 @@ body {
     font-size: 3vw;
     margin-bottom: 3vw;
   }
+  .form-style-8 input[type="submit"] {
+    width: 15vw;
+    height: 6vw;
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -297,6 +302,11 @@ body {
     font-size: 4.4vw;
     margin-bottom: 3.5vw;
   }
+  .form-style-8 input[type="submit"] {
+    width: 19vw;
+    height: 8vw;
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -314,11 +324,7 @@ body {
   #adress-info {
     font-size: 3.5vw;
   }
-  .form-style-8 input[type="submit"] {
-    width: 18vw;
-    height: 7vw;
-    font-size: 3vw;
-  }
+
   #form-title {
     font-size: 4.4vw;
     margin-bottom: 3.5vw;
