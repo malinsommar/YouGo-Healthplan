@@ -4,14 +4,12 @@ import "../styling/hoverButton.css";
 const HoverButton = ({ text }) => {
   const [isShown, setIsShowin] = useState(false);
   return (
-    <div>
+    <div id="hoverButton-component">
       <button
         id="hoverButton"
         onMouseEnter={() => setIsShowin(true)}
         onMouseLeave={() => setIsShowin(false)}
-      >
-        hej
-      </button>
+      ></button>
       {isShown && <div id="shownMessage">{text}</div>}
     </div>
   );

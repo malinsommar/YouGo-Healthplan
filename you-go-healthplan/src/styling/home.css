@@ -160,33 +160,78 @@ body {
   font-family: lightFont;
 }
 
+.button-container {
+  outline: none;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
 .buttonInfo {
   width: 100px;
   height: 30px;
+  background-color: white;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: solid black 1px;
   box-shadow: black 0 0 1px;
   position: relative;
   top: 250px;
+  left: 100px;
   font-family: titleFont;
 }
 
 /*-- Style for picture about how they work --*/
 
 #InfoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
   width: 100%;
-  height: 610px;
+}
+
+#column-2-content {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#Content-button-1 {
+  padding-left: 35%;
+  padding-top: 4%;
+}
+#Content-button-3 {
+  padding-left: 35%;
+  padding-top: 66%;
+}
+
+#Content-button-2 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  padding-left: 35%;
+  padding-top: 50%;
+}
+
+#Content-button-4 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  padding-left: 28%;
+  padding-top: 53%;
 }
 
 #firstBoxRubrik {
   font-family: titleFont;
   font-size: 40px;
   text-align: center;
+  grid-column-start: 2;
+  grid-row: 1;
 }
 
 #firstBox {
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 /*-- Style for partners --*/

@@ -86,7 +86,13 @@ const ColorContainer = () => {
           </div>
 
           <div className="card-back-1">
-            <button className="buttonInfo">Klick here</button>
+            <NavLink
+              className="button-container"
+              to="/about"
+              activeClassName="isActive"
+            >
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -100,7 +106,13 @@ const ColorContainer = () => {
           </div>
 
           <div className="card-back-2">
-            <button className="buttonInfo">Klick here</button>
+            <NavLink
+              className="button-container"
+              to="/contact"
+              activeClassName="isActive"
+            >
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -114,7 +126,13 @@ const ColorContainer = () => {
           </div>
 
           <div className="card-back-3">
-            <button className="buttonInfo">Klick here</button>
+            <NavLink
+              className="button-container"
+              to="/pricing"
+              activeClassName="isActive"
+            >
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -128,6 +146,26 @@ const ContainerInfoCircle = () => {
       <p id="firstBoxRubrik">Så här jobbar vi</p>
       <div id="firstBox">
         <img id="icon" src={Circle} alt="icon"></img>
+      </div>
+      <div id="column-2-content">
+        <div id="Content-button-1">
+          <HoverButton
+            text="Första gången din antällda loggar 
+          in på sitt konto kommer hen få gå igenom ett formulär, 
+          utifrån detta kommer vi sedan kunna kartlägga dennes hälsa. 
+          Formuläret skall göras 4 gånger om året för att ni lätt 
+          skall kunna se era framgångar."
+          />
+        </div>
+        <div id="Content-button-3">
+          <HoverButton text="hej hej" />
+        </div>
+      </div>
+      <div id="Content-button-2">
+        <HoverButton text="hej hej" />
+      </div>
+      <div id="Content-button-4">
+        <HoverButton text="hej hej" />
       </div>
     </div>
   );
