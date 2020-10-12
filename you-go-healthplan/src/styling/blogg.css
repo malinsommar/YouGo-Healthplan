@@ -91,12 +91,6 @@ body {
 
 /*-- In post items --*/
 
-#post-back-button {
-  font-family: lightFont;
-  font-size: 1vw;
-  margin: 2vw;
-}
-
 #post {
   font-family: lightFont;
   display: flex;
@@ -270,11 +264,29 @@ body {
   opacity: 1;
   left: 0;
 }
-/*
+
+.post-back-button {
+  display: block;
+}
+
+.post-back-button-small {
+  display: none;
+  font-family: lightFont;
+  font-size: 3vw;
+  width: 15vw;
+  height: 6vw;
+  color: white;
+  background-color: #4b93c4;
+  border: none;
+  border-radius: 2px;
+  margin: 2vw;
+}
+
 @media only screen and (max-width: 730px) {
   .post-back-button {
-    width: 9vw;
-    font-size: 1.6vw;
+    display: none;
+  }
+  .post-back-button-small {
+    display: block;
   }
 }
-*/

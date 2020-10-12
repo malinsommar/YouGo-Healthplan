@@ -27,36 +27,10 @@ export default function InputSlider({ title }) {
     setValue(newValue);
   };
 
-  const handleInputChange = (event) => {
-    setValue(event.target.value === "" ? "" : Number(event.target.value));
-  };
-
-  const handleBlur = () => {
-    if (value < 1) {
-      setValue(1);
-    } else if (value > 2000) {
-      setValue(2000);
-    }
-  };
-
   /*-----------Salary-------------*/
 
   const handleSliderChange2 = (event, newValue) => {
     setSalaryValue(newValue);
-  };
-
-  const handleInputChange2 = (event) => {
-    setSalaryValue(
-      event.target.salaryValue === "" ? "" : Number(event.target.salaryValue)
-    );
-  };
-
-  const handleBlur2 = () => {
-    if (salaryValue < 20000) {
-      setSalaryValue(20000);
-    } else if (salaryValue > 90000) {
-      setSalaryValue(90000);
-    }
   };
 
   /*-----------Shorttime sickness-------------*/
@@ -65,28 +39,15 @@ export default function InputSlider({ title }) {
     setShortValue(newValue);
   };
 
-  const handleInputChange3 = (event) => {
-    setShortValue(
-      event.target.shortValue === "" ? "" : Number(event.target.shortValue)
-    );
-  };
-
-  const handleBlur3 = () => {
-    if (shortValue < 0) {
-      setShortValue(0);
-    } else if (shortValue > 100) {
-      setShortValue(100);
-    }
-  };
-
   const calculateMoneyLoss = () => {
     return (
       <div>
-        <p>Pengar som företaget förlorar på korttidsfrånvaro:</p>
+        <p>Hur mycket ni förlorar på korttidsfrånvaro varje år:</p>
         <h2>
           {numberWithSpaces(
             Math.round((shortValue / 100) * 227 * value * (salaryValue / 10))
-          )}
+          )}{" "}
+          kr
         </h2>
       </div>
     );
@@ -98,8 +59,8 @@ export default function InputSlider({ title }) {
     return parts.join(".");
   }
 
-  return (
-    <div>
+  const firstSlider = () => {
+    return (
       <div className={classes.root}>
         <Typography id="input-slider" gutterBottom>
           Antal anställda (st)
@@ -114,7 +75,69 @@ export default function InputSlider({ title }) {
               aria-labelledby="input-slider"
             />
           </Grid>
-          <Grid item>
+          <p>{value}</p>
+        </Grid>
+      </div>
+    );
+  };
+
+  const secondSlider = () => {
+    return (
+      <div className={classes.root}>
+        <Typography id="input-slider" gutterBottom>
+          Genomsnittig månadslön (kr)
+        </Typography>
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs>
+            <Slider
+              value={typeof salaryValue === "number" ? salaryValue : 0}
+              onChange={handleSliderChange2}
+              min={20000}
+              max={90000}
+              aria-labelledby="input-slider"
+            />
+          </Grid>
+          <p>{salaryValue}</p>
+        </Grid>
+      </div>
+    );
+  };
+
+  const thirdSlider = () => {
+    return (
+      <div className={classes.root}>
+        <Typography id="input-slider" gutterBottom>
+          Korttidsfrånvaro (%)
+        </Typography>
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs>
+            <Slider
+              value={typeof shortValue === "number" ? shortValue : 0}
+              onChange={handleSliderChange3}
+              min={0}
+              max={40}
+              aria-labelledby="input-slider"
+            />
+          </Grid>
+          <h3>{shortValue}</h3>
+        </Grid>
+      </div>
+    );
+  };
+
+  return (
+    <div>
+      {firstSlider()}
+      {secondSlider()}
+      <hr />
+      {thirdSlider()}
+      <div className="moneyLoss">{calculateMoneyLoss()}</div>
+    </div>
+  );
+}
+
+/*
+   <Grid item>
             <Input
               className={classes.input}
               value={value}
@@ -130,77 +153,4 @@ export default function InputSlider({ title }) {
               }}
             />
           </Grid>
-        </Grid>
-      </div>
-
-      <div className={classes.root}>
-        <Typography id="input-slider" gutterBottom>
-          Genomsnittig månadslön (kr)
-        </Typography>
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs>
-            <Slider
-              value={typeof salaryValue === "number" ? salaryValue : 0}
-              onChange={handleSliderChange2}
-              min={20000}
-              max={90000}
-              aria-labelledby="input-slider"
-            />
-          </Grid>
-          <Grid item>
-            <Input
-              className={classes.input}
-              value={salaryValue}
-              margin="dense"
-              onChange={handleInputChange2}
-              onBlur={handleBlur2}
-              inputProps={{
-                step: 100,
-                min: 1,
-                max: 2000,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
-        </Grid>
-      </div>
-
-      <hr />
-
-      <div className={classes.root}>
-        <Typography id="input-slider" gutterBottom>
-          Korttidsfrånvaro (%)
-        </Typography>
-        <Grid container spacing={2} alignItems="center">
-          <Grid item xs>
-            <Slider
-              value={typeof shortValue === "number" ? shortValue : 0}
-              onChange={handleSliderChange3}
-              min={0}
-              max={40}
-              aria-labelledby="input-slider"
-            />
-          </Grid>
-          <Grid item>
-            <Input
-              className={classes.input}
-              value={shortValue}
-              margin="dense"
-              onChange={handleInputChange3}
-              onBlur={handleBlur3}
-              inputProps={{
-                step: 1,
-                min: 0,
-                max: 100,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
-        </Grid>
-      </div>
-      <div className="moneyLoss">{calculateMoneyLoss()}</div>
-    </div>
-  );
-}
+*/

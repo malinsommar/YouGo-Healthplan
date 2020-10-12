@@ -13,9 +13,9 @@ const Contact = () => {
     evt.preventDefault();
     console.log(evt.target.mail);
 
-    if (mail == "") {
+    if (mail === "") {
       setSubmitMessage("Hoppsan! Du missade att fylla i din mail.");
-    } else if (name == "") {
+    } else if (name === "") {
       setSubmitMessage("Hoppsan! Du missade att fylla i ditt namn.");
     } else {
       emailjs
@@ -44,6 +44,7 @@ const Contact = () => {
     <div id="contact-page">
       <div id="contact-header">
         <HeaderComponent />
+
         <h1 id="contact-header-title">Kontakta oss</h1>
         <p id="contact-header-p">
           Har ni frågor men inte tid att ringa eller maila oss just nu?

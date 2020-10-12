@@ -139,6 +139,9 @@ const BloggPage = () => {
         <button className="post-back-button" onClick={toggleView}>
           <span>Tillbaka</span>
         </button>
+        <button className="post-back-button-small" onClick={toggleView}>
+          Tillbaka
+        </button>
         <div id="post">
           <div>
             <img id="post-image" src={posts[currentPost].image} alt="post" />
