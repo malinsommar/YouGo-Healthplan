@@ -1,7 +1,24 @@
-.carouselDiv {
-  height: 100vh;
+#firstSlide {
+  background: linear-gradient(to right, #f403d1, #64b5f6);
+  color: white;
+  height: 80vh;
 }
 
-#carouselTitle {
+#secondSlide {
+  background: linear-gradient(to right, #64b5f6, #f321d7);
   color: white;
+  height: 80vh;
+}
+
+#thirdSlide {
+  background: linear-gradient(to right, #f321d7, #ffec61);
+
+  color: white;
+  height: 80vh;
+}
+
+#forthSlide {
+  background: linear-gradient(to right, #ffec61, #f403d1);
+  color: white;
+  height: 80vh;
 }

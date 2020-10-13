@@ -31,13 +31,13 @@ const Arrow = ({ direction, handleClick }) => (
     {direction === "right" ? (
       <img
         src={
-          "https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"
+          "https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/01b37a18d7802eedc9e430424e2f902048f0b287/src/img/right-arrow.svg"
         }
       />
     ) : (
       <img
         src={
-          "https://icons-for-free.com/iconfiles/png/512/arrow+left+chevron+chevronleft+left+left+icon+icon-1320185731545502691.png"
+          "https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/01b37a18d7802eedc9e430424e2f902048f0b287/src/img/left-arrow.svg"
         }
       />
     )}
