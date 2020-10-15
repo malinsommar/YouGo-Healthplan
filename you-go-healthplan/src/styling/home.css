@@ -25,11 +25,6 @@ body {
 /*-- Style for Info about YouGo --*/
 
 .infoAboutAll {
-  width: 98%;
-  margin: 1%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
 .infoAboutYouGo {
@@ -38,16 +33,26 @@ body {
 }
 
 #firstContainer {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
 }
 
 #secondContainer {
-  align-items: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
 }
+
+.imageStyle {
+}
+
 #imgOfSomething {
   background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1862&q=80);
   width: 51%;
@@ -197,25 +202,25 @@ body {
 
 #Content-button-1 {
   padding-left: 35%;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 #Content-button-3 {
   padding-left: 35%;
-  padding-top: 66%;
+  padding-top: 48%;
 }
 
 #Content-button-2 {
   grid-column-start: 3;
   grid-row-start: 2;
-  padding-left: 35%;
-  padding-top: 50%;
+  padding-left: 20%;
+  padding-top: 40%;
 }
 
 #Content-button-4 {
   grid-column-start: 1;
   grid-row-start: 2;
-  padding-left: 28%;
-  padding-top: 53%;
+  padding-left: 45%;
+  padding-top: 42%;
 }
 
 #firstBoxRubrik {
@@ -232,6 +237,10 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
+}
+
+#icon {
+  width: 70%;
 }
 
 /*-- Style for partners --*/
