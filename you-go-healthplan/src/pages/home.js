@@ -54,10 +54,10 @@ const ContentAboutYouGo = () => {
             friskheten består.
           </p>
         </div>
-        <div id="imgOfSomething"></div>
+        <div className="imageStyle" id="imgOfSomething"></div>
       </div>
       <div id="secondContainer">
-        <div id="imgOfSomething1"></div>
+        <div className="imageStyle" id="imgOfSomething1"></div>
         <div className="infoAboutYouGo">
           <h1>Vår Filosofi</h1>
           <p>
@@ -150,19 +150,25 @@ const ContainerInfoCircle = () => {
       <div id="column-2-content">
         <div id="Content-button-1">
           <HoverButton
-            text="Första gången din antällda loggar 
-          in på sitt konto kommer hen få gå igenom ett formulär, 
-          utifrån detta kommer vi sedan kunna kartlägga dennes hälsa. 
-          Formuläret skall göras 4 gånger om året för att ni lätt 
-          skall kunna se era framgångar."
+            text="Alla medarbetare svarar på 32 frågor som rör hälsan 
+            efter att vi skickat ut en länk till respektive mailadress."
           />
         </div>
         <div id="Content-button-3">
-          <HoverButton text="hej hej" />
+          <HoverButton
+            text="När alla svarat på frågorna får, chefen, 
+          HR eller ledning direkt rapporter till sig."
+          />
         </div>
       </div>
       <div id="Content-button-2">
-        <HoverButton text="hej hej" />
+        <HoverButton
+          text="Direkt  efter när medarbetarna svarat på sina 
+        frågor kommer det åtgärdsförslag till de man ska börja jobba med 
+        direkt.Där man har svarat och ligger lägst, Små enkla tips tex börja
+         ät en bra frukost , hoppa av bussen en hållplats tidigare, parkera 
+         bilen långt bort från ingången eller säg hej till en kollega man gillar."
+        />
       </div>
       <div id="Content-button-4">
         <HoverButton text="hej hej" />
