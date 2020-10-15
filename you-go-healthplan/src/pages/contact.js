@@ -3,7 +3,17 @@ import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
 import CarouselComponent from "../components/CarouselComp";
+import MultiCarouselComponent from "../components/MultiCarouselComp";
 import "../styling/contact.css";
+
+import geely from "../images/geely.png";
+import nextstepgroup from "../images/nextstepgroup.png";
+import pagero from "../images/pagero.png";
+import amerikanskagymnasiet from "../images/amerikanskagymnasiet.png";
+import närhälsan from "../images/närhälsan.jpg";
+import sigma from "../images/sigma.png";
+import engineering from "../images/2050.png";
+import nääsfabriker from "../images/nääsfabriker.png";
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState("");
@@ -41,6 +51,40 @@ const Contact = () => {
     }
   };
 
+  const customerList = [
+    {
+      image: geely,
+      link: "http://global.geely.com/",
+    },
+    {
+      image: nextstepgroup,
+      link: "https://www.nextstep.se/",
+    },
+    {
+      image: pagero,
+      link: "https://www.pagero.se/",
+    },
+    {
+      image: amerikanskagymnasiet,
+      link: "https://www.amerikanskagymnasiet.se/?lang=en",
+    },
+    {
+      image: närhälsan,
+      link: "https://www.närhälsan.se/",
+    },
+    {
+      image: sigma,
+      link: "https://www.sigma.se/",
+    },
+    {
+      image: engineering,
+      link: "https://2550.engineering/",
+    },
+    {
+      image: nääsfabriker,
+      link: "http://www.naasfabriker.se/en/home/",
+    },
+  ];
   return (
     <div id="contact-page">
       <div id="contact-header">
@@ -109,7 +153,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
+      <MultiCarouselComponent title="Kunder" list={customerList} />
       <FotterComponent />
     </div>
   );
