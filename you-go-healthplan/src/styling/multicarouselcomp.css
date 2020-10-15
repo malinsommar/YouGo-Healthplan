@@ -1,0 +1,20 @@
+.multiCarouselImg {
+  width: 17vw;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.middleDiv {
+  width: 250px;
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.multiCarouselDiv {
+  width: 20vw;
+  height: 17vw;
+  align-items: center;
+  text-align: center;
+}
