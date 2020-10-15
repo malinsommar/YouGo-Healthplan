@@ -3,6 +3,9 @@ import "../styling/home.css";
 import { NavLink } from "react-router-dom";
 
 import HoverButton from "../components/HoverComp";
+import MultiCarouselComponent from "../components/MultiCarouselComp";
+import CarouselComponent from "../components/CarouselComp";
+import FotterComponent from "../components/FooterComp";
 
 import Circle from "../images/YouGo_4.png";
 import actiway from "../images/actiway.png";
@@ -21,18 +24,66 @@ import Login from "../images/login.png";
 import Person from "../images/person.png";
 import SaveMoney from "../images/saveMoney.png";
 
+import geely from "../images/geely.png";
+import nextstepgroup from "../images/nextstepgroup.png";
+import pagero from "../images/pagero.png";
+import amerikanskagymnasiet from "../images/amerikanskagymnasiet.png";
+import närhälsan from "../images/närhälsan.jpg";
+import sigma from "../images/sigma.png";
+import engineering from "../images/2050.png";
+import nääsfabriker from "../images/nääsfabriker.png";
+
+const customerList = [
+  {
+    image: geely,
+    link: "http://global.geely.com/",
+  },
+  {
+    image: nextstepgroup,
+    link: "https://www.nextstep.se/",
+  },
+  {
+    image: pagero,
+    link: "https://www.pagero.se/",
+  },
+  {
+    image: amerikanskagymnasiet,
+    link: "https://www.amerikanskagymnasiet.se/?lang=en",
+  },
+  {
+    image: närhälsan,
+    link: "https://www.närhälsan.se/",
+  },
+  {
+    image: sigma,
+    link: "https://www.sigma.se/",
+  },
+  {
+    image: engineering,
+    link: "https://2550.engineering/",
+  },
+  {
+    image: nääsfabriker,
+    link: "http://www.naasfabriker.se/en/home/",
+  },
+];
+
 const Home = () => {
   return (
     <div>
       <div id="headerpicture">
         <header>
           <HeaderComponent />
+          <CarouselComponent />
         </header>
       </div>
       <div>{ContentAboutYouGo()}</div>
       <div>{ColorContainer()}</div>
       <div>{ContainerInfoCircle()}</div>
-      <div>{Partners()}</div>
+      <div>
+        <MultiCarouselComponent title="Kunder" list={customerList} />
+      </div>
+      <FotterComponent />
     </div>
   );
 };

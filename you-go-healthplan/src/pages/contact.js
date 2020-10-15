@@ -45,7 +45,6 @@ const Contact = () => {
     <div id="contact-page">
       <div id="contact-header">
         <HeaderComponent />
-        <CarouselComponent />
         <h1 id="contact-header-title">Kontakta oss</h1>
         <p id="contact-header-p">
           Har ni frågor men inte tid att ringa eller maila oss just nu?
