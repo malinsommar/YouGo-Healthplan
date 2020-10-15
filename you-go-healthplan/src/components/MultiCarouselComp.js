@@ -20,6 +20,19 @@ export default class SimpleSlider extends Component {
       pauseOnHover: false,
     };
 
+    const settingsSmall = {
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      cssEase: "linear",
+      pauseOnHover: false,
+    };
+
     const getImages = () => {
       return this.props.list.map((item, index) => {
         return (
@@ -36,8 +49,16 @@ export default class SimpleSlider extends Component {
 
     return (
       <div>
-        <h1>{this.props.title}</h1>
-        <Slider {...settings}>{getImages()}</Slider>
+        <div id="sliderBig">
+          <h2 id="multicarouselTitle">{this.props.title}</h2>
+          <i id="multicarouselSubTitle">{this.props.subTitle}</i>
+          <Slider {...settings}>{getImages()}</Slider>
+        </div>
+        <div id="sliderSmall">
+          <h2 id="multicarouselTitle">{this.props.title}</h2>
+          <i id="multicarouselSubTitle">{this.props.subTitle}</i>
+          <Slider {...settingsSmall}>{getImages()}</Slider>
+        </div>
       </div>
     );
   }

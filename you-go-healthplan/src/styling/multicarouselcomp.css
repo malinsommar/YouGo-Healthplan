@@ -1,3 +1,20 @@
+@font-face {
+  font-family: lightFont;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+#multicarouselTitle {
+  margin-top: 3vw;
+  font-family: lightFont;
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+#multicarouselSubTitle {
+  font-family: lightFont;
+  font-size: 1vw;
+}
+
 .multiCarouselImg {
   width: 17vw;
   align-self: center;
@@ -5,16 +22,126 @@
 }
 
 .middleDiv {
-  width: 250px;
-  height: 200px;
+  width: 14vw;
+  height: 17vw;
   vertical-align: middle;
   text-align: center;
   display: table-cell;
 }
 
 .multiCarouselDiv {
-  width: 20vw;
+  position: relative;
+  left: 3vw;
+  width: 14vw;
   height: 17vw;
   align-items: center;
   text-align: center;
+  margin-bottom: 3vw;
+}
+
+#sliderBig {
+  display: block;
+  text-align: center;
+}
+
+#sliderSmall {
+  display: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  #multicarouselTitle {
+    font-size: 2.3vw;
+  }
+  #multicarouselSubTitle {
+    font-size: 1.2vw;
+  }
+  .multiCarouselDiv {
+    left: 4vw;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .multiCarouselDiv {
+    left: 3vw;
+  }
+  #multicarouselSubTitle {
+    font-family: lightFont;
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .multiCarouselDiv {
+    margin-bottom: 5vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #multicarouselTitle {
+    font-size: 2.7vw;
+  }
+  #multicarouselSubTitle {
+    font-family: lightFont;
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .multiCarouselDiv {
+    margin-bottom: 8vw;
+    left: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .multiCarouselDiv {
+    margin-bottom: 17vw;
+    left: 16vw;
+  }
+  .multiCarouselImg {
+    width: 23vw;
+  }
+  #sliderBig {
+    display: none;
+  }
+
+  #sliderSmall {
+    display: block;
+  }
+  #multicarouselTitle {
+    margin-top: 10vw;
+    font-size: 4vw;
+  }
+  #multicarouselSubTitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .multiCarouselDiv {
+    margin-bottom: 25vw;
+    left: 10vw;
+    padding-top: 8vw;
+  }
+  .multiCarouselImg {
+    width: 30vw;
+  }
+  #multicarouselSubTitle {
+    font-size: 2.8vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .multiCarouselDiv {
+    margin-bottom: 34vw;
+    left: 7vw;
+  }
+  .multiCarouselImg {
+    width: 38vw;
+  }
+  #multicarouselTitle {
+    font-size: 6vw;
+  }
+  #multicarouselSubTitle {
+    font-size: 3.4vw;
+  }
 }

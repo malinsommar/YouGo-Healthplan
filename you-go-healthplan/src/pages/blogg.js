@@ -45,15 +45,7 @@ const BloggPage = () => {
       text:
         "ahddirse il nel diiot iyithif ehisprur stle osæo edefawða siþaüdh lii ùdenþnor i ltteh otortud ðret seriè segewa uteihle etrintede orenonb osappolþi te pei wun sati feeff sno dseðfot odhala tonnai iþmveam thounł uvsos iinte hehh þi eeðaly e edehs rane hiðane rahenee redon pao",
     },
-    {
-      title: "Hälsosmart",
-      sortDate: new Date("2020-01-28"),
-      date: "2020-01-28",
-      image:
-        "https://chowhound1.cbsistatic.com/thumbnail/800/0/chowhound1.cbsistatic.com/blog-media/2019/01/easy-healthy-diet-tips-chowhound.jpg",
-      text:
-        "oihpetde gur ðif lni itug deþneiatii ousaisu einidaylð þwytguinle sfkedi hcyec orikosa touskan ingeunn ewchsi llfav nþeþee woaratlu þwfùs geel ittn mbynobeeþ egeh louluf wyscieem resah ecta izeḥitn ciyer gnadr vierpvo lgap lðme poþeiog iwhuðaù ãawtô getf oll akmaa evnæb iiþotoli pnetetl tðiocun efyvedðaa þeesvesn seiybouro oyþrino guneo atet fâie regedi þefesa þehtôatwei atnhiwt usyse sþtoi rsuþ yolto ieda ol o senaa itio dechrefms axtiroþ odarg sopeððasih waôs oðlontnuih tyolfy syeciönys a ïoþad otis ejor nensooða cþpaæso woi hœneyoo dirti cytaiet esdi sill sreheþi edimœ",
-    },
+
     {
       title: "Kom igång",
       sortDate: new Date("2020-10-23"),

@@ -81,7 +81,11 @@ const Home = () => {
       <div>{ColorContainer()}</div>
       <div>{ContainerInfoCircle()}</div>
       <div>
-        <MultiCarouselComponent title="Kunder" list={customerList} />
+        <MultiCarouselComponent
+          title="Kunder"
+          list={customerList}
+          subTitle="Vi är stolta över att få medverka till förbättrad hälsa på dessa företag"
+        />
       </div>
       <FotterComponent />
     </div>
