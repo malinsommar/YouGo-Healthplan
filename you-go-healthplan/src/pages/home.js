@@ -72,10 +72,13 @@ const Home = () => {
   return (
     <div>
       <div id="headerpicture">
-        <header>
-          <HeaderComponent />
-          <CarouselComponent />
-        </header>
+        <div id="headerDiv">
+          <header>
+            <HeaderComponent />
+            <h1 id="homeHeaderTitle">YouGo HealthPlan</h1>
+            <h2 id="homeHeaderSubTitle">Friska medarbetare, sjukt lönsamt!</h2>
+          </header>
+        </div>
       </div>
       <div>{ContentAboutYouGo()}</div>
       <div>{ColorContainer()}</div>

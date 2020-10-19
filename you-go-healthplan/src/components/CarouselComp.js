@@ -21,11 +21,13 @@ export default class SimpleSlider extends Component {
       swipeToSlide: false,
     };
     return (
-      <div>
+      <div id="carousel">
         <Slider {...settings}>
           <div id="firstSlide">
-            <h1>Hejsan!</h1>
-            <h3>Kontaka oss</h3>
+            <div id="middleDiv">
+              <h1 id="middleTitle">YouGo Healthplan</h1>
+              <h3 id="middleSubTitle">Vi hjälper företag bli hälsosammare!</h3>
+            </div>
           </div>
           <div id="secondSlide">
             <h1>
