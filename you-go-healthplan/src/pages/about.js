@@ -25,7 +25,13 @@ const About = () => {
       <div id="headerPicAbout">
         <header>
           <HeaderComponent />
-          <h1 id="about-header-title">Om oss på YouGo</h1>
+          <h1 id="about-header-title">Om YouGo</h1>
+          <hr id="about-header-hr" />
+          <p id="about-header-sub-title">
+            Vårt mål är att bla bla blab la blab labal balba lba lb lablablabl
+            <br />
+            ablab js j aodj ajao s dmadmasdm oasdsaodj dja
+          </p>
         </header>
       </div>
 
