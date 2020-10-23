@@ -1,6 +1,6 @@
 import React from "react";
 import "../styling/about.css";
-import DreamBigLogga from "../images/dream-big-logga.jpg";
+import treHälsa from "../images/hållbarhetsmålTreHälsa.jpg";
 
 import HeaderComponent from "../components/HeaderComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
@@ -37,7 +37,6 @@ const About = () => {
 
       <div>{GlobalGoals()}</div>
       <div>{Philosophy()}</div>
-      <div>{MeetYouGo()}</div>
       <MultiCarouselComponent title="Sammarbetspartners" list={partnerList} />
 
       <FooterComponent />
@@ -95,12 +94,7 @@ const partnerList = [
 const GlobalGoals = () => {
   return (
     <div className="pic-to-left" id="global-goals">
-      <img
-        className="about-images"
-        src={
-          "https://images.unsplash.com/photo-1535515384173-d74166f26820?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-        }
-      />
+      <img className="about-images" src={treHälsa} />
       <div id="globalGoals-right" className="pic-to-right-text">
         <p className="rubrikAbout">Hållbar utveckling</p>
         <p className="textAbout">
@@ -125,14 +119,15 @@ const Philosophy = () => {
   return (
     <div className="pic-to-left">
       <div id="philosophydiv-big" className="pic-to-right-text">
-        <p className="rubrikAbout"> YouGo's Filosofi </p>
+        <p className="rubrikAbout"> YouGo's vision </p>
         <p className="textAbout">
-          Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
-          företag är olika. Vi tar reda på vilka åtgärder just ER organisation
-          behöver. Vår styrka är att nå de medarbetare som är mest ohälsosamma
-          inom olika kategorierna som rör hälsa. Forskningen visar att
-          medarbetare behöver må bra för att göra ett gott jobb och leverera
-          önskat resultat.
+          SKAPA HÅLLBARA MEDARBETARE - Det finaste ett företag kan ha.
+          <br /> <br />
+          Det är vårt fokus och där vet vi att vi kan göra som mest skillnad för
+          såväl människor, som företag och samhället i stort.
+          <br /> <br />
+          Hållbara medarbetare är vår viktigaste insats i vår strävan mot att
+          bidra till en hälsosam och frisk värld.
         </p>
       </div>
       <img
@@ -150,47 +145,15 @@ const Philosophy = () => {
         }
       />
       <div id="philosophydiv-small" className="pic-to-right-text">
-        <p className="rubrikAbout"> YouGo's Filosofi </p>
+        <p className="rubrikAbout"> YouGo's vision </p>
         <p className="textAbout">
-          Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa. Alla
-          företag är olika. Vi tar reda på vilka åtgärder just ER organisation
-          behöver. Vår styrka är att nå de medarbetare som är mest ohälsosamma
-          inom olika kategorierna som rör hälsa. Forskningen visar att
-          medarbetare behöver må bra för att göra ett gott jobb och leverera
-          önskat resultat.
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const MeetYouGo = () => {
-  return (
-    <div className="pic-to-left">
-      <img
-        className="about-images"
-        src={
-          "https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-        }
-      />
-      <div id="meetYouGodiv" className="pic-to-right-text">
-        <p className="rubrikAbout">YouGo's bakgrund</p>
-
-        <p className="textAbout">
-          Med våra tidigare erfarenheter som egenföretagare och ledare vet vi
-          vikten av friska medarbetare och vilken positiv effekt det är när
-          medarbetarna trivs, är friska, blir sedda och har en god gemenskap.
-          När vi blickar tillbaka på våra tidigare år inom arbetslivet, som
-          många gånger varit otroligt tuffa, med stress, höga krav och
-          förväntningar är vi överens om att vi klarat av att hålla oss friska
-          pga att vi hela tiden gjort hälsosamma val och hållit igång med olika
-          typer av aktiviteter. Vi är övertygade om att friska medarbetare är
-          framgångsfaktorn för trivsamma, attraktiva, hållbara och lönsamma
-          arbetsplatser. Detta mynnade ut i vår affärsidé om att göra hälsa
-          mätbar där vi erbjuder företagen en analysdel och medarbetarna en
-          hälsoportal med enkla individanpassade åtgärder utefter vad nuläget
-          visar. Vi vill visa att det lönar sig att arbeta hälsofrämjande, om
-          man gör det på rätt sätt.{" "}
+          SKAPA HÅLLBARA MEDARBETARE - Det finaste ett företag kan ha.
+          <br /> <br />
+          Det är vårt fokus och där vet vi att vi kan göra som mest skillnad för
+          såväl människor, som företag och samhället i stort.
+          <br /> <br />
+          Hållbara medarbetare är vår viktigaste insats i vår strävan mot att
+          bidra till en hälsosam och frisk värld.
         </p>
       </div>
     </div>

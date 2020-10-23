@@ -207,10 +207,6 @@ body {
   align-items: center;
   text-align: center;
   font-family: lightFont;
-  /*background: linear-gradient(to bottom right, #fde55e 20%, #fd635e 100%);
-  background: linear-gradient(to bottom right, #5febc1 20%, #5f9ceb 100%);
-  background: linear-gradient(to bottom right, #d657d6 20%, #4287d6 100%);
-  background: linear-gradient(to bottom right, #7bfa70, #48d13c 100%);*/
   background: linear-gradient(-45deg, #24ff72, #9a4eff);
 
   width: 100%;
