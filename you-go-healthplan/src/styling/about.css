@@ -69,6 +69,9 @@
   #about-header-title {
     font-size: 3.5vw;
   }
+  #about-header-sub-title {
+    font-size: 1.3vw;
+  }
   .textAbout {
     font-size: 1.2vw;
   }
@@ -90,6 +93,9 @@
 @media only screen and (max-width: 800px) {
   #about-header-title {
     font-size: 5vw;
+  }
+  #about-header-sub-title {
+    font-size: 1.8vw;
   }
   .textAbout {
     font-size: 1.5vw;
@@ -132,6 +138,9 @@
   #about-header-title {
     font-size: 6vw;
   }
+  #about-header-sub-title {
+    font-size: 2vw;
+  }
   .textAbout {
     font-size: 2.1vw;
   }
@@ -165,9 +174,12 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .textAbout {
     font-size: 2.6vw;
+  }
+  #about-header-sub-title {
+    font-size: 2.4vw;
   }
   .rubrikAbout {
     font-size: 4vw;

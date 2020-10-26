@@ -118,7 +118,7 @@
 
 @media only screen and (max-width: 500px) {
   .multiCarouselDiv {
-    margin-bottom: 25vw;
+    margin-bottom: 17vw;
     left: 10vw;
     padding-top: 8vw;
   }
@@ -132,7 +132,7 @@
 
 @media only screen and (max-width: 400px) {
   .multiCarouselDiv {
-    margin-bottom: 34vw;
+    margin-bottom: 25vw;
     left: 7vw;
   }
   .multiCarouselImg {
