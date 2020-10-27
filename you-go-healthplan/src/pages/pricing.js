@@ -14,30 +14,31 @@ import breakIcon from "../images/break.png";
 
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
+    "0kr",
     "49kr",
     "69kr",
-    "Kontakta oss",
+    "149kr",
   ]);
-  const [startPrice, setstartPrice] = useState(["0", "0", "1000"]);
+  const [startPrice, setstartPrice] = useState(["500", "0", "0", "1000"]);
 
   const onFirstPricingButton = () => {
-    setmonthlyPrice(["49kr", "69kr", "Kontakta oss"]);
-    setstartPrice(["0", "0", "1000"]);
+    setmonthlyPrice(["0kr", "49kr", "69kr", "149kr"]);
+    setstartPrice(["500", "0", "0", "1000"]);
   };
 
   const onSecondPricingButton = () => {
-    setmonthlyPrice(["39kr", "49kr", "Kontakta oss"]);
-    setstartPrice(["2000", "2000", "1000"]);
+    setmonthlyPrice(["0kr", "39kr", "49kr", "99kr"]);
+    setstartPrice(["1000", "2000", "2000", "1000"]);
   };
 
   const onThirdPricingButton = () => {
-    setmonthlyPrice(["25kr", "35kr", "Kontakta oss"]);
-    setstartPrice(["5000", "7500", "1000"]);
+    setmonthlyPrice(["0kr", "25kr", "35kr", "79kr"]);
+    setstartPrice(["1500", "5000", "7500", "1000"]);
   };
 
   const onForthPricingButton = () => {
-    setmonthlyPrice(["20kr", "25kr", "Kontakta oss"]);
-    setstartPrice(["7500", "10 000", "1000"]);
+    setmonthlyPrice(["0kr", "20kr", "25kr", "59kr"]);
+    setstartPrice(["2000", "7500", "10 000", "1000"]);
   };
 
   const empButtons = () => {
@@ -67,53 +68,70 @@ const Pricing = () => {
     return (
       <div>
         <BoxComponent
-          title="Bas"
+          title="1 månad"
           startPrice={startPrice[0]}
           monthly={monthlyPrice[0]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",
-            "Hälsokartläggning 3ggr/ år",
-            "Individuella åtgärdsförslag",
-            "Tillgång till hälsoportal",
-            "Fria hälsoprogram",
-            "Standard Rapport på hälsokartläggningen",
+            "En hälsokartläggning",
+            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
+            "Tillgång till hälsoportal för medarbetaren",
+            "Fria hälsoprogram till medarbetaren",
+            "En generell rapport på hälsokartläggningen/nuläge på gruppnivå",
           ]}
         />
-
         <BoxComponent
-          title="Premium"
+          title="Bas"
           startPrice={startPrice[1]}
           monthly={monthlyPrice[1]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",
+            "Filtrering ålder och kön",
             "Hälsokartläggning 3ggr/ år",
-            "Individuella åtgärdsförslag",
-            "Tillgång till hälsoportal",
-            "Fria hälsoprogram",
-            "Standard Rapport på hälsokartläggningen",
-            "Åtgärdsförslag",
-            "Skapa egna rapporter",
-            "Målgruppsanpassade utckick av aktiviteter",
+            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
+            "Tillgång till hälsoportal för medarbetaren",
+            "Fria hälsoprogram till medarbetaren",
+            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
           ]}
         />
+
         <BoxComponent
-          title="Premium+"
+          title="Premium"
           startPrice={startPrice[2]}
           monthly={monthlyPrice[2]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",
+            "Filtrering ålder och kön + 2 valfria",
             "Hälsokartläggning 3ggr/ år",
-            "Individuella åtgärdsförslag",
-            "Tillgång till hälsoportal",
-            "Fria hälsoprogram",
-            "Standard Rapport på hälsokartläggningen",
+            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
+            "Tillgång till hälsoportal för medarbetaren",
+            "Fria hälsoprogram till medarbetaren",
+            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
             "Åtgärdsförslag",
-            "Skapa egna rapporter",
-            "Målgruppsanpassade utckick av aktiviteter",
-            "Möjlighet att skräddarsy analysen",
+            "Rättighet till analysverktyg för att skapa egna rapporter",
+            "Rättigheter till målgruppsanpassade utckick av aktiviteter",
+          ]}
+        />
+        <BoxComponent
+          title="Premium+"
+          startPrice={startPrice[3]}
+          monthly={monthlyPrice[3]}
+          list={[
+            "Hälsostrategiskt systemstöd",
+            "Standard analys",
+            "Filtrering ålder och kön + 4 valfria",
+            "Hälsokartläggning 3ggr/ år",
+            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
+            "Tillgång till hälsoportal för medarbetaren",
+            "Fria hälsoprogram till medarbetaren",
+            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
+            "Åtgärdsförslag",
+            "Rättighet till analysverktyg för att skapa egna rapporter",
+            "Rättigheter till målgruppsanpassade utckick av aktiviteter",
+            "Möjlighet att lägga till egna frågor",
             "Möjlighet till extra mätning",
             "Kundservice över telefon",
             "Personlig kontakt",
@@ -142,38 +160,38 @@ const Pricing = () => {
       <div id="bottom-items">
         <PricingInfoComponent
           title="Personlig inloggning:"
-          text="Alla anställda får sitt egen inlogg med tillgång till all
-      funktionalitet. Om du väljer premium eller premium+ får även du som admin tillgång till ett verktyg där du kan se hur dina anställda svarat i formulären."
+          text="Alla anställda får sitt egna inlogg med tillgång till sitt egna resultat samt till hälsoportalen. I premium
+          och premium + får företaget tillgång till analysverktyget och kan målgruppsanpassa åtgärder."
           image={loginIcon}
         />
 
         <PricingInfoComponent
           title="Digital hälsokartläggning:"
-          text=" Första gången din antällda loggar in på sitt konto kommer hen få gå
-        igenom ett formulär,
-         utifrån detta kommer vi sedan kunna kartlägga dennes hälsa.
-         Formuläret skall göras 4 gånger om året för att ni lätt skall
-        kunna se era framgångar."
+          text="Ett systemstöd för proaktiv friskvård där vi mäter effekter av hälsoinvesteringar. Ni får en tydlig
+          hälsostrategi som ger ROI. I premium och premuim + ingår målgruppsanpassning för att fånga upp
+          riskgrupper."
           image={surveyIcon}
         />
 
         <PricingInfoComponent
           title="Åtgärdsförslag & fria hälsoprogram:"
-          text=" Beroende på hur den anställdes resultat på formuläret kommer vi
-        rekomendera ett åtgärdsförslag för ett hälsosamare liv. Hen får tillgång till videos, artiklar, tips och tricks
-        med allt från kost, mental hälsa till träning."
+          text="Beroende på hur medarbetarens resultat ser ut, rekommenderas olika åtgärdsförslag för ett
+          hälsosammare liv. Hen får tillgång till videos, artiklar, tips och tricks med allt ifrån kost, mental hälsa
+          till träning."
           image={breakIcon}
         />
 
         <PricingInfoComponent
           title="Egna rapporter:"
-          text="Väljer ni premium eller premium + får ni tillgång till att skapa egna rapporter till era anställda. I premium+ kan ni även skräddarsy den initiala rapportern!"
+          text="Väljer ni premium eller premium + får ni tillgång till att
+          skapa fler och egna rapporter."
           image={EgnaRapporter}
         />
 
         <PricingInfoComponent
-          title="Personig kontakt:"
-          text="Väljer ni paketet premium+ får ni tillgång till persolig kontakt med oss och kundservice över telefon. Lite extra smidigt!"
+          title="Personlig kontakt:"
+          text="Väljer ni paketet premium + får ni extra stöttning, snabbare
+          svar och personlig kontakt, lite extra smidigt."
           image={individualIcon}
         />
       </div>
