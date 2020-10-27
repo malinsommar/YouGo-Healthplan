@@ -156,18 +156,18 @@ const ContainerInfoCircle = () => {
         </div>
         <div id="Content-button-3">
           <HoverButton
-            text="När alla svarat på frågorna får, chefen, 
-          HR eller ledning direkt rapporter till sig."
+            text="Direkt  efter när medarbetarna svarat på sina 
+        frågor kommer det åtgärdsförslag till de man ska börja jobba med 
+        direkt.Där man har svarat och ligger lägst, Små enkla tips tex börja
+         ät en bra frukost , hoppa av bussen en hållplats tidigare, parkera 
+         bilen långt bort från ingången eller säg hej till en kollega man gillar."
           />
         </div>
       </div>
       <div id="Content-button-2">
         <HoverButton
-          text="Direkt  efter när medarbetarna svarat på sina 
-        frågor kommer det åtgärdsförslag till de man ska börja jobba med 
-        direkt.Där man har svarat och ligger lägst, Små enkla tips tex börja
-         ät en bra frukost , hoppa av bussen en hållplats tidigare, parkera 
-         bilen långt bort från ingången eller säg hej till en kollega man gillar."
+          text="När alla svarat på frågorna får, chefen, 
+          HR eller ledning direkt rapporter till sig."
         />
       </div>
       <div id="Content-button-4">

@@ -243,6 +243,33 @@ body {
   width: 70%;
 }
 
+@media only screen and (max-width: 1200px) {
+  #Content-button-1 {
+    padding-left: 37%;
+    padding-top: 2%;
+  }
+  #Content-button-3 {
+    padding-left: 37%;
+    padding-top: 57%;
+  }
+  #Content-button-4 {
+    padding-left: 50%;
+    padding-top: 45%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #Content-button-3 {
+    padding-left: 37%;
+    padding-top: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Content-button-3 {
+    padding-left: 30%;
+    padding-top: 35%;
+  }
+}
+
 /*-- Style for partners --*/
 
 #partners {
