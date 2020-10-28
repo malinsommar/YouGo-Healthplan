@@ -102,7 +102,10 @@ const ContentAboutYouGo = () => {
         <div className="infoAboutYouGo">
           <h1>Hälsosmart</h1>
           <p>
-            Förebygga hälsa är mer kostnadseffektivt än att rehabilitera! På de
+            Dagens utmaning för arbetsgivaren är att man har kostsamma och
+            generella åtgärder utan resultat. Vi vill att man tar kontroll genom
+            att kartlägga och mäta effekten av friskvårdinsatser då vi vet att
+            förebygga hälsa är mer kostnadseffektivt än att rehabilitera! På de
             flesta arbetsplatser visar beräkningar att det är en ren vinst att
             utöka friskvården, särskilt om den når människor inte värnar om sin
             hälsa på eget initiativ. Lönsam friskvård är till exempel
@@ -115,7 +118,9 @@ const ContentAboutYouGo = () => {
         <div className="imageStyle" id="imgOfSomething"></div>
       </div>
       <div id="secondContainer">
-        <div className="imageStyle" id="imgOfSomething1"></div>
+        <div className="imageStyle" id="imgOfSomething1">
+          {" "}
+        </div>
         <div className="infoAboutYouGo">
           <h1>Vår Filosofi</h1>
           <p>
@@ -140,7 +145,7 @@ const ColorContainer = () => {
           <div className="card-front-1">
             <img className="picture" src={Person}></img>
             <div className="rubrik">Hur vi jobbar</div>
-            <div className="text">Läs mer om hur vi jobbar på YouGo</div>
+            <div className="text"></div>
           </div>
 
           <div className="card-back-1">
@@ -149,6 +154,14 @@ const ColorContainer = () => {
               to="/about"
               activeClassName="isActive"
             >
+              <p>
+                Vi erbjuder ett systemstöd för kartläggning och nuläge på
+                medarbetarnas hälsostatus. Detta ligger som grund för
+                hälsostrategiska beslut för arbetsgivare för att proaktivt kunna
+                ge grupp- och individanpassade friskvårdsinsatser för sina
+                medarbetare. Vårt systemstöd gör det enkelt att arbeta
+                strategiskt, systematiskt och målgruppsanpassat
+              </p>
               <p className="buttonInfo">Tryck här</p>
             </NavLink>
           </div>
@@ -180,7 +193,7 @@ const ColorContainer = () => {
           <div className="card-front-3">
             <img className="picture" src={SaveMoney}></img>
             <div className="rubrik">Erbjudande</div>
-            <div className="text">Gratis 3 månader, kolla priser!</div>
+            <div className="text"></div>
           </div>
 
           <div className="card-back-3">
@@ -229,7 +242,10 @@ const ContainerInfoCircle = () => {
         />
       </div>
       <div id="Content-button-4">
-        <HoverButton text="hej hej" />
+        <HoverButton
+          text="Utefter vad kartläggningen visar i rapporterna blir 
+          beslutet enklare när nuläget synliggörs."
+        />
       </div>
     </div>
   );
