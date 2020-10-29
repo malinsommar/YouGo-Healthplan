@@ -12,6 +12,8 @@ import individualIcon from "../images/individual.png";
 import EgnaRapporter from "../images/egnaRapporter.png";
 import breakIcon from "../images/break.png";
 
+import { css, jsx } from "@emotion/core";
+
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
     "0kr",

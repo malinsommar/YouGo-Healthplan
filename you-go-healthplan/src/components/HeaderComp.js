@@ -8,18 +8,19 @@ const HeaderComponent = () => {
   return (
     <section>
       <nav className="stroke">
-        <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
-
+        <NavLink className="navLink" to="/home" activeClassName="isActive">
+          <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
+        </NavLink>
         <ul className="desktop-screen">
           <li>
             <NavLink className="navLink" to="/home" activeClassName="isActive">
               <p id="home">Hem</p>
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li>
             <NavLink className="navLink" to="/about" activeClassName="isActive">
               <p id="home">Om oss</p>
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li>
             <NavLink
@@ -61,39 +62,6 @@ const HeaderComponent = () => {
       </div>
     </section>
   );
-  /*return (
-    <div id="whole-header">
-      <div className="header">
-        <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
-
-        <div className="nav-items">
-          <NavLink className="navLink" to="/home" activeClassName="isActive">
-            <p id="home">Hem</p>
-          </NavLink>
-
-          <NavLink className="navLink" to="/about" activeClassName="isActive">
-            <p id="home">Om oss</p>
-          </NavLink>
-
-          <NavLink className="navLink" to="/pricing" activeClassName="isActive">
-            <p id="home">Priser</p>
-          </NavLink>
-
-          <NavLink className="navLink" to="/blogg" activeClassName="isActive">
-            <p id="home">Blogg</p>
-          </NavLink>
-
-          <NavLink className="navLink" to="/contact" activeClassName="isActive">
-            <p id="home">Kontakt</p>
-          </NavLink>
-
-          <NavLink className="navLink" to="/home" activeClassName="isActive">
-            <p id="home">Logga in</p>
-          </NavLink>
-        </div>
-      </div>
-    </div>
-  );*/
 };
 
 export default HeaderComponent;

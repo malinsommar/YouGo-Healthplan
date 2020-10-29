@@ -114,6 +114,11 @@ body {
   color: white;
 }
 
+.emp-button:focus {
+  background-color: #6995c5;
+  color: white;
+}
+
 #last-emp-button {
   margin-right: 0;
 }
