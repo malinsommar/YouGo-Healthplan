@@ -32,6 +32,8 @@ import närhälsan from "../images/närhälsan.jpg";
 import sigma from "../images/sigma.png";
 import engineering from "../images/2050.png";
 import nääsfabriker from "../images/nääsfabriker.png";
+import frukt from "../images/fruit.jpg";
+import lindaIVatten from "../images/Lindaivattnet.jpeg";
 
 const customerList = [
   {
@@ -98,10 +100,11 @@ const Home = () => {
 const ContentAboutYouGo = () => {
   return (
     <div className="infoAboutAll">
-      <div id="firstContainer">
-        <div className="infoAboutYouGo">
-          <h1>Hälsosmart</h1>
-          <p>
+      <div className="pic-to-left" id="global-goals">
+        <img className="about-images" src={frukt} />
+        <div id="globalGoals-right" className="pic-to-right-text">
+          <p className="rubrikAbout">Hälsosmart</p>
+          <p className="textAbout">
             Dagens utmaning för arbetsgivaren är att man har kostsamma och
             generella åtgärder utan resultat. Vi vill att man tar kontroll genom
             att kartlägga och mäta effekten av friskvårdinsatser då vi vet att
@@ -115,15 +118,11 @@ const ContentAboutYouGo = () => {
             friskheten består.
           </p>
         </div>
-        <div className="imageStyle" id="imgOfSomething"></div>
       </div>
-      <div id="secondContainer">
-        <div className="imageStyle" id="imgOfSomething1">
-          {" "}
-        </div>
-        <div className="infoAboutYouGo">
-          <h1>Vår Filosofi</h1>
-          <p>
+      <div className="pic-to-left" id="global-goals">
+        <div id="globalGoals-right" className="pic-to-right-text">
+          <p className="rubrikAbout">Vår Filosofi</p>
+          <p className="textAbout">
             Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa.
             Alla företag är olika. Vi tar reda på vilka åtgärder just ER
             organisation behöver. Vår styrka är att nå de medarbetare som är
@@ -132,6 +131,7 @@ const ContentAboutYouGo = () => {
             leverera önskat resultat.
           </p>
         </div>
+        <img className="about-images" src={lindaIVatten} />
       </div>
     </div>
   );

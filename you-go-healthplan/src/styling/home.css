@@ -44,7 +44,66 @@ body {
 
 /*-- Style for Info about YouGo --*/
 
-.infoAboutAll {
+#about-header-title {
+  font-family: titleFont;
+  font-size: 3vw;
+  /* background: linear-gradient(to right, #f403d1 20%, #64b5f6 60%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+#about-header-hr {
+  width: 27vw;
+  height: 0.5px;
+  background-color: black;
+  border: none;
+}
+
+#about-header-sub-title {
+  font-family: lightFont;
+  font-size: 1vw;
+  margin-bottom: 4vw;
+}
+
+.rubrikAbout {
+  position: relative;
+  text-align: initial;
+  text-transform: uppercase;
+  font-family: titleFont;
+  font-size: 2vw;
+}
+
+.pic-to-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+.pic-to-right-text {
+  margin: 0 auto;
+  text-align: initial;
+  font-family: lightFont;
+  width: 30vw;
+  font-size: 1vw;
+}
+
+.about-images {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.about-images {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 3px;
 }
 
 .infoAboutYouGo {
