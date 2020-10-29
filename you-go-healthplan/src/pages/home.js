@@ -140,72 +140,70 @@ const ContentAboutYouGo = () => {
 const ColorContainer = () => {
   return (
     <div id="colorcontainer">
-      <div id="testtest">
-        <div className="g-card">
-          <div className="card-container">
-            <div className="card-front-1">
-              <img className="picture" src={Person}></img>
-              <div className="rubrik">Hur vi jobbar</div>
-              <div className="text"></div>
-            </div>
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-1">
+            <img className="picture" src={Person}></img>
+            <div className="rubrik">Hur vi jobbar</div>
+            <div className="text"></div>
+          </div>
 
-            <div className="card-back-1">
-              <NavLink
-                className="button-container"
-                to="/about"
-                activeClassName="isActive"
-              >
-                <p>
-                  Vi erbjuder ett systemstöd för kartläggning och nuläge på
-                  medarbetarnas hälsostatus. Detta ligger som grund för
-                  hälsostrategiska beslut för arbetsgivare för att proaktivt
-                  kunna ge grupp- och individanpassade friskvårdsinsatser för
-                  sina medarbetare. Vårt systemstöd gör det enkelt att arbeta
-                  strategiskt, systematiskt och målgruppsanpassat
-                </p>
-                <p className="buttonInfo">Tryck här</p>
-              </NavLink>
-            </div>
+          <div className="card-back-1">
+            <NavLink
+              className="button-container"
+              to="/about"
+              activeClassName="isActive"
+            >
+              <p>
+                Vi erbjuder ett systemstöd för kartläggning och nuläge på
+                medarbetarnas hälsostatus. Detta ligger som grund för
+                hälsostrategiska beslut för arbetsgivare för att proaktivt kunna
+                ge grupp- och individanpassade friskvårdsinsatser för sina
+                medarbetare. Vårt systemstöd gör det enkelt att arbeta
+                strategiskt, systematiskt och målgruppsanpassat
+              </p>
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
+      </div>
 
-        <div className="g-card">
-          <div className="card-container">
-            <div className="card-front-2">
-              <img className="picture" src={Login}></img>
-              <div className="rubrik">Enkel registrering</div>
-              <div className="text">Kontakta oss...</div>
-            </div>
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-2">
+            <img className="picture" src={Login}></img>
+            <div className="rubrik">Enkel registrering</div>
+            <div className="text">Kontakta oss...</div>
+          </div>
 
-            <div className="card-back-2">
-              <NavLink
-                className="button-container"
-                to="/contact"
-                activeClassName="isActive"
-              >
-                <p className="buttonInfo">Tryck här</p>
-              </NavLink>
-            </div>
+          <div className="card-back-2">
+            <NavLink
+              className="button-container"
+              to="/contact"
+              activeClassName="isActive"
+            >
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
+      </div>
 
-        <div className="g-card">
-          <div className="card-container">
-            <div className="card-front-3">
-              <img className="picture" src={SaveMoney}></img>
-              <div className="rubrik">Erbjudande</div>
-              <div className="text"></div>
-            </div>
+      <div className="g-card">
+        <div className="card-container">
+          <div className="card-front-3">
+            <img className="picture" src={SaveMoney}></img>
+            <div className="rubrik">Erbjudande</div>
+            <div className="text"></div>
+          </div>
 
-            <div className="card-back-3">
-              <NavLink
-                className="button-container"
-                to="/pricing"
-                activeClassName="isActive"
-              >
-                <p className="buttonInfo">Tryck här</p>
-              </NavLink>
-            </div>
+          <div className="card-back-3">
+            <NavLink
+              className="button-container"
+              to="/pricing"
+              activeClassName="isActive"
+            >
+              <p className="buttonInfo">Tryck här</p>
+            </NavLink>
           </div>
         </div>
       </div>
