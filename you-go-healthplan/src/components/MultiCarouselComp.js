@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "../styling/multicarouselcomp.css";
-import SliderComponent from "../components/SliderComp";
 
 export default class SimpleSlider extends Component {
   render() {

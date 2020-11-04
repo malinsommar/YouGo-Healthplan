@@ -47,7 +47,7 @@ const BloggPage = () => {
           toggle={() => toggleView(index)}
           title={item.title}
           image={item.image}
-          date={item.date}
+          date={formatDate(item.date)}
           key={index}
         />
       );
@@ -80,7 +80,7 @@ const BloggPage = () => {
         <div id="post">
           <div>
             <img id="post-image" src={posts[currentPost].image} alt="post" />
-            <p id="post-date">Datum: {posts[currentPost].date}</p>
+            <p id="post-date">Datum: {formatDate(posts[currentPost].date)}</p>
           </div>
           <div id="title-text-div">
             <h1 id="post-title">{posts[currentPost].title}</h1>
@@ -124,7 +124,19 @@ const BloggPage = () => {
     );
   };
 
-  const sortedPosts = posts.sort((a, b) => b.sortDate - a.sortDate);
+  const formatDate = (date) => {
+    var d = new Date(date),
+      month = "" + (d.getMonth() + 1),
+      day = "" + d.getDate(),
+      year = d.getFullYear();
+
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+
+    return [year, month, day].join("-");
+  };
+
+  const sortedPosts = posts.sort((a, b) => b.date - a.date);
 
   return <div>{returnView()}</div>;
 };

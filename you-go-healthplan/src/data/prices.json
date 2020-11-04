@@ -1,0 +1,35 @@
+{
+  "lessThanHundred": {
+    "baseMonthly": "49kr",
+    "baseStart": "0kr",
+    "premiumMontly": "69kr",
+    "premiumStart": "0kr",
+    "premiumPlusMontly": "149kr",
+    "premiumPlusStart": "1000kr"
+  },
+  "hundredToFiveHundred": {
+    "baseMonthly": "39kr",
+    "baseStart": "2000kr",
+    "premiumMontly": "49kr",
+    "premiumStart": "2000kr",
+    "premiumPlusMontly": "99kr",
+    "premiumPlusStart": "1000kr"
+  },
+
+  "fiveHundredToTwoThousand": {
+    "baseMonthly": "25kr",
+    "baseStart": "5000kr",
+    "premiumMontly": "35kr",
+    "premiumStart": "7500kr",
+    "premiumPlusMontly": "79kr",
+    "premiumPlusStart": "1000kr"
+  },
+  "twoThousandPlus": {
+    "baseMonthly": "20kr",
+    "baseStart": "7500kr",
+    "premiumMontly": "25kr",
+    "premiumStart": "10 000kr",
+    "premiumPlusMontly": "59kr",
+    "premiumPlusStart": "1000kr"
+  }
+}

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
-import CarouselComponent from "../components/CarouselComp";
 import "../styling/contact.css";
+import ContactData from "../data/contactInformation.json";
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState("");
@@ -12,8 +12,6 @@ const Contact = () => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(evt.target.mail);
-
     if (mail === "") {
       setSubmitMessage("Hoppsan! Du missade att fylla i din mail.");
     } else if (name === "") {
@@ -57,12 +55,13 @@ const Contact = () => {
           <div className="agress-img"></div>
           <div id="adress-info">
             <h2>Besök oss!</h2>
-            <p>Björklundabacken 10</p>
-            <p>436 57 Hovås</p>
+            <p>{ContactData.gata}</p>
+            <p>
+              {ContactData.postnummer} {ContactData.stad}
+            </p>
             <hr />
-            <p>Tel: 0707-708490</p>
-            <p>Mail: hej@yougohealthplan.com</p>
-            <div> </div>
+            <p>Tel: {ContactData.telefonnummer}</p>
+            <p>Mail: {ContactData.mail}</p>
           </div>
         </div>
         <div className="form-style-8">

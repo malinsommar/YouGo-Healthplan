@@ -11,36 +11,72 @@ import surveyIcon from "../images/survey.png";
 import individualIcon from "../images/individual.png";
 import EgnaRapporter from "../images/egnaRapporter.png";
 import breakIcon from "../images/break.png";
+import prices from "../data/prices.json";
 
-import { css, jsx } from "@emotion/core";
+const test = prices.lessThanHundred.baseMonthly;
 
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
-    "0kr",
-    "49kr",
-    "69kr",
-    "149kr",
+    prices.lessThanHundred.baseMonthly,
+    prices.lessThanHundred.premiumMontly,
+    prices.lessThanHundred.premiumPlusMontly,
   ]);
-  const [startPrice, setstartPrice] = useState(["500", "0", "0", "1000"]);
+  const [startPrice, setstartPrice] = useState([
+    prices.lessThanHundred.baseStart,
+    prices.lessThanHundred.premiumStart,
+    prices.lessThanHundred.premiumPlusStart,
+  ]);
 
   const onFirstPricingButton = () => {
-    setmonthlyPrice(["0kr", "49kr", "69kr", "149kr"]);
-    setstartPrice(["500", "0", "0", "1000"]);
+    setmonthlyPrice([
+      prices.lessThanHundred.baseMonthly,
+      prices.lessThanHundred.premiumMontly,
+      prices.lessThanHundred.premiumPlusMontly,
+    ]);
+    setstartPrice([
+      prices.lessThanHundred.baseStart,
+      prices.lessThanHundred.premiumStart,
+      prices.lessThanHundred.premiumPlusStart,
+    ]);
   };
 
   const onSecondPricingButton = () => {
-    setmonthlyPrice(["0kr", "39kr", "49kr", "99kr"]);
-    setstartPrice(["1000", "2000", "2000", "1000"]);
+    setmonthlyPrice([
+      prices.hundredToFiveHundred.baseMonthly,
+      prices.hundredToFiveHundred.premiumMontly,
+      prices.hundredToFiveHundred.premiumPlusMontly,
+    ]);
+    setstartPrice([
+      prices.hundredToFiveHundred.baseStart,
+      prices.hundredToFiveHundred.premiumStart,
+      prices.hundredToFiveHundred.premiumPlusStart,
+    ]);
   };
 
   const onThirdPricingButton = () => {
-    setmonthlyPrice(["0kr", "25kr", "35kr", "79kr"]);
-    setstartPrice(["1500", "5000", "7500", "1000"]);
+    setmonthlyPrice([
+      prices.fiveHundredToTwoThousand.baseMonthly,
+      prices.fiveHundredToTwoThousand.premiumMontly,
+      prices.fiveHundredToTwoThousand.premiumPlusMontly,
+    ]);
+    setstartPrice([
+      prices.fiveHundredToTwoThousand.baseStart,
+      prices.fiveHundredToTwoThousand.premiumStart,
+      prices.fiveHundredToTwoThousand.premiumPlusStart,
+    ]);
   };
 
   const onForthPricingButton = () => {
-    setmonthlyPrice(["0kr", "20kr", "25kr", "59kr"]);
-    setstartPrice(["2000", "7500", "10 000", "1000"]);
+    setmonthlyPrice([
+      prices.twoThousandPlus.baseMonthly,
+      prices.twoThousandPlus.premiumMontly,
+      prices.twoThousandPlus.premiumPlusMontly,
+    ]);
+    setstartPrice([
+      prices.twoThousandPlus.baseStart,
+      prices.twoThousandPlus.premiumStart,
+      prices.twoThousandPlus.premiumPlusStart,
+    ]);
   };
 
   const empButtons = () => {
@@ -70,23 +106,9 @@ const Pricing = () => {
     return (
       <div>
         <BoxComponent
-          title="1 månad"
+          title="Bas"
           startPrice={startPrice[0]}
           monthly={monthlyPrice[0]}
-          list={[
-            "Hälsostrategiskt systemstöd",
-            "Standard analys",
-            "En hälsokartläggning",
-            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
-            "Tillgång till hälsoportal för medarbetaren",
-            "Fria hälsoprogram till medarbetaren",
-            "En generell rapport på hälsokartläggningen/nuläge på gruppnivå",
-          ]}
-        />
-        <BoxComponent
-          title="Bas"
-          startPrice={startPrice[1]}
-          monthly={monthlyPrice[1]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",
@@ -101,8 +123,8 @@ const Pricing = () => {
 
         <BoxComponent
           title="Premium"
-          startPrice={startPrice[2]}
-          monthly={monthlyPrice[2]}
+          startPrice={startPrice[1]}
+          monthly={monthlyPrice[1]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",
@@ -119,8 +141,8 @@ const Pricing = () => {
         />
         <BoxComponent
           title="Premium+"
-          startPrice={startPrice[3]}
-          monthly={monthlyPrice[3]}
+          startPrice={startPrice[2]}
+          monthly={monthlyPrice[2]}
           list={[
             "Hälsostrategiskt systemstöd",
             "Standard analys",

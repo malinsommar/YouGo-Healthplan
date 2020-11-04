@@ -28,7 +28,7 @@ import geely from "../images/geely.png";
 import nextstepgroup from "../images/nextstepgroup.png";
 import pagero from "../images/pagero.png";
 import amerikanskagymnasiet from "../images/amerikanskagymnasiet.png";
-import närhälsan from "../images/närhälsan.jpg";
+import närhälsan from "../images/närhälsan.jpg"; //a istället för ä
 import sigma from "../images/sigma.png";
 import engineering from "../images/2050.png";
 import nääsfabriker from "../images/nääsfabriker.png";

@@ -7,25 +7,28 @@ import LinkedinLogo from "../images/linkedinLogo.svg";
 import YoutubeLogo from "../images/youtubeLogo.svg";
 import YougoLogo from "../images/logo.png";
 import "../styling/footercomp.css";
+import ContactData from "../data/contactInformation.json";
+import Contact from "../pages/contact";
 
 const bigScreenFooter = () => {
   return (
     <div id="footerDiv">
       <div id="footer-adress">
         <h2>YouGo Healthplan</h2>
-        <p>Björklundabacken 10</p>
-        <p>436 57 Hovås</p>
+        <p>{ContactData.gata}</p>
+        <p>
+          {ContactData.postnummer} {ContactData.stad}
+        </p>
       </div>
       <div id="footer-contact">
         <p>
           <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
-          0707-708490
+          {ContactData.telefonnummer}
         </p>
-
         <p>
           {" "}
           <img className="footerIcons" src={MailIcon} alt="Mail icon" />
-          hej@yougohealthplan.com
+          {ContactData.mail}
         </p>
       </div>
       <div id="footer-media">
@@ -73,20 +76,22 @@ const smallScreenFooter = () => {
           id="footerYougoLogoSmall"
           alt="Yougo healthplan Logo"
         />
-        <p>Björklundabacken 10</p>
-        <p>436 57 Hovås</p>
+        <p>{ContactData.gata}</p>
+        <p>
+          {ContactData.postnummer} {ContactData.stad}
+        </p>
       </div>
       <hr className="footer-hr" />
       <div id="footer-contact-small">
         <p>
           <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
-          0707-708490
+          {ContactData.telefonnummer}
         </p>
 
         <p>
           {" "}
           <img className="footerIcons" src={MailIcon} alt="Mail icon" />
-          hej@yougohealthplan.com
+          {ContactData.mail}
         </p>
       </div>
       <hr className="footer-hr" />
