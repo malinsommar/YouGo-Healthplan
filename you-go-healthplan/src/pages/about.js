@@ -1,23 +1,10 @@
 import React from "react";
 import "../styling/about.css";
 import treHälsa from "../images/hållbarhetsmålTreHälsa.jpg";
-
 import HeaderComponent from "../components/HeaderComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FooterComponent from "../components/FooterComp";
-
-import bluecall from "../images/bluecall.png";
-import actiway from "../images/actiway.png";
-import bikelease from "../images/bikelease.png";
-import casall from "../images/casall.png";
-import viktväktarna from "../images/viktväktarna.png";
-import flexmassage from "../images/flexmassage.png";
-import icebug from "../images/icebug.png";
-import livingpepole from "../images/livingpepole.png";
-import nordicwellness from "../images/nordicwellness.png";
-import pep from "../images/pep.png";
-import k from "../images/29k.png";
-import samtalscoach from "../images/samtalsCoach.png";
+import Partners from "../data/partnersAndCustomers.json";
 
 const About = () => {
   return (
@@ -37,59 +24,15 @@ const About = () => {
 
       <div>{GlobalGoals()}</div>
       <div>{Philosophy()}</div>
-      <MultiCarouselComponent title="Sammarbetspartners" list={partnerList} />
+      <MultiCarouselComponent
+        title="Sammarbetspartners"
+        list={Partners.partners}
+      />
 
       <FooterComponent />
     </div>
   );
 };
-
-const partnerList = [
-  {
-    image: bluecall,
-    link: "https://www.bluecallapp.com/",
-  },
-  {
-    image: actiway,
-    link: "https://www.actiway.se/",
-  },
-  {
-    image: bikelease,
-    link: "https://bikelease.se/",
-  },
-  {
-    image: casall,
-    link: "https://www.casall.com/se",
-  },
-  {
-    image: k,
-    link: "https://29k.org/",
-  },
-  {
-    image: viktväktarna,
-    link: "https://www.viktvaktarna.se/se/",
-  },
-  {
-    image: flexmassage,
-    link: "https://flexmassage.se/",
-  },
-  {
-    image: livingpepole,
-    link: "http://www.livingpeople.nu/",
-  },
-  {
-    image: nordicwellness,
-    link: "https://nordicwellness.se/",
-  },
-  {
-    image: pep,
-    link: "https://generationpep.se/sv/",
-  },
-  {
-    image: samtalscoach,
-    link: "https://www.patriciawesten.se/",
-  },
-];
 
 const GlobalGoals = () => {
   return (

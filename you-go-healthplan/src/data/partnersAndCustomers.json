@@ -1,0 +1,107 @@
+{
+  "partners": [
+    {
+      "name": "geely",
+      "url": "http://global.geely.com/",
+      "image": "https://www.carlogos.org/logo/Geely-logo-2014-2560x1440.png"
+    },
+    {
+      "name": "nextstepgroup",
+      "url": "https://www.nextstep.se/",
+      "image": "https://www.nextstep.se/wp-content/themes/nextstep/img/nextstep-logotype-black.png"
+    },
+    {
+      "name": "pagero",
+      "url": "https://www.pagero.se/",
+      "image": "https://theme.zdassets.com/theme_assets/285710/9c32ee8a1f380c7ff3d033511b02a56ed0ccaedb.png"
+    },
+    {
+      "name": "amerikanskagymnasiet",
+      "url": "https://www.amerikanskagymnasiet.se/?lang=en",
+      "image": "https://www.amerikanskagymnasiet.se/14546_wp-content/themes/AmerikanskaGymnasiet/assets/images/logotype_v2.png"
+    },
+    {
+      "name": "närhälsan",
+      "url": "https://www.närhälsan.se/",
+      "image": "https://www.internetmedicin.se/wp-content/uploads/2020/07/narhalsan_vgr.jpg"
+    },
+    {
+      "name": "sigma",
+      "url": "https://www.sigma.se/",
+      "image": "https://www.secify.com/wp-content/uploads/2019/12/sigma-logo.png"
+    },
+    {
+      "name": "engineering",
+      "url": "https://2550.engineering/",
+      "image": "https://wickitly.se/img/portfolio/2050-logo.png"
+    },
+    {
+      "name": "naasfabriker",
+      "url": "http://www.naasfabriker.se/en/home/",
+      "image": "https://static.hitta.se/static/products/images/InfoText/naas_fabriker2_il.gif"
+    }
+  ],
+
+  "customer": [
+    {
+      "name": "icebug",
+      "url": "https://icebug.se/",
+      "image": "https://via.tt.se/data/images/00080/c12e25c3-6e81-4769-b030-f2cbb96973ab.png"
+    },
+    {
+      "name": "bluecall",
+      "url": "https://www.bluecallapp.com/",
+      "image": "https://www.bluecallapp.com/wp-content/uploads/2018/04/bluecall-logo-blue-300x88.png"
+    },
+    {
+      "name": "actiway",
+      "url": "https://www.actiway.se/",
+      "image": "https://www.actiway.se/images/actiway-logo-portal-2.png"
+    },
+    {
+      "name": "bikelease",
+      "url": "https://bikelease.se/",
+      "image": "https://bikelease.se/s/bikelease_logo_blue_text.png"
+    },
+    {
+      "name": "casall",
+      "url": "https://www.casall.com/se",
+      "image": "https://www.casallpro.se/wp-content/uploads/2018/01/Casall-Pro-Full-white-300x170.png"
+    },
+    {
+      "name": "k",
+      "url": "https://29k.org/",
+      "image": "https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/dt1dekgmsry4w96clqud"
+    },
+    {
+      "name": "viktväktarna",
+      "url": "https://www.viktvaktarna.se/se/",
+      "image": "https://yougohealthplan.com/wp-content/uploads/2020/02/viktv%C3%A4ktarna.png"
+    },
+    {
+      "name": "flexmassage",
+      "url": "https://flexmassage.se/",
+      "image": "https://flexmassage.se/wp-content/themes/flex/images/flex_massage_logotyp_grey.png"
+    },
+    {
+      "name": "livingpepole",
+      "url": "http://www.livingpeople.nu/",
+      "image": "https://www.livingpeople.nu/wp-content/uploads/2015/01/livingpeople-logo-charlie-725.png"
+    },
+    {
+      "name": "nordicwellness",
+      "url": "https://nordicwellness.se/",
+      "image": "https://logos-download.com/wp-content/uploads/2016/12/Nordic_Wellness_logo_symbol_emblem.png"
+    },
+    {
+      "name": "pep",
+      "url": "https://generationpep.se/sv/",
+      "image": "https://files.builder.misssite.com/ff/af/ffaf0e17-e915-4411-afc8-8519f5df2c48.png"
+    },
+    {
+      "name": "samtalscoach",
+      "url": "https://www.patriciawesten.se/",
+      "image": "https://www.patriciawesten.se/wp-content/uploads/2019/04/pw-logo-2019.png"
+    }
+  ]
+}

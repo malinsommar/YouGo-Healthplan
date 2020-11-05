@@ -1,74 +1,17 @@
 import React from "react";
 import "../styling/home.css";
 import { NavLink } from "react-router-dom";
-
 import HoverButton from "../components/HoverComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
-import CarouselComponent from "../components/CarouselComp";
 import FotterComponent from "../components/FooterComp";
-
+import Customers from "../data/partnersAndCustomers.json";
 import Circle from "../images/YouGo_4.png";
-import actiway from "../images/actiway.png";
-import bikelease from "../images/bikelease.png";
-import casall from "../images/casall.png";
-import bluecall from "../images/bluecall.png";
-import viktväktarna from "../images/viktväktarna.png";
-import flexmassage from "../images/flexmassage.png";
-import icebug from "../images/icebug.png";
-import livingpepole from "../images/livingpepole.png";
-import nordicwellness from "../images/nordicwellness.png";
-import pep from "../images/pep.png";
 import HeaderComponent from "../components/HeaderComp";
-import FooterComponent from "../components/FooterComp";
 import Login from "../images/login.png";
 import Person from "../images/person.png";
 import SaveMoney from "../images/saveMoney.png";
-
-import geely from "../images/geely.png";
-import nextstepgroup from "../images/nextstepgroup.png";
-import pagero from "../images/pagero.png";
-import amerikanskagymnasiet from "../images/amerikanskagymnasiet.png";
-import närhälsan from "../images/närhälsan.jpg"; //a istället för ä
-import sigma from "../images/sigma.png";
-import engineering from "../images/2050.png";
-import nääsfabriker from "../images/nääsfabriker.png";
 import frukt from "../images/fruit.jpg";
 import lindaIVatten from "../images/Lindaivattnet.jpeg";
-
-const customerList = [
-  {
-    image: geely,
-    link: "http://global.geely.com/",
-  },
-  {
-    image: nextstepgroup,
-    link: "https://www.nextstep.se/",
-  },
-  {
-    image: pagero,
-    link: "https://www.pagero.se/",
-  },
-  {
-    image: amerikanskagymnasiet,
-    link: "https://www.amerikanskagymnasiet.se/?lang=en",
-  },
-  {
-    image: närhälsan,
-    link: "https://www.närhälsan.se/",
-  },
-  {
-    image: sigma,
-    link: "https://www.sigma.se/",
-  },
-  {
-    image: engineering,
-    link: "https://2550.engineering/",
-  },
-  {
-    image: nääsfabriker,
-    link: "http://www.naasfabriker.se/en/home/",
-  },
-];
 
 const Home = () => {
   return (
@@ -88,7 +31,7 @@ const Home = () => {
       <div>
         <MultiCarouselComponent
           title="Kunder"
-          list={customerList}
+          list={Customers.customer}
           subTitle="Vi är stolta över att få medverka till förbättrad hälsa på dessa företag"
         />
       </div>
@@ -247,36 +190,6 @@ const ContainerInfoCircle = () => {
           beslutet enklare när nuläget synliggörs."
         />
       </div>
-    </div>
-  );
-};
-
-const Partners = () => {
-  return (
-    <div>
-      <div id="partners">
-        <p id="textSamarbetspartners">Samarbetspartners</p>
-        <img className="picinfo" src={flexmassage} alt="icon"></img>
-
-        <img className="picinfo" src={bluecall} alt="icon"></img>
-
-        <img className="picinfo" src={casall} alt="icon"></img>
-
-        <img className="picinfo" src={icebug} alt="icon"></img>
-
-        <img className="picinfo" src={livingpepole} alt="icon"></img>
-
-        <img className="picinfo" src={pep} alt="icon"></img>
-
-        <img className="picinfo" src={nordicwellness} alt="icon"></img>
-
-        <img className="picinfo" src={viktväktarna} alt="icon"></img>
-
-        <img className="picinfo" src={actiway} alt="icon"></img>
-
-        <img className="picinfo" src={bikelease} alt="icon"></img>
-      </div>
-      <FooterComponent />
     </div>
   );
 };

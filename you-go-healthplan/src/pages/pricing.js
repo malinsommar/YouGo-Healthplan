@@ -109,57 +109,20 @@ const Pricing = () => {
           title="Bas"
           startPrice={startPrice[0]}
           monthly={monthlyPrice[0]}
-          list={[
-            "Hälsostrategiskt systemstöd",
-            "Standard analys",
-            "Filtrering ålder och kön",
-            "Hälsokartläggning 3ggr/ år",
-            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
-            "Tillgång till hälsoportal för medarbetaren",
-            "Fria hälsoprogram till medarbetaren",
-            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
-          ]}
+          list={prices.baseInformation.list}
         />
 
         <BoxComponent
           title="Premium"
           startPrice={startPrice[1]}
           monthly={monthlyPrice[1]}
-          list={[
-            "Hälsostrategiskt systemstöd",
-            "Standard analys",
-            "Filtrering ålder och kön + 2 valfria",
-            "Hälsokartläggning 3ggr/ år",
-            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
-            "Tillgång till hälsoportal för medarbetaren",
-            "Fria hälsoprogram till medarbetaren",
-            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
-            "Åtgärdsförslag",
-            "Rättighet till analysverktyg för att skapa egna rapporter",
-            "Rättigheter till målgruppsanpassade utckick av aktiviteter",
-          ]}
+          list={prices.premiumInformation.list}
         />
         <BoxComponent
           title="Premium+"
           startPrice={startPrice[2]}
           monthly={monthlyPrice[2]}
-          list={[
-            "Hälsostrategiskt systemstöd",
-            "Standard analys",
-            "Filtrering ålder och kön + 4 valfria",
-            "Hälsokartläggning 3ggr/ år",
-            "Individuellt och direkt hälsoresultat till medarbetare med åtgärdsförslag",
-            "Tillgång till hälsoportal för medarbetaren",
-            "Fria hälsoprogram till medarbetaren",
-            "Standard Rapport på hälsokartläggningen/nuläge på gruppnivå",
-            "Åtgärdsförslag",
-            "Rättighet till analysverktyg för att skapa egna rapporter",
-            "Rättigheter till målgruppsanpassade utckick av aktiviteter",
-            "Möjlighet att lägga till egna frågor",
-            "Möjlighet till extra mätning",
-            "Kundservice över telefon",
-            "Personlig kontakt",
-          ]}
+          list={prices.premiumPlusInformation.list}
         />
       </div>
     );
@@ -226,8 +189,7 @@ const Pricing = () => {
     <div>
       <div className="top-items">
         <HeaderComponent />
-        <h1 id="pricing-title">Erbjudanden</h1>
-        <hr id="pricing-hr" />
+        <h3 id="pricing-title">Erbjudanden</h3>
         <p id="numberOfEmp">
           Klicka i hur många anställda ni är på ert företag:
         </p>

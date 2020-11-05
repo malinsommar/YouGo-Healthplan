@@ -19,22 +19,13 @@ body {
 
 #pricing-title {
   font-family: titleFont;
-  color: #57e24a;
-  font-size: 4.5vw;
-  background: linear-gradient(to left, #24ff72 20%, #9a4eff 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#pricing-hr {
-  width: 40vw;
-  height: 1px;
-  background-color: #6995c5;
-  border: none;
+  color: #84acce;
+  font-size: 3.5vw;
+  margin: 1vw;
 }
 
 #numberOfEmp {
-  margin: 3vw 0vw 2vw 0vw;
+  margin: 2vw;
 }
 
 @media only screen and (max-width: 1151px) {
@@ -99,9 +90,9 @@ body {
 }
 
 .emp-button {
-  border: solid 2px #6995c5;
+  border: solid 2px #84acce;
   border-radius: 3px;
-  color: #6995c5;
+  color: #84acce;
   height: 50px;
   margin-right: 40px;
   width: 125px;
@@ -110,12 +101,12 @@ body {
 }
 
 .emp-button:hover {
-  background-color: #6995c5;
+  background-color: #84acce;
   color: white;
 }
 
 .emp-button:focus {
-  background-color: #6995c5;
+  background-color: #84acce;
   color: white;
 }
 
@@ -168,7 +159,7 @@ body {
 }
 
 #nav {
-  color: #6995c5;
+  color: #84acce;
   border: solid 2px;
   padding: 10px;
   width: 10%;
@@ -177,7 +168,7 @@ body {
 }
 
 #nav:hover {
-  color: #5178a1;
+  color: #658cad;
 }
 
 @media only screen and (min-width: 895px) {
@@ -212,7 +203,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: lightFont;
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+  background: linear-gradient(to left, #658cad, #84acce);
 
   width: 100%;
   display: inline-block;

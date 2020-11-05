@@ -23,7 +23,7 @@ body {
 
 #contact-header-title {
   font-family: titleFont;
-  background: linear-gradient(to right, #f321d7 20%, #ffec61 70%);
+  background: linear-gradient(to right, #84acce 20%, #84acce 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3vw;
@@ -127,10 +127,10 @@ body {
 }
 .form-style-8 input[type="button"],
 .form-style-8 input[type="submit"] {
-  -moz-box-shadow: inset 0px 1px 0px 0px #ec9287;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ec948b;
-  box-shadow: inset 0px 1px 0px 0px #e98f85;
-  background-color: #fa9a90;
+  -moz-box-shadow: inset 0px 1px 0px 0px #84acce;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #84acce;
+  box-shadow: inset 0px 1px 0px 0px #84acce;
+  background-color: #84acce;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -145,7 +145,7 @@ body {
 }
 .form-style-8 input[type="button"]:hover,
 .form-style-8 input[type="submit"]:hover {
-  background-color: #e2887e;
+  background-color: #84acce;
 }
 
 #form-title {

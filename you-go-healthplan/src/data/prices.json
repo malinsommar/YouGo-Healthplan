@@ -15,7 +15,6 @@
     "premiumPlusMontly": "99kr",
     "premiumPlusStart": "1000kr"
   },
-
   "fiveHundredToTwoThousand": {
     "baseMonthly": "25kr",
     "baseStart": "5000kr",
@@ -31,5 +30,40 @@
     "premiumStart": "10 000kr",
     "premiumPlusMontly": "59kr",
     "premiumPlusStart": "1000kr"
+  },
+  "baseInformation": {
+    "name": "Bas",
+    "list": [
+      "Hälsostrategiskt systemstöd",
+      "Standard analys",
+      "Filtrering ålder och kön",
+      "Hälsokartläggning 3ggr/ år",
+      "Individuellt och direkt hälsoresultat",
+      "Tillgång till hälsoportal",
+      "Fria hälsoprogram",
+      "Standard rapport på hälsokartläggning"
+    ]
+  },
+  "premiumInformation": {
+    "name": "Premium",
+    "list": [
+      "Allt i förgående rank",
+      "2 extra filtreringsalternativ",
+      "Standard Rapport på hälsokartläggningen",
+      "Åtgärdsförslag",
+      "Analysverktyg för att skapa egna rapporter",
+      "Målgruppsanpassade utckick av aktiviteter"
+    ]
+  },
+  "premiumPlusInformation": {
+    "name": "Premium+",
+    "list": [
+      "Allt i förgående rank",
+      "4 extra filtreringsalternativ",
+      "Möjlighet att lägga till egna frågor",
+      "Möjlighet till extra mätning",
+      "Kundservice över telefon",
+      "Personlig kontakt"
+    ]
   }
 }
