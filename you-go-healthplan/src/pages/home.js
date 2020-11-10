@@ -13,6 +13,8 @@ import SaveMoney from "../images/saveMoney.png";
 import frukt from "../images/fruit.jpg";
 import lindaIVatten from "../images/Lindaivattnet.jpeg";
 
+import TextData from "../data/textHomePage.json";
+
 const Home = () => {
   return (
     <div>
@@ -46,33 +48,14 @@ const ContentAboutYouGo = () => {
       <div className="pic-to-left" id="global-goals">
         <img className="about-images" src={frukt} />
         <div id="globalGoals-right" className="pic-to-right-text">
-          <p className="rubrikAbout">Hälsosmart</p>
-          <p className="textAbout">
-            Dagens utmaning för arbetsgivaren är att man har kostsamma och
-            generella åtgärder utan resultat. Vi vill att man tar kontroll genom
-            att kartlägga och mäta effekten av friskvårdinsatser då vi vet att
-            förebygga hälsa är mer kostnadseffektivt än att rehabilitera! På de
-            flesta arbetsplatser visar beräkningar att det är en ren vinst att
-            utöka friskvården, särskilt om den når människor inte värnar om sin
-            hälsa på eget initiativ. Lönsam friskvård är till exempel
-            pulshöjande motion, att äta regelbundet och rätt sammansatt, finna
-            tid för återhämtning, hjälp att sluta röka, gå ner i vikt med mera.
-            Har medarbetarna redan god hälsa är det viktigt att se till att
-            friskheten består.
-          </p>
+          <p className="rubrikAbout">{TextData.hälsosmartRubrik}</p>
+          <p className="textAbout">{TextData.hälsosmart}</p>
         </div>
       </div>
       <div className="pic-to-left" id="global-goals">
         <div id="globalGoals-right" className="pic-to-right-text">
-          <p className="rubrikAbout">Vår Filosofi</p>
-          <p className="textAbout">
-            Vi arbetar proaktivt för att tidigt fånga upp signaler på ohälsa.
-            Alla företag är olika. Vi tar reda på vilka åtgärder just ER
-            organisation behöver. Vår styrka är att nå de medarbetare som är
-            mest ohälsosamma inom olika kategorierna som rör hälsa. Forskningen
-            visar att medarbetare behöver må bra för att göra ett gott jobb och
-            leverera önskat resultat.
-          </p>
+          <p className="rubrikAbout">{TextData.filosofiRubrik}</p>
+          <p className="textAbout">{TextData.filosofi}</p>
         </div>
         <img className="about-images" src={lindaIVatten} />
       </div>
@@ -87,7 +70,7 @@ const ColorContainer = () => {
         <div className="card-container">
           <div className="card-front-1">
             <img className="picture" src={Person}></img>
-            <div className="rubrik">Hur vi jobbar</div>
+            <div className="rubrik">{TextData.firstCardContainerFront}</div>
             <div className="text"></div>
           </div>
 
@@ -97,14 +80,7 @@ const ColorContainer = () => {
               to="/about"
               activeClassName="isActive"
             >
-              <p>
-                Vi erbjuder ett systemstöd för kartläggning och nuläge på
-                medarbetarnas hälsostatus. Detta ligger som grund för
-                hälsostrategiska beslut för arbetsgivare för att proaktivt kunna
-                ge grupp- och individanpassade friskvårdsinsatser för sina
-                medarbetare. Vårt systemstöd gör det enkelt att arbeta
-                strategiskt, systematiskt och målgruppsanpassat
-              </p>
+              <p>{TextData.firstCardContainerBack}</p>
               <p className="buttonInfo">Tryck här</p>
             </NavLink>
           </div>
@@ -115,8 +91,8 @@ const ColorContainer = () => {
         <div className="card-container">
           <div className="card-front-2">
             <img className="picture" src={Login}></img>
-            <div className="rubrik">Enkel registrering</div>
-            <div className="text">Kontakta oss...</div>
+            <div className="rubrik">{TextData.secondCardContainerFront}</div>
+            <div className="text"></div>
           </div>
 
           <div className="card-back-2">
@@ -125,6 +101,7 @@ const ColorContainer = () => {
               to="/contact"
               activeClassName="isActive"
             >
+              <p>Kontakta oss...</p>
               <p className="buttonInfo">Tryck här</p>
             </NavLink>
           </div>
@@ -135,7 +112,7 @@ const ColorContainer = () => {
         <div className="card-container">
           <div className="card-front-3">
             <img className="picture" src={SaveMoney}></img>
-            <div className="rubrik">Erbjudande</div>
+            <div className="rubrik">{TextData.thirdCardContainerFront}</div>
             <div className="text"></div>
           </div>
 
@@ -157,38 +134,23 @@ const ColorContainer = () => {
 const ContainerInfoCircle = () => {
   return (
     <div id="InfoContainer">
-      <p id="firstBoxRubrik">Så här jobbar vi</p>
+      <p id="firstBoxRubrik">{TextData.såHärJobbarViRubrik}</p>
       <div id="firstBox">
         <img id="icon" src={Circle} alt="icon"></img>
       </div>
       <div id="column-2-content">
         <div id="Content-button-1">
-          <HoverButton
-            text="Alla medarbetare svarar på 32 frågor som rör hälsan 
-            efter att vi skickat ut en länk till respektive mailadress."
-          />
+          <HoverButton text={TextData.textDigitalHälsokontroll} />
         </div>
         <div id="Content-button-3">
-          <HoverButton
-            text="Direkt  efter när medarbetarna svarat på sina 
-        frågor kommer det åtgärdsförslag till de man ska börja jobba med 
-        direkt.Där man har svarat och ligger lägst, Små enkla tips tex börja
-         ät en bra frukost , hoppa av bussen en hållplats tidigare, parkera 
-         bilen långt bort från ingången eller säg hej till en kollega man gillar."
-          />
+          <HoverButton text={TextData.textIndividanpassadeÅtgärder} />
         </div>
       </div>
       <div id="Content-button-2">
-        <HoverButton
-          text="När alla svarat på frågorna får, chefen, 
-          HR eller ledning direkt rapporter till sig."
-        />
+        <HoverButton text={TextData.textHälsorapporter} />
       </div>
       <div id="Content-button-4">
-        <HoverButton
-          text="Utefter vad kartläggningen visar i rapporterna blir 
-          beslutet enklare när nuläget synliggörs."
-        />
+        <HoverButton text={TextData.textAgeraMedRättInsats} />
       </div>
     </div>
   );
