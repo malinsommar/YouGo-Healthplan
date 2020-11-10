@@ -56,7 +56,6 @@ const GlobalGoals = () => {
     </div>
   );
 };
-/*Vår tjänst stöttar de Globala målen för en hållbar utveckling.*/
 
 const Philosophy = () => {
   return (

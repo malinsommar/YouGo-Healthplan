@@ -67,6 +67,10 @@ const BloggPage = () => {
     );
   };
 
+  const newLineText = (text) => {
+    return text.split('\n').map(str => <p>{str}</p>);
+  }
+
   const postView = () => {
     return (
       <div id="post-page">
@@ -84,7 +88,7 @@ const BloggPage = () => {
           </div>
           <div id="title-text-div">
             <h1 id="post-title">{posts[currentPost].title}</h1>
-            <p id="post-text">{posts[currentPost].text}</p>
+            <p id="post-text">{newLineText(posts[currentPost].text)}</p>
           </div>
         </div>
         <div className="shareButtons">
