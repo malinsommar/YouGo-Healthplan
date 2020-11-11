@@ -5,10 +5,12 @@
 
 #input-slider {
   font-family: lightFont;
+  font-size: 1vw;
 }
 
-#slider-info {
+.slider-info {
   font-family: lightFont;
+  font-size: 1vw;
 }
 
 #sliderTitle {
@@ -22,6 +24,10 @@
   position: relative;
   top: -5px;
   left: 20px;
+}
+
+.sliderOutput {
+  font-size: 2.5vw;
 }
 
 .moneyLoss {
@@ -44,5 +50,63 @@
 
 .sliders {
   margin: 0 auto;
-  width: 420px;
+  width: 320px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #sliderTitle {
+    font-size: 2.7vw;
+  }
+  .slider-info {
+    font-size: 1.5vw;
+  }
+  .sliderText {
+    font-size: 1.5vw;
+  }
+  #input-slider {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sliderDiv {
+    width: 80%;
+  }
+  #sliderTitle {
+    font-size: 3vw;
+  }
+  .slider-info {
+    font-size: 2vw;
+  }
+  .sliderText {
+    font-size: 2vw;
+  }
+  .sliderOutput {
+    font-size: 3vw;
+  }
+  #input-slider {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sliderDiv {
+    width: 95%;
+  }
+  #sliderTitle {
+    font-size: 4vw;
+  }
+  .slider-info {
+    font-size: 2.5vw;
+  }
+  .sliderText {
+    font-size: 2.5vw;
+    left: 0;
+  }
+  .sliderOutput {
+    font-size: 4vw;
+  }
+  #input-slider {
+    font-size: 2.5vw;
+  }
 }

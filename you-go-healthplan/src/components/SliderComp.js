@@ -4,11 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
-import Input from "@material-ui/core/Input";
 
 const useStyles = makeStyles({
   root: {
-    width: 400,
+    width: 300,
   },
   input: {
     width: 65,
@@ -42,14 +41,14 @@ export default function InputSlider({ title }) {
   const calculateMoneyLoss = () => {
     return (
       <div>
-        <p>Er sjukkostnad för korttid varje år:</p>
-        <h2>
+        <p className="slider-info">Er sjukkostnad för korttid varje år:</p>
+        <h2 className="sliderOutput">
           {numberWithSpaces(
             Math.round((shortValue / 100) * 227 * value * (salaryValue / 10))
           )}{" "}
           kr
         </h2>
-        <p id="slider-info">(En sjukdag kostar 10% av månadslönen enligt en schablon från nyckeltalsinstitutet)</p>
+        <p className="slider-info">(En sjukdag kostar 10% av månadslönen enligt en schablon från nyckeltalsinstitutet)</p>
       </div>
     );
   };

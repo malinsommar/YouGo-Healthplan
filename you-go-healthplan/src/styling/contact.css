@@ -23,7 +23,7 @@ body {
 
 #contact-header-title {
   font-family: titleFont;
-  background: linear-gradient(to right, #84acce 20%, #84acce 70%);
+  background: linear-gradient(to right, #319eaf 20%, #319eaf 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3vw;
@@ -31,7 +31,7 @@ body {
 
 #contact-header-p {
   font-family: lightFont;
-  color: #336245;
+  color: black;
   font-size: 1vw;
 }
 
@@ -127,10 +127,10 @@ body {
 }
 .form-style-8 input[type="button"],
 .form-style-8 input[type="submit"] {
-  -moz-box-shadow: inset 0px 1px 0px 0px #84acce;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #84acce;
-  box-shadow: inset 0px 1px 0px 0px #84acce;
-  background-color: #84acce;
+  -moz-box-shadow: inset 0px 1px 0px 0px #319eaf;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #319eaf;
+  box-shadow: inset 0px 1px 0px 0px #319eaf;
+  background-color: #319eaf;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -145,7 +145,7 @@ body {
 }
 .form-style-8 input[type="button"]:hover,
 .form-style-8 input[type="submit"]:hover {
-  background-color: #84acce;
+  background-color: #238999;
 }
 
 #form-title {
@@ -205,7 +205,7 @@ body {
     font-size: 1.9vw;
   }
   .form-style-8 {
-    width: 45vw;
+    width: 66vw;
   }
   #form-title {
     font-size: 2.8vw;
@@ -239,7 +239,7 @@ body {
     font-size: 2.2vw;
   }
   .form-style-8 {
-    width: 52vw;
+    width: 76vw;
   }
   #form-title {
     font-size: 3vw;
@@ -329,4 +329,15 @@ body {
     font-size: 4.4vw;
     margin-bottom: 3.5vw;
   }
+}
+
+.faqSection {
+  width: 91.5%;
+  margin: 0 auto;
+}
+
+.faqOuterSection {
+  background-color: white;
+  width: 100%;
+  padding: 1vw;
 }

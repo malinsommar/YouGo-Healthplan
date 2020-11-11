@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import HoverButton from "../components/HoverComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FotterComponent from "../components/FooterComp";
+import VideoHeader from "../components/VideoHeader";
 import SliderComp from "../components/SliderComp";
 import Customers from "../data/partnersAndCustomers.json";
 import Circle from "../images/YouGo_4.png";
@@ -19,15 +20,8 @@ import TextData from "../data/textHomePage.json";
 const Home = () => {
   return (
     <div>
-      <div id="headerpicture">
-        <div id="headerDiv">
-          <header>
-            <HeaderComponent />
-            <h1 id="homeHeaderTitle">YouGo HealthPlan</h1>
-            <h2 id="homeHeaderSubTitle">Friska medarbetare, sjukt lönsamt!</h2>
-          </header>
-        </div>
-      </div>
+    <HeaderComponent />
+      <VideoHeader />
       <div>{ContentAboutYouGo()}</div>
       <div>{<SliderComp />}</div>
       <div>{ColorContainer()}</div>

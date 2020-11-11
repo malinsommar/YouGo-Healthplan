@@ -1,6 +1,7 @@
 import React from "react";
 import "../styling/postcomp.css";
 
+
 const PostComponent = ({ title, date, image, toggle }) => {
   return (
     <div className="cardDiv" onClick={toggle}>

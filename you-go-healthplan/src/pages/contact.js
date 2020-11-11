@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
+import FaQ from "../components/FAQ";
 import "../styling/contact.css";
 import ContactData from "../data/contactInformation.json";
 
@@ -106,6 +107,11 @@ const Contact = () => {
             <p>{submitMessage}</p>
           </form>
         </div>
+      </div>
+      <div className="faqOuterSection">
+       <div className="faqSection">
+         <FaQ />
+       </div>
       </div>
       <FotterComponent />
     </div>
