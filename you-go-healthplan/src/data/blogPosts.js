@@ -1,10 +1,11 @@
+import frukt from "../images/fruit.jpg";
+
 const posts = [
   {
     title: "5 tips till vardags motion när ni jobbar hemma.",
     date: new Date("2020-07-11"), 
-    image:
-      "https://images.pexels.com/photos/167300/pexels-photo-167300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-    text:`Allt fler svenskar har jobbat hemma under den senaste tiden. Att arbeta hemma kan leda till mer stillasittande och möjligen en del utebliven motion. Men det finns enkla knep för att bryta den onda cirkeln och inkludera mer rörelse i vardagen. Onlineträning, aktiva lunchraster och pausgympa är några av tipsen vi på Yougohealthplan vill dela med oss för en hälsosammare vardag när du jobbar hemma.\n
+    image: frukt ,
+        text:`Allt fler svenskar har jobbat hemma under den senaste tiden. Att arbeta hemma kan leda till mer stillasittande och möjligen en del utebliven motion. Men det finns enkla knep för att bryta den onda cirkeln och inkludera mer rörelse i vardagen. Onlineträning, aktiva lunchraster och pausgympa är några av tipsen vi på Yougohealthplan vill dela med oss för en hälsosammare vardag när du jobbar hemma.\n
 
     Det har gått över ett halvår sedan Covid-19 fick sitt utbrott och många av oss arbetar fortfarande hemifrån. Eftersom våra kroppar är byggda för rörelse påverkar långvarigt stillasittande vår hälsa mer än vi tror. Fysisk aktivitet, exempelvis i form av en rask promenad, trädgårdsarbete eller styrketräning, kan minska risken för bland annat hjärt-kärlsjukdomar, cancer och psykisk ohälsa.*\n
     

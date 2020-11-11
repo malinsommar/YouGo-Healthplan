@@ -12,6 +12,12 @@
   font-family: lightFont;
 }
 
+@media only screen and (max-width: 730px) {
+  .Container {
+    height: 40vh;
+  }
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 .Video {
   width: 100%;
