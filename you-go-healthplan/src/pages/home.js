@@ -77,12 +77,12 @@ const ColorContainer = () => {
           </div>
 
           <div className="card-back-1">
+            <p className="text">{TextData.firstCardContainerBack}</p>
             <NavLink
               className="button-container"
               to="/about"
               activeClassName="isActive"
             >
-              <p>{TextData.firstCardContainerBack}</p>
               <p className="buttonInfo">Tryck här</p>
             </NavLink>
           </div>
@@ -103,7 +103,7 @@ const ColorContainer = () => {
               to="/contact"
               activeClassName="isActive"
             >
-              <p>Kontakta oss...</p>
+              <p className="text">Kontakta oss...</p>
               <p className="buttonInfo">Tryck här</p>
             </NavLink>
           </div>
@@ -119,6 +119,7 @@ const ColorContainer = () => {
           </div>
 
           <div className="card-back-3">
+            <p className="text"> hejhej</p>
             <NavLink
               className="button-container"
               to="/pricing"

@@ -101,7 +101,7 @@ body {
 
 .g-card {
   width: 300px;
-  height: 500px;
+  height: 300px;
   margin: 0 auto;
 }
 .g-card .card-container {
@@ -135,7 +135,7 @@ body {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 .card-back-1 {
-  background: linear-gradient(-45deg, #6bab90, #6bab90);
+  background: linear-gradient(-45deg, #ff6b6b, #ff6b6b);
   border-radius: 2%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -151,7 +151,7 @@ body {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 .card-back-2 {
-  background: linear-gradient(-45deg, #ffec61, #f321d7);
+  background: linear-gradient(-45deg, #319eaf, #319eaf);
   border-radius: 2%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -167,7 +167,7 @@ body {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 .card-back-3 {
-  background: linear-gradient(-45deg, #9a4eff, #24ff72);
+  background: linear-gradient(-45deg, #6bab90, #6bab90);
   border-radius: 2%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -183,16 +183,19 @@ body {
 .rubrik {
   text-transform: uppercase;
   font-family: titleFont;
+  color: white;
 }
 
 .text {
   font-family: lightFont;
+  color: white;
 }
 
 .button-container {
   outline: none;
   text-decoration: none;
   margin: 0 auto;
+  color: black;
 }
 
 .buttonInfo {
@@ -204,7 +207,6 @@ body {
   border: solid black 1px;
   box-shadow: black 0 0 1px;
   position: relative;
-  top: 250px;
   left: 100px;
   font-family: titleFont;
 }
