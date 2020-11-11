@@ -205,7 +205,7 @@ body {
     font-size: 1.9vw;
   }
   .form-style-8 {
-    width: 45vw;
+    width: 66vw;
   }
   #form-title {
     font-size: 2.8vw;
@@ -239,7 +239,7 @@ body {
     font-size: 2.2vw;
   }
   .form-style-8 {
-    width: 52vw;
+    width: 76vw;
   }
   #form-title {
     font-size: 3vw;
@@ -329,4 +329,15 @@ body {
     font-size: 4.4vw;
     margin-bottom: 3.5vw;
   }
+}
+
+.faqSection {
+  width: 91.5%;
+  margin: 0 auto;
+}
+
+.faqOuterSection {
+  background-color: white;
+  width: 100%;
+  padding: 1vw;
 }

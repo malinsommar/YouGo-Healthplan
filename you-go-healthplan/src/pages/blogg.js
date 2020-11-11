@@ -3,21 +3,6 @@ import HeaderComponent from "../components/HeaderComp";
 import PostComponent from "../components/PostComp";
 import FooterComponent from "../components/FooterComp";
 import posts from "../data/blogPosts";
-import {
-  EmailShareButton,
-  EmailIcon,
-  FacebookShareButton,
-  FacebookIcon,
-  FacebookShareCount,
-  FacebookMessengerShareButton,
-  FacebookMessengerIcon,
-  LinkedinShareButton,
-  LinkedinIcon,
-  TwitterShareButton,
-  TwitterIcon,
-  WhatsappShareButton,
-  WhatsappIcon,
-} from "react-share";
 
 import "../styling/blogg.css";
 
@@ -90,38 +75,6 @@ const BloggPage = () => {
             <h1 id="post-title">{posts[currentPost].title}</h1>
             <p id="post-text">{newLineText(posts[currentPost].text)}</p>
           </div>
-        </div>
-        <div className="shareButtons">
-          <FacebookShareButton
-            url={shareUrl}
-            quote={posts[currentPost].title + " - YouGo healthplan Blogg"}
-            className="Demo__some-network__share-button"
-          >
-            <FacebookIcon size={40} round />
-          </FacebookShareButton>
-
-          <FacebookMessengerShareButton
-            url={shareUrl}
-            appId="521270401588372"
-            className="Demo__some-network__share-button"
-          >
-            <FacebookMessengerIcon size={40} round />
-          </FacebookMessengerShareButton>
-
-          <TwitterShareButton
-            url={shareUrl}
-            title={posts[currentPost].title + " - YouGo healthplan Blogg"}
-            className="Demo__some-network__share-button"
-          >
-            <TwitterIcon size={40} round />
-          </TwitterShareButton>
-
-          <LinkedinShareButton
-            url={shareUrl}
-            className="Demo__some-network__share-button"
-          >
-            <LinkedinIcon size={40} round />
-          </LinkedinShareButton>
         </div>
         <FooterComponent />
       </div>

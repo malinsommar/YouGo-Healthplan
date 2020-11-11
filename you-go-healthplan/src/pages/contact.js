@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import HeaderComponent from "../components/HeaderComp";
 import FotterComponent from "../components/FooterComp";
+import FaQ from "../components/FAQ";
 import "../styling/contact.css";
 import ContactData from "../data/contactInformation.json";
 
@@ -107,30 +108,14 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className="faqOuterSection">
+       <div className="faqSection">
+         <FaQ />
+       </div>
+      </div>
       <FotterComponent />
     </div>
   );
 };
 
 export default Contact;
-
-/*
-Hur fungerar YoGo Health Plan?
-
-För att kunna skapa ett utgångsläge skattar medarbetarna först sig själva inom fysiskt,
-psykiskt och socialt välbefinnande. Medarbetaren får direkt se sitt eget resultat med enkla
-individanpassade åtgärdsförslag för ökad hälsa. Samtidigt får arbetsgivaren en övergripande rapport
-på gruppnivå som presenterar vilka steg som organisationen kan ta för att bidra till ökad hälsa för
-medarbetarna.
-
-Vad kostar er tjänst?
-Kostnaden baseras på antal anställda och vilken typ av paketlösning ni väljer, vi har något som passar alla.
-
- 
-Vad har ni för bindningstid?
-Vi arbetar långsiktig med våra kunder, hållbar förändring och utveckling tar tid vilket innebär att vi alltid arbetar med en bindningstid på 24 månader.
-
-
-Är er tjänst Coronasäkert?
-Ja, vi driver friskvårdsarbetet digitalt.
-*/
