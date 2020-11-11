@@ -18,7 +18,7 @@
 #title {
   position: relative;
   top: -25px;
-  background: linear-gradient(to left, #658cad, #84acce);
+  background: linear-gradient(to left, #6bab90, #528b74);
   color: white;
   padding: 10px 25px 0px 25px;
   border-radius: 3px;
@@ -28,7 +28,7 @@
 /*-- Top row -- */
 
 .top-box {
-  background: linear-gradient(to left, #658cad, #84acce);
+  background: linear-gradient(to left, #6bab90, #528b74);
   color: white;
   padding-bottom: 5px;
 }

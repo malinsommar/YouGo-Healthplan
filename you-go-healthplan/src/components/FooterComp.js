@@ -8,13 +8,12 @@ import YoutubeLogo from "../images/youtubeLogo.svg";
 import YougoLogo from "../images/logo.png";
 import "../styling/footercomp.css";
 import ContactData from "../data/contactInformation.json";
-import Contact from "../pages/contact";
 
 const bigScreenFooter = () => {
   return (
     <div id="footerDiv">
       <div id="footer-adress">
-        <h2>YouGo Healthplan</h2>
+        <h2>YouGo HealthPlan</h2>
         <p>{ContactData.gata}</p>
         <p>
           {ContactData.postnummer} {ContactData.stad}

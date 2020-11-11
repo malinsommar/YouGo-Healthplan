@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import HoverButton from "../components/HoverComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FotterComponent from "../components/FooterComp";
+import SliderComp from "../components/SliderComp";
 import Customers from "../data/partnersAndCustomers.json";
 import Circle from "../images/YouGo_4.png";
 import HeaderComponent from "../components/HeaderComp";
 import Login from "../images/login.png";
 import Person from "../images/person.png";
-import SaveMoney from "../images/saveMoney.png";
+import SaveMoney from "../images/testIcon.png";
 import frukt from "../images/fruit.jpg";
 import lindaIVatten from "../images/Lindaivattnet.jpeg";
 
@@ -28,6 +29,7 @@ const Home = () => {
         </div>
       </div>
       <div>{ContentAboutYouGo()}</div>
+      <div>{<SliderComp />}</div>
       <div>{ColorContainer()}</div>
       <div>{ContainerInfoCircle()}</div>
       <div>

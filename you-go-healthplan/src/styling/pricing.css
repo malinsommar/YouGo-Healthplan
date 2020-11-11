@@ -19,7 +19,7 @@ body {
 
 #pricing-title {
   font-family: titleFont;
-  color: #84acce;
+  color: #6bab90;
   font-size: 3.5vw;
   margin: 1vw;
 }
@@ -90,9 +90,9 @@ body {
 }
 
 .emp-button {
-  border: solid 2px #84acce;
+  border: solid 2px #6bab90;
   border-radius: 3px;
-  color: #84acce;
+  color: #6bab90;
   height: 50px;
   margin-right: 40px;
   width: 125px;
@@ -101,12 +101,12 @@ body {
 }
 
 .emp-button:hover {
-  background-color: #84acce;
+  background-color: #6bab90;
   color: white;
 }
 
 .emp-button:focus {
-  background-color: #84acce;
+  background-color: #6bab90;
   color: white;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 #nav {
-  color: #84acce;
+  color: #6bab90;
   border: solid 2px;
   padding: 10px;
   width: 10%;
@@ -168,7 +168,7 @@ body {
 }
 
 #nav:hover {
-  color: #658cad;
+  color: #458168;
 }
 
 @media only screen and (min-width: 895px) {
@@ -203,7 +203,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: lightFont;
-  background: linear-gradient(to left, #658cad, #84acce);
+  background: linear-gradient(to left, #407760, #6bab90);
 
   width: 100%;
   display: inline-block;

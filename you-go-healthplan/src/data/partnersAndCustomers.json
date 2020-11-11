@@ -1,5 +1,5 @@
 {
-  "partners": [
+  "customer": [
     {
       "name": "geely",
       "url": "http://global.geely.com/",
@@ -42,7 +42,7 @@
     }
   ],
 
-  "customer": [
+  "partners": [
     {
       "name": "icebug",
       "url": "https://icebug.se/",

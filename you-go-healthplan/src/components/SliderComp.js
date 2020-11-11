@@ -8,7 +8,7 @@ import Input from "@material-ui/core/Input";
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 400,
   },
   input: {
     width: 65,
@@ -42,13 +42,14 @@ export default function InputSlider({ title }) {
   const calculateMoneyLoss = () => {
     return (
       <div>
-        <p>Hur mycket ni förlorar på korttidsfrånvaro varje år:</p>
+        <p>Er sjukkostnad för korttid varje år:</p>
         <h2>
           {numberWithSpaces(
             Math.round((shortValue / 100) * 227 * value * (salaryValue / 10))
           )}{" "}
           kr
         </h2>
+        <p id="slider-info">(En sjukdag kostar 10% av månadslönen enligt en schablon från nyckeltalsinstitutet)</p>
       </div>
     );
   };
@@ -75,7 +76,7 @@ export default function InputSlider({ title }) {
               aria-labelledby="input-slider"
             />
           </Grid>
-          <p>{value}</p>
+          <p className="sliderText">{value}</p>
         </Grid>
       </div>
     );
@@ -97,7 +98,7 @@ export default function InputSlider({ title }) {
               aria-labelledby="input-slider"
             />
           </Grid>
-          <p>{salaryValue}</p>
+          <p className="sliderText">{salaryValue}</p>
         </Grid>
       </div>
     );
@@ -119,18 +120,22 @@ export default function InputSlider({ title }) {
               aria-labelledby="input-slider"
             />
           </Grid>
-          <h3>{shortValue}</h3>
+          <p className="sliderText">{shortValue}</p>
         </Grid>
       </div>
     );
   };
 
   return (
-    <div>
+    <div className="sliderDiv">
+    <h1 id="sliderTitle">Vet du hur mycket era sjuktal kostar?</h1>
+    <div className="sliders">
+    <div id="slider">
       {firstSlider()}
       {secondSlider()}
-      <hr />
       {thirdSlider()}
+      </div>
+      </div>
       <div className="moneyLoss">{calculateMoneyLoss()}</div>
     </div>
   );

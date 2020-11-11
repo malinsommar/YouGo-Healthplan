@@ -7,7 +7,42 @@
   font-family: lightFont;
 }
 
+#slider-info {
+  font-family: lightFont;
+}
+
+#sliderTitle {
+  font-family: lightFont;
+  font-size: 2.2vw;
+}
+
+.sliderText {
+  font-family: lightFont;
+  font-size: 1vw;
+  position: relative;
+  top: -5px;
+  left: 20px;
+}
+
 .moneyLoss {
   font-family: lightFont;
   font-size: 1.2vw;
+}
+
+.sliderDiv {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  width: 60%;
+  border-radius: 3px;
+  padding: 1vw;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.sliders {
+  margin: 0 auto;
+  width: 420px;
 }

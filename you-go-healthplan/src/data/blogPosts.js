@@ -21,10 +21,26 @@ const posts = [
     date: new Date("2020-07-10"),
     image:
       "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heart-healthy-food-1580231690.jpg",
-    text: `test \n
-    hejhej`
+    text: `Forskning visar att hälsans ROI är hela 1:5 när man lyckas aktivera sin personal. Arbetsgivaren får i genomsnitt tillbaks 5 kr för varje satsad krona ( i ökad produktivitet, frisknärvaro & kreativitet) Ett tips mot hälsosammare medarbetare:\n
+
+    Visa att ni tänker långsiktigt och på alla medarbetare, genom att sätta en hälsoplan. Där man börjar med en kartläggning , när man fått fram rapporter och vet vad medarbetare behöver på gruppen då börjar man jobba med föreläsningar och utbildningar.\n
+    
+    Och som individ kan man få individuell coaching, träningsupplägg, samtal kostråd och bra tips som stämmer överens med just din egna profil.\n
+    
+    Med vårt systemstöd blir vi er digitaliserande hälsostrateg, som hjälper våra kunder planera och genomföra exakt de som passar på ert företag för att öka välbefinnandet och jobba med Lönsam – Friskvård. På riktigt!`
     },
-  
+   
 ];
 
 export default posts;
+
+/*
+ {
+      title: "Titeltext",
+      date: new Date("2020-07-12"),
+      image:
+        "bild",
+      text: `Text \n för "enter"`
+      },
+  
+*/
