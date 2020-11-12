@@ -11,6 +11,7 @@ import ContactData from "../data/contactInformation.json";
 
 const bigScreenFooter = () => {
   return (
+    <div id="footer">
     <div id="footerDiv">
       <div id="footer-adress">
         <h2>YouGo HealthPlan</h2>
@@ -62,7 +63,9 @@ const bigScreenFooter = () => {
         <img src={YougoLogo} id="footerYougoLogo" alt="Yougo healthplan Logo" />
         <p id="follow">Följ oss:</p>
       </div>
-    </div>
+      </div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
   );
 };
 

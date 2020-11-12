@@ -5,6 +5,18 @@
 
 /*-- Big screen --*/
 
+#footer {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: lightFont;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #6bab90;
+}
+
 #footerDiv {
   background-color: white;
   color: black;
