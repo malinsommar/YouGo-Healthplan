@@ -14,9 +14,9 @@ const Contact = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     if (mail === "") {
-      setSubmitMessage("Hoppsan! Du missade att fylla i din mail.");
+      setSubmitMessage("Du missade att fylla i din mail.");
     } else if (name === "") {
-      setSubmitMessage("Hoppsan! Du missade att fylla i ditt namn.");
+      setSubmitMessage("Du missade att fylla i ditt namn.");
     } else {
       emailjs
         .sendForm(

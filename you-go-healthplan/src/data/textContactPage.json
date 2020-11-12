@@ -1,0 +1,16 @@
+{
+    "pageTitle": "Kontakta oss",
+    "pageSubTitle": "Har ni frågor men inte tid att ringa eller maila oss just nu?\nInga problem! Svara på formuläret så kontaktar vi er så snart vi kan.",
+
+    "contactInfoTitle": "Besök oss!",
+    "contactFormTitle": "Skicka ett meddelande!",
+
+    "emailJsServiceKey": "service_wkq6nqw",
+    "emailJsTemplateKey": "template_uj6j6n7",
+    "emailJsUserKey": "user_2rNXw0NnMeH0FbsHBLxi4",
+
+    "contactFormMailError": "Du missade att fylla i din mail.",
+    "contactFormNameError": "Du missade att fylla i ditt namn.",
+    "contactFormError": "Något gick fel, försök igen eller nå oss på mail eller telefon.",
+    "contactFormSuccess": "Meddelandet är skickat, vi hör av oss inom kort!"
+}
