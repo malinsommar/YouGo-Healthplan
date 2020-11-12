@@ -6,6 +6,8 @@ import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FooterComponent from "../components/FooterComp";
 import Partners from "../data/partnersAndCustomers.json";
 
+import TextDataAboutUs from "../data/textAboutPage.json";
+
 const About = () => {
   return (
     <div>
@@ -39,18 +41,11 @@ const GlobalGoals = () => {
     <div className="pic-to-left" id="global-goals">
       <img className="about-images" src={treHälsa} />
       <div id="globalGoals-right" className="pic-to-right-text">
-        <p className="rubrikAbout">Hållbar utveckling</p>
+        <p className="rubrikAbout">
+          {TextDataAboutUs.SustainableDevelopmentTitle}
+        </p>
         <p className="textAbout">
-          Nr 3 God hälsa är en grundläggande förutsättning för människors
-          möjlighet att nå sin fulla potential och att bidra till samhällets
-          utveckling. Människors hälsa påverkas av ekonomiska, ekologiska och
-          sociala faktorer och mål 3 inkluderar alla dimensioner och människor i
-          alla åldrar. Under de senaste decennierna har stora framsteg gjorts
-          för att förbättra människors hälsa globalt, till exempel så har
-          barndödligheten minskat med 50% sedan 1990. Investeringar i hälsa
-          genom förebyggande insatser och modern och effektiv vård för alla
-          gynnar samhällets utveckling i stort och skapar förutsättningar för
-          människors grundläggande rättigheter till välbefinnande.
+          {TextDataAboutUs.SustainableDevelopmentText}
         </p>
       </div>
     </div>
@@ -61,8 +56,10 @@ const Philosophy = () => {
   return (
     <div className="pic-to-left">
       <div id="philosophydiv-big" className="pic-to-right-text">
-        <p className="rubrikAbout"> YouGo's vision </p>
+        <p className="rubrikAbout"> {TextDataAboutUs.YouGosVisionTitle} </p>
         <p className="textAbout">
+          {TextDataAboutUs.YouGosVisionText}
+          <br></br>
           SKAPA HÅLLBARA MEDARBETARE - Det finaste ett företag kan ha.
           <br /> <br />
           Det är vårt fokus och där vet vi att vi kan göra som mest skillnad för

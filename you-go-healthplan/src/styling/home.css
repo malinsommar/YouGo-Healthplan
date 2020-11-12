@@ -100,7 +100,7 @@ body {
 }
 
 .g-card {
-  width: 300px;
+  width: 25%;
   height: 300px;
   margin: 0 auto;
 }
@@ -189,6 +189,7 @@ body {
 .text {
   font-family: lightFont;
   color: white;
+  margin: 5%;
 }
 
 .button-container {
@@ -206,8 +207,7 @@ body {
   outline: none;
   border: solid black 1px;
   box-shadow: black 0 0 1px;
-  position: relative;
-  left: 100px;
+  margin: 0 auto;
   font-family: titleFont;
 }
 

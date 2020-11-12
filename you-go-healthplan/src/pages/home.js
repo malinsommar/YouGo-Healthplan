@@ -9,9 +9,9 @@ import SliderComp from "../components/SliderComp";
 import Customers from "../data/partnersAndCustomers.json";
 import Circle from "../images/YouGo_4.png";
 import HeaderComponent from "../components/HeaderComp";
-import Login from "../images/login.png";
-import Person from "../images/person.png";
-import SaveMoney from "../images/testIcon.png";
+import Login from "../images/to-do-list.png";
+import Person from "../images/agenda.png";
+import SaveMoney from "../images/money.png";
 import frukt from "../images/fruit.jpg";
 import lindaIVatten from "../images/Lindaivattnet.jpeg";
 
@@ -20,7 +20,7 @@ import TextData from "../data/textHomePage.json";
 const Home = () => {
   return (
     <div>
-    <HeaderComponent />
+      <HeaderComponent />
       <VideoHeader />
       <div>{ContentAboutYouGo()}</div>
       <div>{<SliderComp />}</div>
