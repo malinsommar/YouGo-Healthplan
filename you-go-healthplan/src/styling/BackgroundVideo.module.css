@@ -44,7 +44,7 @@
 }
 .SubContent p {
   color: #eeeeeead;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
 }
 .SubContent button {
   font-weight: bold;
@@ -72,8 +72,4 @@
 
 .videoHeaderTitle {
   font-size: 4vw;
-}
-
-.videoHeaderSubTitle {
-  font-size: 3vw;
 }

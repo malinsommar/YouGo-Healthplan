@@ -2,14 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import SideBar from "../components/Sidebar";
 import "../styling/headercomp.css";
-import { useState } from "react";
+import images from "../data/images.js";
 
 const HeaderComponent = () => {
   return (
     <section>
       <nav className="stroke">
         <NavLink className="navLink" to="/home" activeClassName="isActive">
-          <img id="logo" src={require("../images/logo.png")} alt="logo"></img>
+          <img id="logo" src={images[0].youGoiconHeader} alt="logo"></img>
         </NavLink>
         <ul className="desktop-screen">
           <li>

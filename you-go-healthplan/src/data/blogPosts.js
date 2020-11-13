@@ -1,10 +1,21 @@
-import frukt from "../images/fruit.jpg";
+/*import bild from "../images/bildnamn.jpg";*/
+
+/*
+    {
+      title: "Titeltext",
+      date: new Date("2020-07-12"),
+      image:
+        "bild",
+      text: `Text \n för "enter"`
+    },
+  
+*/
 
 const posts = [
   {
     title: "5 tips till vardags motion när ni jobbar hemma.",
     date: new Date("2020-07-11"), 
-    image: frukt ,
+    image: "frukt" ,
         text:`Allt fler svenskar har jobbat hemma under den senaste tiden. Att arbeta hemma kan leda till mer stillasittande och möjligen en del utebliven motion. Men det finns enkla knep för att bryta den onda cirkeln och inkludera mer rörelse i vardagen. Onlineträning, aktiva lunchraster och pausgympa är några av tipsen vi på Yougohealthplan vill dela med oss för en hälsosammare vardag när du jobbar hemma.\n
 
     Det har gått över ett halvår sedan Covid-19 fick sitt utbrott och många av oss arbetar fortfarande hemifrån. Eftersom våra kroppar är byggda för rörelse påverkar långvarigt stillasittande vår hälsa mer än vi tror. Fysisk aktivitet, exempelvis i form av en rask promenad, trädgårdsarbete eller styrketräning, kan minska risken för bland annat hjärt-kärlsjukdomar, cancer och psykisk ohälsa.*\n
@@ -16,32 +27,7 @@ const posts = [
     3: Träna på lunchen: Efter att de dagliga turerna till och från jobbet har försvunnit så är det av högsta vikt att ta pauser för att röra på sig. Allt från promenader till löprundor syresätter blodet, vilket gör dig piggare och gladare. Det är en enkel men effektiv aktivitet som fyller på dina energidepåer. \n
     4: Investera i enkla träningsredskap att ha hemma: Ett annat alternativ för att få mer vardagsmotion vid hemarbete är att investera i träningsredskap. Gummiband, balansplattor, hantlar och yogamattor är utmärkta verktyg för att hålla igång träningen hemma. Det ger dig möjligheten till att hålla muskulaturen i trim, utan att behöva gå till ett gym. \n
     5: Utmana kollegor och inspirera varandra: För att hålla motivationen uppe är det viktigt att bli inspirerad. Därför kan det vara en idé att utmana dina kollegor. Introducera en utmaning i veckan där ni får hitta på olika träningsövningar som ni ska genomföra under veckans gång. En sådan utmaning kan vara att göra minst 10 squats per dag i en vecka, eller att gå 10 000 steg per dag i en vecka. Att träna i grupp stärker sammanhållningen samtidigt som det förbättrar din hälsa.`,
-  },
-  {
-    title: "Varför grönt?",
-    date: new Date("2020-07-10"),
-    image:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heart-healthy-food-1580231690.jpg",
-    text: `Forskning visar att hälsans ROI är hela 1:5 när man lyckas aktivera sin personal. Arbetsgivaren får i genomsnitt tillbaks 5 kr för varje satsad krona ( i ökad produktivitet, frisknärvaro & kreativitet) Ett tips mot hälsosammare medarbetare:\n
-
-    Visa att ni tänker långsiktigt och på alla medarbetare, genom att sätta en hälsoplan. Där man börjar med en kartläggning , när man fått fram rapporter och vet vad medarbetare behöver på gruppen då börjar man jobba med föreläsningar och utbildningar.\n
-    
-    Och som individ kan man få individuell coaching, träningsupplägg, samtal kostråd och bra tips som stämmer överens med just din egna profil.\n
-    
-    Med vårt systemstöd blir vi er digitaliserande hälsostrateg, som hjälper våra kunder planera och genomföra exakt de som passar på ert företag för att öka välbefinnandet och jobba med Lönsam – Friskvård. På riktigt!`
-    },
-   
+  }, 
 ];
 
 export default posts;
-
-/*
- {
-      title: "Titeltext",
-      date: new Date("2020-07-12"),
-      image:
-        "bild",
-      text: `Text \n för "enter"`
-      },
-  
-*/

@@ -55,10 +55,15 @@ body {
 }
 
 .agress-img {
-  background-image: url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: 140%;
   background-position: -5vw;
   width: 30vw;
+}
+
+.contact-info-image {
+  width: 30vw;
+  height: 28vw;
+  object-fit: cover;
 }
 
 #adress-info {
@@ -188,6 +193,10 @@ body {
     font-size: 5vw;
     margin-bottom: -0.5vw;
   }
+  .contact-info-image {
+    width: 40vw;
+    height: 33vw;
+  }
   #contact-header-p {
     font-size: 1.6vw;
   }
@@ -225,6 +234,10 @@ body {
   #contact-header-p {
     font-size: 2.1vw;
   }
+  .contact-info-image {
+    width: 45vw;
+    height: 40vw;
+  }
   .adress-pic-info {
     height: 40vw;
     width: 80vw;
@@ -259,6 +272,9 @@ body {
   }
   #contact-header-p {
     font-size: 2.5vw;
+  }
+  .contact-info-image {
+    display: none;
   }
   .adress-pic-info {
     width: 61vw;

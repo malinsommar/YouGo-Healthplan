@@ -12,8 +12,8 @@ import individualIcon from "../images/individual.png";
 import EgnaRapporter from "../images/egnaRapporter.png";
 import breakIcon from "../images/break.png";
 import prices from "../data/prices.json";
-
-const test = prices.lessThanHundred.baseMonthly;
+import PricingTexts from "../data/textPricingPage.json";
+import images from "../data/images.js";
 
 const Pricing = () => {
   const [monthlyPrice, setmonthlyPrice] = useState([
@@ -83,20 +83,20 @@ const Pricing = () => {
     return (
       <div className="employeesButtons">
         <button className="emp-button" onClick={onFirstPricingButton}>
-          0 - 100
+          {PricingTexts.firstButtonText}
         </button>
         <button className="emp-button" onClick={onSecondPricingButton}>
-          101 - 500
+          {PricingTexts.secondButtonText}
         </button>
         <button className="emp-button" onClick={onThirdPricingButton}>
-          501 - 2000
+         {PricingTexts.thirdButtonText}
         </button>
         <button
           className="emp-button"
           id="last-emp-button"
           onClick={onForthPricingButton}
         >
-          2001+
+          {PricingTexts.forthButtonText}
         </button>
       </div>
     );
@@ -133,9 +133,7 @@ const Pricing = () => {
       <div id="contact-div">
         <NavLink id="contact" to="/contact" activeClassName="isActive">
           <p id="nav">
-            Intresserad?
-            <br />
-            Kontakta oss!
+            {newLineText(PricingTexts.contactButton)}
           </p>
         </NavLink>
       </div>
@@ -146,52 +144,49 @@ const Pricing = () => {
     return (
       <div id="bottom-items">
         <PricingInfoComponent
-          title="Personlig inloggning:"
-          text="Alla anställda får sitt egna inlogg med tillgång till sitt egna resultat samt till hälsoportalen. I premium
-          och premium + får företaget tillgång till analysverktyget och kan målgruppsanpassa åtgärder."
-          image={loginIcon}
+          title={PricingTexts.firstInfoBoxTitle}
+          text={PricingTexts.firstInfoBoxText}
+          image={images[0].iconFirstCard}
         />
 
         <PricingInfoComponent
-          title="Digital hälsokartläggning:"
-          text="Ett systemstöd för proaktiv friskvård där vi mäter effekter av hälsoinvesteringar. Ni får en tydlig
-          hälsostrategi som ger ROI. I premium och premuim + ingår målgruppsanpassning för att fånga upp
-          riskgrupper."
-          image={surveyIcon}
+          title={PricingTexts.secondInfoBoxTitle}
+          text={PricingTexts.secondInfoBoxText}
+          image={images[0].iconSecondCard}
         />
 
         <PricingInfoComponent
-          title="Åtgärdsförslag & fria hälsoprogram:"
-          text="Beroende på hur medarbetarens resultat ser ut, rekommenderas olika åtgärdsförslag för ett
-          hälsosammare liv. Hen får tillgång till videos, artiklar, tips och tricks med allt ifrån kost, mental hälsa
-          till träning."
-          image={breakIcon}
+          title={PricingTexts.thirdInfoBoxTitle}
+          text={PricingTexts.thirdInfoBoxText}
+          image={images[0].iconThirdCard}
         />
 
         <PricingInfoComponent
-          title="Egna rapporter:"
-          text="Väljer ni premium eller premium + får ni tillgång till att
-          skapa fler och egna rapporter."
-          image={EgnaRapporter}
+          title={PricingTexts.forthInfoBoxTitle}
+          text={PricingTexts.forthInfoBoxText}
+          image={images[0].iconforthCard}
         />
 
         <PricingInfoComponent
-          title="Personlig kontakt:"
-          text="Väljer ni paketet premium + får ni extra stöttning, snabbare
-          svar och personlig kontakt, lite extra smidigt."
-          image={individualIcon}
+          title={PricingTexts.fifthInfoBoxTitle}
+          text={PricingTexts.iconFirstCard}
+          image={images[0].iconfifthCard}
         />
       </div>
     );
   };
 
+  const newLineText = (text) => {
+    return text.split('\n').map(str => <p>{str}</p>);
+  }
+
   return (
     <div>
       <div className="top-items">
         <HeaderComponent />
-        <h3 id="pricing-title">Erbjudanden</h3>
+        <h3 id="pricing-title">{PricingTexts.pageTitle}</h3>
         <p id="numberOfEmp">
-          Klicka i hur många anställda ni är på ert företag:
+          {PricingTexts.buttonsTitle}
         </p>
         {empButtons()}
         {pricingBoxes()}

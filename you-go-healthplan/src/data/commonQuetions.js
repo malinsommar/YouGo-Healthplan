@@ -1,8 +1,15 @@
+/*
+{
+    title: "Fråga",
+    content: `Svar \n för "enter"`,
+},
+*/
+
 const questions = {
     title: "Vanliga frågor",
     rows: [
         {
-            title: "Hur fungerar YoGo Health Plan?",
+            title: "Hur fungerar YouGo Health Plan?",
             content: `För att kunna skapa ett utgångsläge skattar medarbetarna först sig själva inom fysiskt,
             psykiskt och socialt välbefinnande. Medarbetaren får direkt se sitt eget resultat med enkla
             individanpassade åtgärdsförslag för ökad hälsa. Samtidigt får arbetsgivaren en övergripande rapport

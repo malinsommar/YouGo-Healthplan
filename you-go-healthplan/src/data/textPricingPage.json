@@ -1,13 +1,13 @@
 {
     "pageTitle": "Erbjudanden",
 
-    "buttonsTitle": "Klicka i hur många ni är på ert företag:",
-    "firstButtonText": "0-100",
-    "secondButtonText": "101-500",
-    "thirdButtonText": "501-2000",
+    "buttonsTitle": "Klicka i hur många anställda ni är på ert företag:",
+    "firstButtonText": "0 - 100",
+    "secondButtonText": "101 - 500",
+    "thirdButtonText": "501 - 2000",
     "forthButtonText": "2000+",
 
-    "contactButton": "Intresserad?/nKontakta oss!",
+    "contactButton": "Intresserad? Kontakta oss!",
 
     "firstInfoBoxTitle": "Personlig inloggning:",
     "firstInfoBoxText": "Alla anställda får sitt egna inlogg med tillgång till sitt egna resultat samt till hälsoportalen. I premium och premium + får företaget tillgång till analysverktyget och kan målgruppsanpassa åtgärder.",

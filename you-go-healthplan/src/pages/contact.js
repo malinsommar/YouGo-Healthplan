@@ -5,6 +5,8 @@ import FotterComponent from "../components/FooterComp";
 import FaQ from "../components/FAQ";
 import "../styling/contact.css";
 import ContactData from "../data/contactInformation.json";
+import ContactText from "../data/textContactPage.json";
+import images from "../data/images.js";
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState("");
@@ -14,24 +16,24 @@ const Contact = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     if (mail === "") {
-      setSubmitMessage("Du missade att fylla i din mail.");
+      setSubmitMessage(ContactText.contactFormMailError);
     } else if (name === "") {
-      setSubmitMessage("Du missade att fylla i ditt namn.");
+      setSubmitMessage(ContactText.contactFormNameError);
     } else {
       emailjs
         .sendForm(
-          "service_wkq6nqw",
-          "template_uj6j6n7",
+          ContactText.emailJsServiceKey,
+          ContactText.emailJsTemplateKey,
           evt.target,
-          "user_2rNXw0NnMeH0FbsHBLxi4"
+          ContactText.emailJsUserKey
         )
         .then((res) => {
-          setSubmitMessage("Meddelandet är skickat, vi hör av oss inom kort!");
+          setSubmitMessage(ContactText.contactFormSuccess);
         })
         .catch((err) => {
           console.error("Something went wrong", err);
           setSubmitMessage(
-            "Något gick fel, försök igen eller nå oss på mail eller telefon."
+            ContactText.contactFormError
           );
         });
       evt.target.reset();
@@ -40,36 +42,38 @@ const Contact = () => {
     }
   };
 
+  const newLineText = (text) => {
+    return text.split('\n').map(str => <p>{str}</p>);
+  }
+
   return (
     <div id="contact-page">
       <div id="contact-header">
         <HeaderComponent />
-        <h1 id="contact-header-title">Kontakta oss</h1>
-        <p id="contact-header-p">
-          Har ni frågor men inte tid att ringa eller maila oss just nu?
-          <br /> Inga problem! Svara på formuläret så kontaktar vi er så snart
-          vi kan.
-        </p>
+        <h1 id="contact-header-title">{ContactText.pageTitle}</h1>
+        <p id="contact-header-p">{newLineText(ContactText.pageSubTitle)}</p>
       </div>
       <div className="contact-content">
         <div className="adress-pic-info">
-          <div className="agress-img"></div>
+          <div className="agress-img">
+          <img className="contact-info-image" src={images[0].contactInfoImage} />
+          </div>
           <div id="adress-info">
-            <h2>Besök oss!</h2>
+            <h2>{ContactText.contactInfoTitle}</h2>
             <p>{ContactData.gata}</p>
             <p>
               {ContactData.postnummer} {ContactData.stad}
             </p>
             <hr />
-            <p>Tel: {ContactData.telefonnummer}</p>
-            <p>Mail: {ContactData.mail}</p>
+            <p>{ContactText.contactInfoPhone} {ContactData.telefonnummer}</p>
+            <p>{ContactText.contactInfoMail} {ContactData.mail}</p>
           </div>
         </div>
         <div className="form-style-8">
-          <h1 id="form-title">Skicka ett meddelande! </h1>
+          <h1 id="form-title">{ContactText.contactFormTitle}</h1>
           <form onSubmit={handleSubmit} className="contactForm">
             <label>
-              Namn: *
+              {ContactText.contactFormName}
               <input
                 type="text"
                 name="name"
@@ -79,7 +83,7 @@ const Contact = () => {
             </label>
             <br />
             <label>
-              Mail: *
+            {ContactText.contactFormMail}
               <input
                 type="text"
                 name="mail"
@@ -89,12 +93,12 @@ const Contact = () => {
             </label>
             <br />
             <label>
-              Telefon:
+            {ContactText.contactFormPhone}
               <input type="number" name="phone" className="contact-input" />
             </label>
             <br />
             <label>
-              Meddelande:
+            {ContactText.contactFormText}
               <textarea
                 type="text"
                 name="message"
@@ -103,7 +107,7 @@ const Contact = () => {
               />
             </label>
             <br />
-            <input type="submit" value="Skicka" />
+            <input type="submit" value={ContactText.contactFormButton} />
             <p>{submitMessage}</p>
           </form>
         </div>

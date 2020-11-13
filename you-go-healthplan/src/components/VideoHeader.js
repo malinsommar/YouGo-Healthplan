@@ -13,7 +13,8 @@ const BackgroundVideo = () => {
             <div className={classes.Content}>
                 <div className={classes.SubContent} >
                     <h1 className={classes.videoHeaderTitle}>YouGo HealthPlan</h1>
-                    <p className={classes.videoHeaderSubTitle}>Friska medarbetare, sjukt lönsamt!</p>
+                    <p className={classes.videoHeaderSubTitle}>FRISKVÅRD SOM ÄR PERSONLIG, HÅLLBAR OCH LÅNGSIKTIG!</p>
+                    <p className={classes.videoHeaderText}>Proaktiva hälsoinsatser för medarbetarna utefter nuläget och behov</p>
                 </div>
             </div>
         </div>

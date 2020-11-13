@@ -13,10 +13,10 @@
 
 #about-header-title {
   font-family: titleFont;
-  font-size: 3vw;
-  /* background: linear-gradient(to right, #f403d1 20%, #64b5f6 60%); 
+  background: linear-gradient(to right, #6bab90 20%, #6bab90 70%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
+  font-size: 4vw;
 }
 
 #about-header-hr {

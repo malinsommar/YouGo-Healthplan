@@ -3,7 +3,7 @@ import HeaderComponent from "../components/HeaderComp";
 import PostComponent from "../components/PostComp";
 import FooterComponent from "../components/FooterComp";
 import posts from "../data/blogPosts";
-
+import BlogTexts from "../data/textBlogPage.json"
 import "../styling/blogg.css";
 
 const BloggPage = () => {
@@ -43,8 +43,8 @@ const BloggPage = () => {
       <div id="blogg-page">
         <div id="blog-header">
           <HeaderComponent />
-          <h1 id="blog-header-title">Blogg</h1>
-          <h3 id="blog-header-sub-title">Inspiration, fakta och nyheter.</h3>
+          <h1 id="blog-header-title">{BlogTexts.pageTitle}</h1>
+          <h3 id="blog-header-sub-title">{BlogTexts.pageSubTitle}</h3>
         </div>
         <div id="blogg-posts">{printBloggPosts()}</div>
         <FooterComponent />
@@ -61,10 +61,10 @@ const BloggPage = () => {
       <div id="post-page">
         <HeaderComponent />
         <button className="post-back-button" onClick={toggleView}>
-          <span>Tillbaka</span>
+          <span>{BlogTexts.postBackButtonText}</span>
         </button>
         <button className="post-back-button-small" onClick={toggleView}>
-          Tillbaka
+        {BlogTexts.postBackButtonText}
         </button>
         <div id="post">
           <div>

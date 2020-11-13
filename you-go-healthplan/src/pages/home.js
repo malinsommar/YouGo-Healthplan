@@ -9,13 +9,9 @@ import SliderComp from "../components/SliderComp";
 import Customers from "../data/partnersAndCustomers.json";
 import Circle from "../images/YouGo_4.png";
 import HeaderComponent from "../components/HeaderComp";
-import Login from "../images/to-do-list.png";
-import Person from "../images/agenda.png";
-import SaveMoney from "../images/money.png";
-import frukt from "../images/fruit.jpg";
-import lindaIVatten from "../images/Lindaivattnet.jpeg";
 
 import TextData from "../data/textHomePage.json";
+import images from "../data/images.js";
 
 const Home = () => {
   return (
@@ -42,7 +38,7 @@ const ContentAboutYouGo = () => {
   return (
     <div className="infoAboutAll">
       <div className="pic-to-left" id="global-goals">
-        <img className="about-images" src={frukt} />
+        <img className="about-images" src={images[0].firstHomeImage} />
         <div id="globalGoals-right" className="pic-to-right-text">
           <p className="rubrikAbout">{TextData.hälsosmartRubrik}</p>
           <p className="textAbout">{TextData.hälsosmart}</p>
@@ -53,7 +49,7 @@ const ContentAboutYouGo = () => {
           <p className="rubrikAbout">{TextData.filosofiRubrik}</p>
           <p className="textAbout">{TextData.filosofi}</p>
         </div>
-        <img className="about-images" src={lindaIVatten} />
+        <img className="about-images" src={images[0].secondHomeImage} />
       </div>
     </div>
   );
@@ -65,7 +61,7 @@ const ColorContainer = () => {
       <div className="g-card">
         <div className="card-container">
           <div className="card-front-1">
-            <img className="picture" src={Person}></img>
+            <img className="picture" src={images[0].homeFirstCard}></img>
             <div className="rubrik">{TextData.firstCardContainerFront}</div>
             <div className="text"></div>
           </div>
@@ -86,7 +82,7 @@ const ColorContainer = () => {
       <div className="g-card">
         <div className="card-container">
           <div className="card-front-2">
-            <img className="picture" src={Login}></img>
+            <img className="picture" src={images[0].homeSecondCard}></img>
             <div className="rubrik">{TextData.secondCardContainerFront}</div>
             <div className="text"></div>
           </div>
@@ -107,7 +103,7 @@ const ColorContainer = () => {
       <div className="g-card">
         <div className="card-container">
           <div className="card-front-3">
-            <img className="picture" src={SaveMoney}></img>
+            <img className="picture" src={images[0].homeThirdCard}></img>
             <div className="rubrik">{TextData.thirdCardContainerFront}</div>
             <div className="text"></div>
           </div>

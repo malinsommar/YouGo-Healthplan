@@ -1,17 +1,10 @@
 import React from "react";
-import PhoneIcon from "../images/phoneIconWhite.png";
-import MailIcon from "../images/mailIconWhite.png";
-import FacebookLogo from "../images/facebookLogo.svg";
-import InstagramLogo from "../images/instagramLogo.svg";
-import LinkedinLogo from "../images/linkedinLogo.svg";
-import YoutubeLogo from "../images/youtubeLogo.svg";
-import YougoLogo from "../images/logo.png";
 import "../styling/footercomp.css";
 import ContactData from "../data/contactInformation.json";
+import images from "../data/images.js";
 
 const bigScreenFooter = () => {
   return (
-    <div id="footer">
     <div id="footerDiv">
       <div id="footer-adress">
         <h2>YouGo HealthPlan</h2>
@@ -22,49 +15,45 @@ const bigScreenFooter = () => {
       </div>
       <div id="footer-contact">
         <p>
-          <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
           {ContactData.telefonnummer}
         </p>
         <p>
           {" "}
-          <img className="footerIcons" src={MailIcon} alt="Mail icon" />
           {ContactData.mail}
         </p>
       </div>
       <div id="footer-media">
         <a href="https://www.facebook.com/yougohealthplan/">
           <img
-            src={FacebookLogo}
+            src={images[0].faceBookIcon}
             className="socialMediaLogo"
             alt="Facebook Logo"
           />
         </a>
         <a href="https://www.instagram.com/yougohealthplan/?hl=en">
           <img
-            src={InstagramLogo}
+            src={images[0].instagramIcon}
             className="socialMediaLogo"
             alt="Instagram Logo"
           />
         </a>
         <a href="https://se.linkedin.com/company/yougo-healthplan">
           <img
-            src={LinkedinLogo}
+            src={images[0].linkedinIcon}
             className="socialMediaLogo"
             alt="Linkedin Logo"
           />
         </a>
         <a href="https://www.youtube.com/channel/UCOOuv2oO-y79iDeU3jpx6xQ">
           <img
-            src={YoutubeLogo}
+            src={images[0].youtubeIcon}
             className="socialMediaLogo"
             alt="Youtube Logo"
           />
         </a>
-        <img src={YougoLogo} id="footerYougoLogo" alt="Yougo healthplan Logo" />
+        <img src={images[0].youGoiconFooter} id="footerYougoLogo" alt="Yougo healthplan Logo" />
         <p id="follow">Följ oss:</p>
       </div>
-      </div>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
   );
 };
@@ -74,7 +63,7 @@ const smallScreenFooter = () => {
     <div className="smallScreenDiv">
       <div id="footer-adress-small">
         <img
-          src={YougoLogo}
+          src={images[0].youGoiconFooter}
           id="footerYougoLogoSmall"
           alt="Yougo healthplan Logo"
         />
@@ -86,13 +75,11 @@ const smallScreenFooter = () => {
       <hr className="footer-hr" />
       <div id="footer-contact-small">
         <p>
-          <img className="footerIcons" src={PhoneIcon} alt="Phone icon" />
           {ContactData.telefonnummer}
         </p>
 
         <p>
           {" "}
-          <img className="footerIcons" src={MailIcon} alt="Mail icon" />
           {ContactData.mail}
         </p>
       </div>
@@ -100,28 +87,28 @@ const smallScreenFooter = () => {
       <div id="footer-media-small">
         <a href="https://www.facebook.com/yougohealthplan/">
           <img
-            src={FacebookLogo}
+            src={images[0].faceBookIcon}
             className="socialMediaLogoSmall"
             alt="Facebook Logo"
           />
         </a>
         <a href="https://www.instagram.com/yougohealthplan/?hl=en">
           <img
-            src={InstagramLogo}
+            src={images[0].instagramIcon}
             className="socialMediaLogoSmall"
             alt="Instagram Logo"
           />
         </a>
         <a href="https://se.linkedin.com/company/yougo-healthplan">
           <img
-            src={LinkedinLogo}
+            src={images[0].linkedinIcon}
             className="socialMediaLogoSmall"
             alt="Linkedin Logo"
           />
         </a>
         <a href="https://www.youtube.com/channel/UCOOuv2oO-y79iDeU3jpx6xQ">
           <img
-            src={YoutubeLogo}
+            src={images[0].youtubeIcon}
             className="socialMediaLogoSmall"
             alt="Youtube Logo"
           />

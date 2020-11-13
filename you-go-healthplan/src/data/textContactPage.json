@@ -1,9 +1,18 @@
 {
     "pageTitle": "Kontakta oss",
-    "pageSubTitle": "Har ni frågor men inte tid att ringa eller maila oss just nu?\nInga problem! Svara på formuläret så kontaktar vi er så snart vi kan.",
+    "pageSubTitle": "Har ni frågor men inte tid att ringa eller maila oss just nu? Inga problem! \nSvara på formuläret så kontaktar vi er så snart vi kan.",
 
     "contactInfoTitle": "Besök oss!",
+    "contactInfoPhone": "Tel:",
+    "contactInfoMail": "Mail:",
+    
+
     "contactFormTitle": "Skicka ett meddelande!",
+    "contactFormName": "Namn: *",
+    "contactFormMail": "Mail: *",
+    "contactFormPhone": "Telefon:",
+    "contactFormText": "Meddelande:",
+    "contactFormButton": "Skicka",
 
     "emailJsServiceKey": "service_wkq6nqw",
     "emailJsTemplateKey": "template_uj6j6n7",
