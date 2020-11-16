@@ -16,11 +16,7 @@ const textHomePage = {
   FlipContainers: [
     {
       firstCardContainerFront: "Hur går det till",
-      firstCardContainerBack: `Vi skapar friska medarbetare genom vår innovativa digitala hälsotjänst som möjliggör att anställda och arbetsgivare tillsammans arbetar hälsostrategiskt.
-      Digital Hälsoanalys & Kartläggning
-      Rekommendationer
-      Digitalt Hälsoportal till alla medarbetare 
-      Hälsofrämjande program/moduler grupp- och individnivå`,
+      firstCardContainerBack: `Vi skapar friska medarbetare genom vår innovativa digitala hälsotjänst som möjliggör att anställda och arbetsgivare tillsammans arbetar hälsostrategiskt.`,
       secondCardContainerFront: "Enkel Registrering",
       secondCardContainerBack:
         "Det går snabbt och enkelt att komma igång oavsett vart ni befinner er då vår tjänst är digital. Kontakta oss så berättar vi mer.",

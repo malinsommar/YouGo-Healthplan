@@ -6,11 +6,6 @@ import PricingInfoComponent from "../components/PricingInfoComp";
 import FotterComponent from "../components/FooterComp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import loginIcon from "../images/login.png";
-import surveyIcon from "../images/survey.png";
-import individualIcon from "../images/individual.png";
-import EgnaRapporter from "../images/egnaRapporter.png";
-import breakIcon from "../images/break.png";
 import prices from "../data/prices.json";
 import PricingTexts from "../data/textPricingPage.json";
 import images from "../data/images.js";
@@ -169,7 +164,7 @@ const Pricing = () => {
 
         <PricingInfoComponent
           title={PricingTexts.fifthInfoBoxTitle}
-          text={PricingTexts.iconFirstCard}
+          text={PricingTexts.fifthInfoBoxText}
           image={images[0].iconfifthCard}
         />
       </div>

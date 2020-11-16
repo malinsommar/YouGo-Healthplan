@@ -84,122 +84,95 @@ body {
 
 #colorcontainer {
   width: 100%;
-  height: 610px;
-  display: flex;
-  flex-direction: row;
+  height: 320px;
+  display: inline-block;
   align-items: center;
+  text-align: center;
+  margin-top: 4vw;
+  color: white;
 }
 
-.g-card {
-  width: 25%;
+.flip-card {
+  display: inline-table;
+  background-color: transparent;
+  width: 300px;
   height: 300px;
-  margin: 0 auto;
+  margin: 2.5vw;
 }
-.g-card .card-container {
+
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.g-card:hover .card-container {
+
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front-1,
-.card-back-1,
-.card-front-2,
-.card-back-2,
-.card-front-3,
-.card-back-3 {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.card-front-1 {
-  background: linear-gradient(-45deg, #ff6b6b, #ff6b6b);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-}
-.card-back-1 {
-  background: linear-gradient(-45deg, #ff6b6b, #ff6b6b);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  transform: rotateY(180deg);
-}
 
-.card-front-2 {
-  background: linear-gradient(-45deg, #319eaf, #319eaf);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-}
-.card-back-2 {
-  background: linear-gradient(-45deg, #319eaf, #319eaf);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  transform: rotateY(180deg);
-}
-
-.card-front-3 {
-  background: linear-gradient(-45deg, #6bab90, #6bab90);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-}
-.card-back-3 {
-  background: linear-gradient(-45deg, #6bab90, #6bab90);
-  border-radius: 2%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  transform: rotateY(180deg);
-}
-.picture {
-  width: 100px;
-  height: 100px;
-  margin: 40px;
-}
-
-.rubrik {
-  text-transform: uppercase;
-  font-family: titleFont;
-  color: white;
-}
-
-.text {
-  font-family: lightFont;
-  color: white;
-  margin: 5%;
-}
-
-.button-container {
-  outline: none;
-  text-decoration: none;
-  margin: 0 auto;
+.flip-card-front {
+  background-color: #bbb;
   color: black;
 }
 
-.buttonInfo {
-  width: 100px;
-  height: 30px;
-  background-color: white;
-  border-radius: 5px;
-  outline: none;
-  border: solid black 1px;
-  box-shadow: black 0 0 1px;
-  margin: 0 auto;
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#firstCard {
+  background-color: #ff6b6b;
+}
+
+#secondCard {
+  background-color: #319eaf;
+}
+
+#thirdCard {
+  background-color: #6bab90;
+}
+
+.card-image {
+  margin-top: 40px;
+  width: 130px;
+}
+
+.cardTitle {
+  color: white;
   font-family: titleFont;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.card-back-text {
+  font-family: lightFont;
+  font-size: 19px;
+  margin: 30px 15px 15px 15px;
+}
+
+.card-button {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px 20px 10px 20px;
 }
 
 /*-- Style for picture about how they work --*/
@@ -291,7 +264,7 @@ body {
     padding-top: 50%;
   }
 }
-@media only screen and (max-width: 750px) {
+/*@media only screen and (max-width: 750px) {
   #colorcontainer {
     display: block;
     flex-direction: row;
@@ -304,7 +277,7 @@ body {
   .text {
     font-size: 11px;
   }
-}
+}*/
 @media only screen and (max-width: 600px) {
   #Content-button-3 {
     padding-left: 30%;
