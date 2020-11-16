@@ -5,12 +5,12 @@ import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FooterComponent from "../components/FooterComp";
 import Partners from "../data/partnersAndCustomers.json";
 
-import TextDataAboutUs from "../data/textAboutPage.json";
+import TextDataAboutUs from "../data/textAboutPage.js";
 import images from "../data/images.js";
 
 const newLineText = (text) => {
-  return text.split('\n').map(str => <p>{str}</p>);
-}
+  return text.split("\n").map((str) => <p>{str}</p>);
+};
 
 const About = () => {
   return (
@@ -37,13 +37,16 @@ const About = () => {
 const GlobalGoals = () => {
   return (
     <div className="pic-to-left" id="global-goals">
-      <img className="about-images" src={images[0].aboutFirst}/>
+      <img className="about-images" src={images[0].aboutFirst} />
       <div id="globalGoals-right" className="pic-to-right-text">
         <p className="rubrikAbout">
-          {TextDataAboutUs.SustainableDevelopmentTitle}
+          {
+            TextDataAboutUs.SustainableDevelopment[0]
+              .SustainableDevelopmentTitle
+          }
         </p>
         <p className="textAbout">
-          {TextDataAboutUs.SustainableDevelopmentText}
+          {TextDataAboutUs.SustainableDevelopment[0].SustainableDevelopmentText}
         </p>
       </div>
     </div>
@@ -54,9 +57,12 @@ const Philosophy = () => {
   return (
     <div className="pic-to-left">
       <div id="philosophydiv-big" className="pic-to-right-text">
-        <p className="rubrikAbout"> {TextDataAboutUs.YouGosVisionTitle} </p>
+        <p className="rubrikAbout">
+          {" "}
+          {TextDataAboutUs.YouGosVision[0].YouGosVisionTitle}{" "}
+        </p>
         <p className="textAbout">
-          {newLineText(TextDataAboutUs.YouGosVisionText)}
+          {newLineText(TextDataAboutUs.YouGosVision[0].YouGosVisionText)}
         </p>
       </div>
       <img
@@ -70,9 +76,12 @@ const Philosophy = () => {
         src={images[0].aboutSecond}
       />
       <div id="philosophydiv-small" className="pic-to-right-text">
-        <p className="rubrikAbout"> YouGo's vision </p>
+        <p className="rubrikAbout">
+          {" "}
+          {TextDataAboutUs.YouGosVision[0].YouGosVisionTitle}{" "}
+        </p>
         <p className="textAbout">
-          {TextDataAboutUs.YouGosVisionText}
+          {TextDataAboutUs.YouGosVision[0].YouGosVisionText}
         </p>
       </div>
     </div>

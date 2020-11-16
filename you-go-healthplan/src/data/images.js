@@ -7,6 +7,8 @@ import firstHomeCard from "../images/agenda.png";
 import secondHomeCard from "../images/to-do-list.png";
 import thirdHomeCard from "../images/money.png";
 
+import howWeWork from "../images/YouGo_4.png";
+
 //About us page
 import aboutFirst from "../images/hållbarhetsmålTreHälsa.jpg";
 import aboutSecond from "../images/aboutSecond.jpg";
@@ -33,7 +35,7 @@ import youtubeIcon from "../images/youtube.png";
 import footerIcon from "../images/logo.png";
 
 const images = [
-    {
+  {
     //Home page
     headerVideo: headerVideo,
     firstHomeImage: homeFirst,
@@ -42,6 +44,8 @@ const images = [
     homeFirstCard: firstHomeCard,
     homeSecondCard: secondHomeCard,
     homeThirdCard: thirdHomeCard,
+
+    howWeWork: howWeWork,
 
     //About page
     aboutFirst: aboutFirst,
@@ -67,6 +71,7 @@ const images = [
     youtubeIcon: youtubeIcon,
 
     youGoiconFooter: footerIcon,
-}]
+  },
+];
 
 export default images;

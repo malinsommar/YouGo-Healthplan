@@ -44,9 +44,6 @@ body {
 
 /*-- Style for Info about YouGo --*/
 
-.infoAboutAll {
-}
-
 .infoAboutYouGo {
   width: 50%;
   padding-left: 1%;
@@ -68,12 +65,6 @@ body {
   width: 75%;
   margin: 0 auto;
   margin-bottom: 5vw;
-}
-
-.imageStyle {
-}
-
-.infoAboutAll {
 }
 
 #imgOfSomething {
@@ -269,6 +260,12 @@ body {
   width: 70%;
 }
 
+@media only screen and (max-width: 1260px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   #Content-button-1 {
     padding-left: 37%;
@@ -283,10 +280,29 @@ body {
     padding-top: 45%;
   }
 }
+@media only screen and (max-width: 1140px) {
+  .text {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 800px) {
   #Content-button-3 {
     padding-left: 37%;
     padding-top: 50%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #colorcontainer {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+  }
+  .g-card {
+    margin: 0 auto;
+    padding: 4px;
+  }
+  .text {
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 600px) {
