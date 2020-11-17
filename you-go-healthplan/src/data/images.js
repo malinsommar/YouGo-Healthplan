@@ -3,9 +3,9 @@ import headerVideo from "../images/headerVideo.mp4";
 import homeFirst from "../images/homeFirst.jpg";
 import HomeSecond from "../images/linda.jpeg";
 
-import firstHomeCard from "../images/agenda.png";
-import secondHomeCard from "../images/to-do-list.png";
-import thirdHomeCard from "../images/money.png";
+import firstHomeCard from "../images/HowWeWork.png";
+import secondHomeCard from "../images/Contact.png";
+import thirdHomeCard from "../images/SaveMoney.png";
 
 import howWeWork from "../images/YouGo_4.png";
 
