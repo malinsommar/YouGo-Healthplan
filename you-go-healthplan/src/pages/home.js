@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import HoverButton from "../components/HoverComp";
 import MultiCarouselComponent from "../components/MultiCarouselComp";
 import FotterComponent from "../components/FooterComp";
+import CardComp from "../components/CardComp";
 import VideoHeader from "../components/VideoHeader";
 import SliderComp from "../components/SliderComp";
 import Customers from "../data/partnersAndCustomers.json";
@@ -12,6 +13,7 @@ import HeaderComponent from "../components/HeaderComp";
 
 import TextDataHome from "../data/textHomePge.js";
 import images from "../data/images.js";
+import textHomePage from "../data/textHomePge.js";
 
 const newLineText = (text) => {
   return text.split("\n").map((str) => <p>{str}</p>);
@@ -64,85 +66,33 @@ const ContentAboutYouGo = () => {
     </div>
   );
 };
-
 const ColorContainer = () => {
   return (
     <div id="colorcontainer">
-      <div className="g-card">
-        <div className="card-container">
-          <div className="card-front-1">
-            <img className="picture" src={images[0].homeFirstCard}></img>
-            <div className="rubrik">
-              {TextDataHome.FlipContainers[0].firstCardContainerFront}
-            </div>
-          </div>
-
-          <div className="card-back-1">
-            <p className="text">
-              {newLineText(
-                TextDataHome.FlipContainers[0].firstCardContainerBack
-              )}
-            </p>
-            <NavLink
-              className="button-container"
-              to="/about"
-              activeClassName="isActive"
-            >
-              <p className="buttonInfo">Tryck här</p>
-            </NavLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="g-card">
-        <div className="card-container">
-          <div className="card-front-2">
-            <img className="picture" src={images[0].homeSecondCard}></img>
-            <div className="rubrik">
-              {TextDataHome.FlipContainers[0].secondCardContainerFront}
-            </div>
-            <div className="text"></div>
-          </div>
-
-          <div className="card-back-2">
-            <p className="text">
-              {TextDataHome.FlipContainers[0].secondCardContainerBack}
-            </p>
-            <NavLink
-              className="button-container"
-              to="/contact"
-              activeClassName="isActive"
-            >
-              <p className="buttonInfo">Tryck här</p>
-            </NavLink>
-          </div>
-        </div>
-      </div>
-
-      <div className="g-card">
-        <div className="card-container">
-          <div className="card-front-3">
-            <img className="picture" src={images[0].homeThirdCard}></img>
-            <div className="rubrik">
-              {TextDataHome.FlipContainers[0].thirdCardContainerFront}
-            </div>
-            <div className="text"></div>
-          </div>
-
-          <div className="card-back-3">
-            <p className="text">
-              {TextDataHome.FlipContainers[0].thirdCardContainerBack}
-            </p>
-            <NavLink
-              className="button-container"
-              to="/pricing"
-              activeClassName="isActive"
-            >
-              <p className="buttonInfo">Tryck här</p>
-            </NavLink>
-          </div>
-        </div>
-      </div>
+      <CardComp
+        frontText={textHomePage.FlipContainers[0].firstCardContainerFront}
+        backtext={textHomePage.FlipContainers[0].firstCardContainerBack}
+        buttonText="Läs mer"
+        image={images[0].homeFirstCard}
+        cardId="firstCard"
+        toPage="/about"
+      />
+      <CardComp
+        frontText={textHomePage.FlipContainers[0].secondCardContainerFront}
+        backtext={textHomePage.FlipContainers[0].secondCardContainerBack}
+        buttonText="Läs mer"
+        image={images[0].homeSecondCard}
+        cardId="secondCard"
+        toPage="/contact"
+      />
+      <CardComp
+        frontText={textHomePage.FlipContainers[0].thirdCardContainerFront}
+        backtext={textHomePage.FlipContainers[0].thirdCardContainerBack}
+        buttonText="Läs mer"
+        image={images[0].homeThirdCard}
+        cardId="thirdCard"
+        toPage="/pricing"
+      />
     </div>
   );
 };

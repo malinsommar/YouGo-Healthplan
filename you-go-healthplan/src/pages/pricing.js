@@ -6,11 +6,6 @@ import PricingInfoComponent from "../components/PricingInfoComp";
 import FotterComponent from "../components/FooterComp";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import loginIcon from "../images/login.png";
-import surveyIcon from "../images/survey.png";
-import individualIcon from "../images/individual.png";
-import EgnaRapporter from "../images/egnaRapporter.png";
-import breakIcon from "../images/break.png";
 import prices from "../data/prices.json";
 import PricingTexts from "../data/textPricingPage.json";
 import images from "../data/images.js";
@@ -89,7 +84,7 @@ const Pricing = () => {
           {PricingTexts.secondButtonText}
         </button>
         <button className="emp-button" onClick={onThirdPricingButton}>
-         {PricingTexts.thirdButtonText}
+          {PricingTexts.thirdButtonText}
         </button>
         <button
           className="emp-button"
@@ -132,9 +127,7 @@ const Pricing = () => {
     return (
       <div id="contact-div">
         <NavLink id="contact" to="/contact" activeClassName="isActive">
-          <p id="nav">
-            {newLineText(PricingTexts.contactButton)}
-          </p>
+          <p id="nav">{newLineText(PricingTexts.contactButton)}</p>
         </NavLink>
       </div>
     );
@@ -169,7 +162,7 @@ const Pricing = () => {
 
         <PricingInfoComponent
           title={PricingTexts.fifthInfoBoxTitle}
-          text={PricingTexts.iconFirstCard}
+          text={PricingTexts.fifthInfoBoxText}
           image={images[0].iconfifthCard}
         />
       </div>
@@ -177,17 +170,15 @@ const Pricing = () => {
   };
 
   const newLineText = (text) => {
-    return text.split('\n').map(str => <p>{str}</p>);
-  }
+    return text.split("\n").map((str) => <p>{str}</p>);
+  };
 
   return (
     <div>
       <div className="top-items">
         <HeaderComponent />
         <h3 id="pricing-title">{PricingTexts.pageTitle}</h3>
-        <p id="numberOfEmp">
-          {PricingTexts.buttonsTitle}
-        </p>
+        <p id="numberOfEmp">{PricingTexts.buttonsTitle}</p>
         {empButtons()}
         {pricingBoxes()}
         {contactButton()}
